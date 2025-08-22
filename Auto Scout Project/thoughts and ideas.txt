@@ -1,0 +1,11 @@
+Thoughts and ideas
+
+
+Description Sentiment Analysis?
+Accuracy drops for non-English without translations - should I trust?
+How statistically useful would it really be?
+
+
+Month columns rendered as MM/YYYY
+Is it better to make a YYYYMM string, so that a higher number corresponds to a more recent date?
+Or would this confuse the model? Should I instead just do YYYY?
