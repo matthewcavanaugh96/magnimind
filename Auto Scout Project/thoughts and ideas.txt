@@ -1,3 +1,11 @@
+CLEANING
+Gears - Just extract number, this function already exists.
+
+Country version - Just extract word
+
+
+
+
 Thoughts and ideas
 
 
