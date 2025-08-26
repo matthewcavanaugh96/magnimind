@@ -1,7 +1,5 @@
 CLEANING
-Gears - Just extract number, this function already exists.
-
-Country version - Just extract word
+Should be done except maybe data types.
 
 
 
@@ -10,6 +8,9 @@ Entertainment, Safety columns etc. - Create dummies, drop first - Maybe remove t
 
 BOOL COLUMNS - Must ensure these are not INT
 
+
+# of doors and # of seats
+Change column names to Nr. ? # mark make things too difficult?
 
 
 Thoughts and ideas
@@ -23,3 +24,4 @@ How statistically useful would it really be?
 Month columns rendered as MM/YYYY
 Is it better to make a YYYYMM string, so that a higher number corresponds to a more recent date?
 Or would this confuse the model? Should I instead just do YYYY?
+Get dummies for this?
