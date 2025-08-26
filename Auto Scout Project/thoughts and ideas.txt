@@ -5,6 +5,12 @@ Country version - Just extract word
 
 
 
+Entertainment, Safety columns etc. - Create dummies, drop first - Maybe remove this from the initial notebook and re-do on part 4
+
+
+BOOL COLUMNS - Must ensure these are not INT
+
+
 
 Thoughts and ideas
 
