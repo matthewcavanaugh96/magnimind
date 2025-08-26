@@ -1,1 +1,1 @@
-Central repository for all Magnimind projects and assignments.
+Central repository for all Magnimind mentorship projects and assignments.
