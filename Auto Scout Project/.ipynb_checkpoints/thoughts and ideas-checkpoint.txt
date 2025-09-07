@@ -1,27 +1,15 @@
-CLEANING
-Should be done except maybe data types.
+Run several regression models to predict price. Rank columns by absolute correlation, with 1 being more accurate.
 
+Then, one all those are done, 
+Run classification models *on* the previous predictions to see if it can predict whether each regression model overpredicted or underpredicted the price. Rank columns by absolute correlation to accuracy, with 1 being more accurate.
 
+Once all models are done, compare rankings. Measure:
+Mean rank
+Median rank
+Mean-median difference (MMD)
+Total variation (TV)
+MMD-TV spread
+MMD-Largest spread
+MMD-Smallest spread
 
-Entertainment, Safety columns etc. - Create dummies, drop first - Maybe remove this from the initial notebook and re-do on part 4
-
-
-BOOL COLUMNS - Must ensure these are not INT
-
-
-# of doors and # of seats
-Change column names to Nr. ? # mark make things too difficult?
-
-
-Thoughts and ideas
-
-
-Description Sentiment Analysis?
-Accuracy drops for non-English without translations - should I trust?
-How statistically useful would it really be?
-
-
-Month columns rendered as MM/YYYY
-Is it better to make a YYYYMM string, so that a higher number corresponds to a more recent date?
-Or would this confuse the model? Should I instead just do YYYY?
-Get dummies for this?
+Then sum all of the above. A smaller number is better as it indicates a feature that is more likely to be predictive in all models.
