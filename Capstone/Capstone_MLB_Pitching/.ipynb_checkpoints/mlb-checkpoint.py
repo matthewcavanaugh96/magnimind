@@ -1,11 +1,20 @@
 import streamlit as st
 import os
 import numpy as np
-
-
+import matplotlib.pyplot as plt
+import matplotlib.image as mpimg
+import streamlit as st
+import pandas as pd
+import unicodedata
+import streamlit as st
+from PIL import Image
 
 # --- Streamlit page setup ---
 st.set_page_config(page_title="Machine learning with MLB statistics", page_icon="⚾️", layout="centered")
+
+bartolo = Image.open("saved pics/bartolo.jpg")
+st.image(bartolo, caption='Bartolo "Big Sexy" Colon', use_container_width=True)
+
 st.title("⚾️ MLB Pitching")
 st.write("""
 Predicting Baseball Hall of Fame selections with machine learning.
@@ -13,6 +22,16 @@ Predicting Baseball Hall of Fame selections with machine learning.
 I analyzed a dataset of 1215 Major League Baseball pitchers and attempted to predict whether each one has been named to the National Baseball Hall of Fame. 
 
 Two criteria have been applied: the pitcher must have thrown a minimum of 1000 career innings (to ensure longevity), and must have retired no later than 2019 (to account for the time delay in eligibility). 
+""")
+
+import streamlit as st
+from PIL import Image
+
+st.title("🖥️ About the source")
+image = Image.open("saved pics/stathead-br.jpg")
+st.image(image, caption="Bartolo", use_container_width=True)
+st.write("""
+Stathead Baseball contains detailed statistics on all levels of professional and college baseball stretching as far back as 1871, including full play-by-play data on all MLB games since 1952. Stathead helpfully separates batting from pitching statistics, preventing players from being penalized by occasional, likely poor, appearances in roles opposite their normal one. Parent company Sports Reference also operates Basketball Reference, Pro Football Reference, and many others. 
 """)
 
 st.title("🤔😵‍💫 Data challenges")
@@ -30,7 +49,7 @@ Most importantly, Hall of Fame induction is not based exclusively on objective s
 I wanted to see how the models could handle these quirks.
 """)
 
-st.title("✨🧠🖥️ About my models and process")
+st.title("✨🧠 About my models and process")
 st.write("""
 I used seven classification models: Logistic Regression, Decision Tree, Random Forest, Extra Trees, Gradient Booster, Support Vector, and Neural Network.
 
@@ -41,7 +60,7 @@ For most of the machine learning models, I ran GridSearchCV to find optimal hype
 I did not run a GridSearch on the Logistic Regression due to its simplicity, but I did run a ridge and lasso. Furthermore, the Support Vector Machine did not run a GridSearch in over 30 minutes, so I was forced to suspend it for time purposes, but I was able to run both versions of K-Folds. 
 and the Support Vector Machine
 
-I used a Standard Scaler on the Logistic Regression, SVM, and Neural Network, but tree-based models were not scaled, as doing so reduced performance. I also tried using a feature-reduced version of my dataset, but in each model the performance was slightly worse. Furthermore, I also attempted inverting /"lower is better/" features such as ERA, so that a higher number would always be more favorable, but this had almost zero bearing on performance. 
+I used a Standard Scaler on the Logistic Regression, SVM, and Neural Network, but tree-based models were not scaled, as doing so reduced performance. I also tried using a feature-reduced version of my dataset, but in each model the performance was slightly worse. Furthermore, I also attempted inverting "lower is better" features such as ERA, so that a higher number would always be more favorable, but this had almost zero bearing on performance. 
 
 Once all modeling was complete, I saved the results as CSV files and loaded every version into a comparison dataframe, from which I chose the best version of each model.
 
@@ -49,7 +68,13 @@ To see my process in detail, visit:
 https://github.com/matthewcavanaugh96/magnimind/tree/main/Capstone
 """)
 
-st.title("Try it for yourself!")
+st.title("📊🤼‍♂️📊 Model comparison")
+st.write("""
+In addition to the standard metrics provided by Scikit-learn, I also manually calculated what I'm calling Prediction Score. I found this by using predict_proba to pull the confidence in the prediction, and compared it with the actual result. Incorrect predictions are penalized, especially with high confidence. For example, Roger Clemens is not a Hall of Famer (steroid controversy), despite models predicting he would be with 99% confidence, so his Prediction Score is ___. Here is how each model did on both the default metrics and mine.
+""")
+
+
+st.title("🫵Pick a player and try it for yourself!")
 st.write("""
 Search for a player and see how the models did!
 """)
