@@ -18,13 +18,11 @@ df_model_comp = pd.read_csv('final_tables/model_comparison.csv')
 # --- Streamlit page setup ---
 st.set_page_config(page_title="Machine learning with MLB statistics", page_icon="⚾️", layout="centered")
 
-kershaw = Image.open("saved pics/kershaw.jpg")
-st.image(kershaw, caption='Clayton Kershaw, not yet eligible but a near-certain future Hall of Fame inductee', use_container_width=True)
+img_sabathia = Image.open("saved pics/cc_sabathia.jpeg")
+st.image(img_sabathia, caption='CC Sabathia, inducted to the Baseball Hall of Fame in 2025, his first year of eligibility.', use_container_width=True)
 
-st.title("⚾️ MLB Pitching")
+st.title("⚾️ MLB statistics and machine learning")
 st.write("""
-Predicting Baseball Hall of Fame selections with machine learning.
-
 I analyzed a dataset of 1215 Major League Baseball pitchers and attempted to predict whether each one has been named to the National Baseball Hall of Fame. 
 
 Two criteria have been applied: the pitcher must have thrown a minimum of 1000 career innings (to ensure longevity), and must have retired no later than 2019 (to account for the time delay in eligibility). 
@@ -37,10 +35,10 @@ st.title("🖥️ About the source")
 image = Image.open("saved pics/stathead-br.jpg")
 st.image(image, caption="Bartolo", use_container_width=True)
 st.write("""
-Stathead Baseball contains detailed statistics on all levels of professional and college baseball stretching as far back as 1871, including full play-by-play data on all MLB games since 1952. Stathead helpfully separates batting from pitching statistics, preventing players from being penalized by occasional, likely poor, appearances in roles opposite their normal one. Parent company Sports Reference also operates Basketball Reference, Pro Football Reference, and many others. 
+Stathead Baseball contains detailed statistics on all levels of professional and college baseball stretching as far back as 1871, including full play-by-play data on all MLB games since 1952. Their parent company Sports Reference also operates Basketball Reference, Pro Football Reference, and many others. Stathead helpfully separates batting from pitching statistics, preventing players from being penalized by occasional, likely poor, appearances in roles opposite their normal one. Their built-in filters allow for a multitude of insights, and I was able to download my dataset easily with little cleaning required.
 """)
 
-st.title("🤔😵‍💫 Data challenges")
+st.title("😵‍💫 Data challenges")
 st.write("""
 This dataset is highly imbalanced - just 82 of the 1215 pitchers are in the Hall of Fame.
 
@@ -61,11 +59,9 @@ I used six classification models: Logistic Regression, Decision Tree, Random For
 
 For each of my models, I ran K-Fold regularization so that every player would be predicted. This was to have more data points to work with, and to compare predictions for the same player across all models.
 
-For most of the machine learning models, I ran GridSearchCV to find optimal hyperparameters. Since there is no real-world harm to be done by an incorrect prediction, in theory, Precision and Recall should be equally important. For this reason, my GridSearches were originally run on F1 Score. However, finding a good Precision score proved to be the biggest challenge, which is to say that many players were falsely predicted to be Hall of Famers when in fact they are not. Therefore, I also ran the GridSearch on Precision and Recall, each also combined with both standard and stratified K-Folds, to see the tradeoffs.
+For most of the machine learning models, I ran GridSearchCV to find optimal hyperparameters. Since there is no real-world harm to be done by an incorrect prediction, in theory, Precision and Recall should be equally important. For this reason, my GridSearches were originally run on F1 Score. However, Precision and Recall were prone to extremely poor scores, which is to say the models registered a large number of False Positives or False Negatives, respectively. Therefore, I also ran the GridSearch on these metrics, each also combined with both standard and stratified K-Folds, to see the tradeoffs.
 
 I did not run a GridSearch on the Logistic Regression due to its simplicity. Furthermore, the Support Vector Machine did not run a GridSearch in over 30 minutes, so I was forced to suspend it for time purposes, but I was able to run both versions of K-Folds. 
-
-In some cases, using default settings with no GridSearch output better results than any GridSearch combination I tried.
 
 I used a Standard Scaler on the Logistic Regression and SVM, but tree-based models were not scaled, as doing so reduced performance. I also tried using a feature-reduced version of my dataset, but in each model the performance was slightly worse. Furthermore, I also attempted inverting "lower is better" features such as ERA, so that a higher number would always be more favorable, but this had almost zero bearing on performance. 
 
@@ -80,8 +76,8 @@ st.write("""
 In addition to the standard metrics provided by Scikit-learn, I also manually calculated what I'm calling Adjusted Prediction Score (APS). I found this by using predict_proba to pull the confidence in the prediction, and compared it with the actual result. The more confident an incorrect prediction, the lower the APS. Here is how each model did on both the default metrics and mine.
 """)
 
-st.markdown("---")
-st.subheader("📊 Model Comparison Metrics")
+#st.markdown("---")
+#st.subheader("📊 Model Comparison Metrics")
 
 # Dropdown for models
 model_list = df_model_comp["Model"].unique().tolist()
@@ -96,29 +92,16 @@ st.dataframe(metrics_df)
 
 
 
+
+# -------
+# -------
+# -------
+# -------
+
 st.title("🫵Pick a player and try it for yourself!")
 st.write("""
 Search for a player and see how the models did with them! Keep in mind, a player won't appear in this dataset if they don't have 1000 innings pitched or were not retired by 2019.
 """)
-
-# Define datasets
-df_player_stats = pd.read_csv('final_tables/Player_stats.csv')
-df_player_preds = pd.read_csv('final_tables/Players_and_models.csv')
-df_model_comp = pd.read_csv('final_tables/model_comparison.csv')
-
-
-#st.title("MLB Hall of Fame Pitcher Prediction Explorer")
-
-import streamlit as st
-import pandas as pd
-import unicodedata
-
-# ---------------------------------------------------------
-# Load dataframes
-# ---------------------------------------------------------
-df_player_stats = pd.read_csv('final_tables/Player_stats.csv')
-df_player_preds = pd.read_csv('final_tables/Players_and_models.csv')
-df_model_comp = pd.read_csv('final_tables/model_comparison.csv')
 
 # ---------------------------------------------------------
 # Normalize names for accent-insensitive search
@@ -130,25 +113,41 @@ def normalize(s):
 df_player_preds["normalized"] = df_player_preds["Player"].apply(normalize)
 df_player_stats["normalized"] = df_player_stats["Player"].apply(normalize)
 
-#st.title("MLB Hall of Fame Pitcher Prediction Explorer")
-
 # ---------------------------------------------------------
-# Search bar without autocomplete
+# Search + dropdown on ONE BAR
 # ---------------------------------------------------------
-search_query = st.text_input("Search for a pitcher (partial name ok):", "")
+col_search, col_select = st.columns([1.2, 1])
 
+with col_search:
+    search_query = st.text_input("Search for a pitcher:", "")
+
+# Process matches
 if search_query.strip():
     q = normalize(search_query)
     matches = df_player_preds[df_player_preds["normalized"].str.contains(q, na=False)]
 else:
     matches = pd.DataFrame()
 
+# If no matches
 if search_query.strip() and matches.empty:
     st.warning("No players found.")
+    selected_player = None
+else:
+    # Only show dropdown when matches exist
+    with col_select:
+        if matches.empty:
+            selected_player = None
+        else:
+            # Selectbox with empty default so nothing is auto-selected
+            options = ["-- Select --"] + matches["Player"].unique().tolist()
+            selected = st.selectbox("Matches:", options)
 
-selected_player = None
-if not matches.empty:
-    selected_player = st.selectbox("Select a player:", matches["Player"].unique().tolist())
+            selected_player = None if selected == "-- Select --" else selected
+
+# -------
+# -------
+# -------
+# -------
 
 
 
@@ -190,36 +189,46 @@ if selected_player:
     col6.metric("Gradient Boosting", model_results["GBC Pred"])
     col7.metric("SVC", model_results["SVC Pred"])
 
+    
+    # Second row: Mean APS alone
+    st.markdown("")  # spacing
+    col8 = st.columns(1)[0]
+    col8.metric("Mean Adjusted Prediction Score", f"{pred_row['Mean Adjusted Prediction Score']:.3f}")
 
-    st.markdown("---")
+
+# -------------
+# THIS SECTION MAY BE REDUNDANT since I've added mean APS above
+#    st.markdown("---")
 
     # =====================================================
     # MODEL PREDICTIONS TABLE (from df_player_preds)
     # =====================================================
-    st.subheader("🔮 Model Predictions (Probabilities)")
+#    st.subheader("🔮 Model Predictions (Probabilities)")
 
-    prediction_cols = [c for c in df_player_preds.columns if c.startswith("Pred_")]
-    prediction_df = pred_row[prediction_cols].to_frame("Predicted Probability")
+#    prediction_cols = [c for c in df_player_preds.columns if c.startswith("Pred_")]
+#    prediction_df = pred_row[prediction_cols].to_frame("Predicted Probability")
 
-    st.dataframe(prediction_df)
+#    st.dataframe(prediction_df)
 
-    st.markdown("---")
+#    st.markdown("---")
 
     # =====================================================
     # FULL STATS TABLE (from df_player_stats)
     # =====================================================
-    st.subheader("📘 Full Career Statistics")
+#    st.subheader("📘 Full Career Statistics")
 
-    exclude_cols = ["Player", "normalized"]
-    full_stats_df = stats_row.drop(labels=exclude_cols).to_frame("Value")
+#    exclude_cols = ["Player", "normalized"]
+#    full_stats_df = stats_row.drop(labels=exclude_cols).to_frame("Value")
 
-    st.dataframe(full_stats_df)
+#    st.dataframe(full_stats_df)
+# ------------
 
 
-
-st.title("🕥What I hope to add later")
+st.title("🤔🕥 What I hope to add later")
 st.write("""
-I also intended to use a Neural Network. However, I chose to exclude it for the time being, as I have not been able to approximate prediction accuracy as with the machine learning models.
+I worked with a primitive Neural Network which I intended to incorporate alongside the machine learning models. You can still see it in the model breakdown, but it is excluded from most aggregates, as I have not been able to approximate prediction accuracy in the same manner as the other models. A possible workaround would be to scale confidence for each model, but this may distort insights about the models themselves. If I can surmount this issue, I'd like to experiment with multiple neural networks, with different activation functions, numbers of layers and neurons, and so on.
 
 I'd also like to be able to add images for each player.
+
+I am curious about what would happen if I re-ran this dataset while dropping the players that confused the model the most (i.e. consistenly predicted incorrect with high degrees of confidence). Would the models improve and would confidence improve for the other players?
 """)
