@@ -78,7 +78,7 @@ In addition to the standard metrics provided by Scikit-learn, I also manually ca
 
 st.title("🫵Pick a player and try it for yourself!")
 st.write("""
-Search for a player and see how the models did!
+Search for a player and see how the models did with them! Keep in mind, a player won't appear in this dataset if they don't have 1000 innings pitched or were not retired by 2019.
 """)
 
 
@@ -90,7 +90,7 @@ df_player_preds = pd.read_csv('final_tables/Players_and_models.csv')
 df_model_comp = pd.read_csv('final_tables/model_comparison.csv')
 
 
-st.title("MLB Hall of Fame Pitcher Prediction Explorer")
+#st.title("MLB Hall of Fame Pitcher Prediction Explorer")
 
 import streamlit as st
 import pandas as pd
@@ -113,7 +113,7 @@ def normalize(s):
 df_player_preds["normalized"] = df_player_preds["Player"].apply(normalize)
 df_player_stats["normalized"] = df_player_stats["Player"].apply(normalize)
 
-st.title("MLB Hall of Fame Pitcher Prediction Explorer")
+#st.title("MLB Hall of Fame Pitcher Prediction Explorer")
 
 # ---------------------------------------------------------
 # Search bar without autocomplete
@@ -197,12 +197,6 @@ if selected_player:
     full_stats_df = stats_row.drop(labels=exclude_cols).to_frame("Value")
 
     st.dataframe(full_stats_df)
-
-
-
-
-
-
 
 
 
