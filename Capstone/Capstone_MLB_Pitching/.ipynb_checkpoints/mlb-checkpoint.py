@@ -12,8 +12,8 @@ from PIL import Image
 # --- Streamlit page setup ---
 st.set_page_config(page_title="Machine learning with MLB statistics", page_icon="⚾️", layout="centered")
 
-bartolo = Image.open("saved pics/bartolo.jpg")
-st.image(bartolo, caption='Bartolo "Big Sexy" Colon', use_container_width=True)
+kershaw = Image.open("saved pics/kershaw.jpg")
+st.image(kershaw, caption='Clayton Kershaw, not yet eligible but a near-certain future Hall of Fame inductee', use_container_width=True)
 
 st.title("⚾️ MLB Pitching")
 st.write("""
