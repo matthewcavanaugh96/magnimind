@@ -9,6 +9,7 @@ import unicodedata
 import streamlit as st
 from PIL import Image
 
+
 # --- Streamlit page setup ---
 st.set_page_config(page_title="Machine learning with MLB statistics", page_icon="⚾️", layout="centered")
 
@@ -80,64 +81,127 @@ st.write("""
 Search for a player and see how the models did!
 """)
 
+
+
+
+# Define datasets
+df_player_stats = pd.read_csv('final_tables/Player_stats.csv')
+df_player_preds = pd.read_csv('final_tables/Players_and_models.csv')
+df_model_comp = pd.read_csv('final_tables/model_comparison.csv')
+
+
+st.title("MLB Hall of Fame Pitcher Prediction Explorer")
+
 import streamlit as st
 import pandas as pd
 import unicodedata
 
-# --------------------------------------
-# Load your final dataframe
-# --------------------------------------
-df2 = pd.read_csv("stored_datasets/All Pitchers Cleaned.csv")
+# ---------------------------------------------------------
+# Load your dataframes
+# ---------------------------------------------------------
+df_player_stats = pd.read_csv('final_tables/Player_stats.csv')
+df_player_preds = pd.read_csv('final_tables/Players_and_models.csv')
+df_model_comp = pd.read_csv('final_tables/model_comparison.csv')
 
-# Function to normalize names for accent-insensitive search
+# ---------------------------------------------------------
+# Normalize names for accent-insensitive search
+# ---------------------------------------------------------
 def normalize(s):
     s = unicodedata.normalize('NFD', s)
     return ''.join(c for c in s if unicodedata.category(c) != 'Mn').lower()
 
-# Create normalized lookup column (safe to do here too)
-df2["normalized"] = df2["Player"].apply(normalize)
+df_player_preds["normalized"] = df_player_preds["Player"].apply(normalize)
+df_player_stats["normalized"] = df_player_stats["Player"].apply(normalize)
 
 st.title("MLB Hall of Fame Pitcher Prediction Explorer")
 
-# --------------------------------------
-# Search Box (returns all matches)
-# --------------------------------------
+# ---------------------------------------------------------
+# Search bar without autocomplete
+# ---------------------------------------------------------
 search_query = st.text_input("Search for a pitcher (partial name ok):", "")
 
-matches = []
-
-if search_query.strip() != "":
+if search_query.strip():
     q = normalize(search_query)
-    matches = df2[df2["normalized"].str.contains(q)]["Player"].tolist()
-
-    if len(matches) == 0:
-        st.warning("No players found.")
-    else:
-        selected_player = st.selectbox("Select a player:", matches)
+    matches = df_player_preds[df_player_preds["normalized"].str.contains(q, na=False)]
 else:
-    selected_player = None
+    matches = pd.DataFrame()
 
-# --------------------------------------
-# Show player stats only after they pick
-# --------------------------------------
+if search_query.strip() and matches.empty:
+    st.warning("No players found.")
+
+selected_player = None
+if not matches.empty:
+    selected_player = st.selectbox("Select a player:", matches["Player"].unique().tolist())
+
+
+
+# ---------------------------------------------------------
+# Display Data
+# ---------------------------------------------------------
 if selected_player:
-    player_row = df2[df2["Player"] == selected_player].iloc[0]
 
-    st.subheader(f"📌 {selected_player}")
+    # Pull rows from both dataframes
+    pred_row = df_player_preds[df_player_preds["Player"] == selected_player].iloc[0]
+    stats_row = df_player_stats[df_player_stats["Player"] == selected_player].iloc[0]
 
-    # Example metrics
-    col1, col2, col3, col4 = st.columns(4)
-    
-    col1.metric("Hall of Famer?", player_row["Hall of Fame"])
-    col2.metric("Wins", f"{player_row['Wins']:.2f}")
-    col3.metric("Earned Run Average", f"{player_row['Earned Run Average']:.2f}")
-    col4.metric("Strikeouts", f"{player_row['Strikeouts']:.2f}")
+    # =====================================================
+    # SUMMARY METRICS (Model Predictions + Actual HOF)
+    # =====================================================
+    st.subheader(f"📌 Summary for {selected_player}")
+
+    # True Hall of Fame value
+    true_hof = pred_row["Hall of Fame"]
+    true_hof_display = "Yes" if true_hof == 1 else "No"
+
+    # List of model prediction columns
+    model_cols = ["Logreg Pred", "DTree Pred", "RFC Pred", "ETC Pred", "GBC Pred", "SVC Pred"]
+
+    # Convert to Yes/No for display
+    model_results = {
+        col: ("Yes" if pred_row[col] == 1 else "No")
+        for col in model_cols
+    }
+
+    # Create columns for the metrics
+    col1, col2, col3, col4, col5, col6, col7 = st.columns(7)
+
+    col1.metric("Actual HOF?", true_hof_display)
+    col2.metric("LogReg", model_results["Logreg Pred"])
+    col3.metric("Decision Tree", model_results["DTree Pred"])
+    col4.metric("Random Forest", model_results["RFC Pred"])
+    col5.metric("Extra Trees", model_results["ETC Pred"])
+    col6.metric("Gradient Boosting", model_results["GBC Pred"])
+    col7.metric("SVC", model_results["SVC Pred"])
 
 
     st.markdown("---")
 
-    # Show stats table
-    st.dataframe(player_row.to_frame("Value"))
+    # =====================================================
+    # MODEL PREDICTIONS TABLE (from df_player_preds)
+    # =====================================================
+    st.subheader("🔮 Model Predictions (Probabilities)")
+
+    prediction_cols = [c for c in df_player_preds.columns if c.startswith("Pred_")]
+    prediction_df = pred_row[prediction_cols].to_frame("Predicted Probability")
+
+    st.dataframe(prediction_df)
+
+    st.markdown("---")
+
+    # =====================================================
+    # FULL STATS TABLE (from df_player_stats)
+    # =====================================================
+    st.subheader("📘 Full Career Statistics")
+
+    exclude_cols = ["Player", "normalized"]
+    full_stats_df = stats_row.drop(labels=exclude_cols).to_frame("Value")
+
+    st.dataframe(full_stats_df)
+
+
+
+
+
 
 
 
@@ -145,4 +209,6 @@ if selected_player:
 st.title("🕥What I hope to add later")
 st.write("""
 I also intended to use a Neural Network. However, I chose to exclude it for the time being, as I have not been able to approximate prediction accuracy as with the machine learning models.
+
+I'd also like to be able to add images for each player.
 """)
