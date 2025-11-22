@@ -9,6 +9,11 @@ import unicodedata
 import streamlit as st
 from PIL import Image
 
+# Define datasets
+df_player_stats = pd.read_csv('final_tables/Player_stats.csv')
+df_player_preds = pd.read_csv('final_tables/Players_and_models.csv')
+df_model_comp = pd.read_csv('final_tables/model_comparison.csv')
+
 
 # --- Streamlit page setup ---
 st.set_page_config(page_title="Machine learning with MLB statistics", page_icon="⚾️", layout="centered")
@@ -75,14 +80,26 @@ st.write("""
 In addition to the standard metrics provided by Scikit-learn, I also manually calculated what I'm calling Adjusted Prediction Score (APS). I found this by using predict_proba to pull the confidence in the prediction, and compared it with the actual result. The more confident an incorrect prediction, the lower the APS. Here is how each model did on both the default metrics and mine.
 """)
 
+st.markdown("---")
+st.subheader("📊 Model Comparison Metrics")
+
+# Dropdown for models
+model_list = df_model_comp["Model"].unique().tolist()
+selected_model = st.selectbox("Select a model to view its metrics:", model_list)
+
+# Pull row for the selected model
+model_row = df_model_comp[df_model_comp["Model"] == selected_model].iloc[0]
+
+# Display as a clean table
+metrics_df = model_row.to_frame("Value")
+st.dataframe(metrics_df)
+
+
 
 st.title("🫵Pick a player and try it for yourself!")
 st.write("""
 Search for a player and see how the models did with them! Keep in mind, a player won't appear in this dataset if they don't have 1000 innings pitched or were not retired by 2019.
 """)
-
-
-
 
 # Define datasets
 df_player_stats = pd.read_csv('final_tables/Player_stats.csv')
@@ -97,7 +114,7 @@ import pandas as pd
 import unicodedata
 
 # ---------------------------------------------------------
-# Load your dataframes
+# Load dataframes
 # ---------------------------------------------------------
 df_player_stats = pd.read_csv('final_tables/Player_stats.csv')
 df_player_preds = pd.read_csv('final_tables/Players_and_models.csv')
