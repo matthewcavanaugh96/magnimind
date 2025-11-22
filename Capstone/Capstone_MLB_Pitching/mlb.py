@@ -51,7 +51,7 @@ I wanted to see how the models could handle these quirks.
 
 st.title("✨🧠 About my models and process")
 st.write("""
-I used seven classification models: Logistic Regression, Decision Tree, Random Forest, Extra Trees, Gradient Booster, Support Vector, and Neural Network.
+I used six classification models: Logistic Regression, Decision Tree, Random Forest, Extra Trees, Gradient Booster, and Support Vector Classifier.
 
 For each of my models, I ran K-Fold regularization so that every player would be predicted. This was to have more data points to work with, and to compare predictions for the same player across all models.
 
@@ -61,7 +61,7 @@ I did not run a GridSearch on the Logistic Regression due to its simplicity. Fur
 
 In some cases, using default settings with no GridSearch output better results than any GridSearch combination I tried.
 
-I used a Standard Scaler on the Logistic Regression, SVM, and Neural Network, but tree-based models were not scaled, as doing so reduced performance. I also tried using a feature-reduced version of my dataset, but in each model the performance was slightly worse. Furthermore, I also attempted inverting "lower is better" features such as ERA, so that a higher number would always be more favorable, but this had almost zero bearing on performance. 
+I used a Standard Scaler on the Logistic Regression and SVM, but tree-based models were not scaled, as doing so reduced performance. I also tried using a feature-reduced version of my dataset, but in each model the performance was slightly worse. Furthermore, I also attempted inverting "lower is better" features such as ERA, so that a higher number would always be more favorable, but this had almost zero bearing on performance. 
 
 Once all modeling was complete, I saved the results as CSV files and loaded every version into a comparison dataframe, from which I chose the best version of each model.
 
@@ -128,7 +128,7 @@ if selected_player:
     # Example metrics
     col1, col2, col3, col4 = st.columns(4)
     
-    col1.metric("HOF Status", player_row["Hall of Fame"])
+    col1.metric("Hall of Famer?", player_row["Hall of Fame"])
     col2.metric("Wins", f"{player_row['Wins']:.2f}")
     col3.metric("Earned Run Average", f"{player_row['Earned Run Average']:.2f}")
     col4.metric("Strikeouts", f"{player_row['Strikeouts']:.2f}")
@@ -139,3 +139,10 @@ if selected_player:
     # Show stats table
     st.dataframe(player_row.to_frame("Value"))
 
+
+
+
+st.title("🕥What I hope to add later")
+st.write("""
+I also intended to use a Neural Network. However, I chose to exclude it for the time being, as I have not been able to approximate prediction accuracy as with the machine learning models.
+""")
