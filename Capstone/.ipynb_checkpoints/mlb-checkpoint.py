@@ -1,0 +1,208 @@
+import streamlit as st
+import os
+import numpy as np
+import matplotlib.pyplot as plt
+import matplotlib.image as mpimg
+import streamlit as st
+import pandas as pd
+import unicodedata
+import streamlit as st
+from PIL import Image
+
+
+# --- Streamlit page setup ---
+st.set_page_config(page_title="Machine learning with MLB statistics", page_icon="⚾️", layout="centered")
+
+kershaw = Image.open("saved pics/kershaw.jpg")
+st.image(kershaw, caption='Clayton Kershaw, not yet eligible but a near-certain future Hall of Fame inductee', use_container_width=True)
+
+st.title("⚾️ MLB Pitching")
+st.write("""
+Predicting Baseball Hall of Fame selections with machine learning.
+
+I analyzed a dataset of 1215 Major League Baseball pitchers and attempted to predict whether each one has been named to the National Baseball Hall of Fame. 
+
+Two criteria have been applied: the pitcher must have thrown a minimum of 1000 career innings (to ensure longevity), and must have retired no later than 2019 (to account for the time delay in eligibility). 
+""")
+
+import streamlit as st
+from PIL import Image
+
+st.title("🖥️ About the source")
+image = Image.open("saved pics/stathead-br.jpg")
+st.image(image, caption="Bartolo", use_container_width=True)
+st.write("""
+Stathead Baseball contains detailed statistics on all levels of professional and college baseball stretching as far back as 1871, including full play-by-play data on all MLB games since 1952. Stathead helpfully separates batting from pitching statistics, preventing players from being penalized by occasional, likely poor, appearances in roles opposite their normal one. Parent company Sports Reference also operates Basketball Reference, Pro Football Reference, and many others. 
+""")
+
+st.title("🤔😵‍💫 Data challenges")
+st.write("""
+This dataset is highly imbalanced - just 82 of the 1215 pitchers are in the Hall of Fame.
+
+There is some dispute as to what qualifies as a Major League, especially pre-1901. Some accepted modern teams were previously in leagues that have since disbanded, and some legendary players spent part or all of their careers with teams that no longer exist. I used every league that Stathead judges to be major.
+
+Older data are incomplete, especially for the Negro Leagues, where many barnstorming games were played for which there is little or no information available.
+
+Additionally, some players with unimpressive playing careers may later achieve notoriety through coaching or management and be inducted for those achievements.
+
+Most importantly, Hall of Fame induction is not based exclusively on objective statistics, but is voted on by the Baseball Writers' Association of America (BBWAA), whose motivations are often opaque and shift over time. Some players with impressive statistics are excluded for non-statistical reasons, such as admitted or suspected steroid usage. It has also been implied that personality factors and teams played for may have influenced voting decisions.
+
+I wanted to see how the models could handle these quirks.
+""")
+
+st.title("✨🧠 About my models and process")
+st.write("""
+I used six classification models: Logistic Regression, Decision Tree, Random Forest, Extra Trees, Gradient Booster, and Support Vector Classifier.
+
+For each of my models, I ran K-Fold regularization so that every player would be predicted. This was to have more data points to work with, and to compare predictions for the same player across all models.
+
+For most of the machine learning models, I ran GridSearchCV to find optimal hyperparameters. Since there is no real-world harm to be done by an incorrect prediction, in theory, Precision and Recall should be equally important. For this reason, my GridSearches were originally run on F1 Score. However, finding a good Precision score proved to be the biggest challenge, which is to say that many players were falsely predicted to be Hall of Famers when in fact they are not. Therefore, I also ran the GridSearch on Precision and Recall, each also combined with both standard and stratified K-Folds, to see the tradeoffs.
+
+I did not run a GridSearch on the Logistic Regression due to its simplicity. Furthermore, the Support Vector Machine did not run a GridSearch in over 30 minutes, so I was forced to suspend it for time purposes, but I was able to run both versions of K-Folds. 
+
+In some cases, using default settings with no GridSearch output better results than any GridSearch combination I tried.
+
+I used a Standard Scaler on the Logistic Regression and SVM, but tree-based models were not scaled, as doing so reduced performance. I also tried using a feature-reduced version of my dataset, but in each model the performance was slightly worse. Furthermore, I also attempted inverting "lower is better" features such as ERA, so that a higher number would always be more favorable, but this had almost zero bearing on performance. 
+
+Once all modeling was complete, I saved the results as CSV files and loaded every version into a comparison dataframe, from which I chose the best version of each model.
+
+To see my process in detail, visit:
+https://github.com/matthewcavanaugh96/magnimind/tree/main/Capstone
+""")
+
+st.title("📊🤼‍♂️📊 Model comparison")
+st.write("""
+In addition to the standard metrics provided by Scikit-learn, I also manually calculated what I'm calling Adjusted Prediction Score (APS). I found this by using predict_proba to pull the confidence in the prediction, and compared it with the actual result. The more confident an incorrect prediction, the lower the APS. Here is how each model did on both the default metrics and mine.
+""")
+
+
+st.title("🫵Pick a player and try it for yourself!")
+st.write("""
+Search for a player and see how the models did with them! Keep in mind, a player won't appear in this dataset if they don't have 1000 innings pitched or were not retired by 2019.
+""")
+
+
+
+
+# Define datasets
+df_player_stats = pd.read_csv('final_tables/Player_stats.csv')
+df_player_preds = pd.read_csv('final_tables/Players_and_models.csv')
+df_model_comp = pd.read_csv('final_tables/model_comparison.csv')
+
+
+#st.title("MLB Hall of Fame Pitcher Prediction Explorer")
+
+import streamlit as st
+import pandas as pd
+import unicodedata
+
+# ---------------------------------------------------------
+# Load your dataframes
+# ---------------------------------------------------------
+df_player_stats = pd.read_csv('final_tables/Player_stats.csv')
+df_player_preds = pd.read_csv('final_tables/Players_and_models.csv')
+df_model_comp = pd.read_csv('final_tables/model_comparison.csv')
+
+# ---------------------------------------------------------
+# Normalize names for accent-insensitive search
+# ---------------------------------------------------------
+def normalize(s):
+    s = unicodedata.normalize('NFD', s)
+    return ''.join(c for c in s if unicodedata.category(c) != 'Mn').lower()
+
+df_player_preds["normalized"] = df_player_preds["Player"].apply(normalize)
+df_player_stats["normalized"] = df_player_stats["Player"].apply(normalize)
+
+#st.title("MLB Hall of Fame Pitcher Prediction Explorer")
+
+# ---------------------------------------------------------
+# Search bar without autocomplete
+# ---------------------------------------------------------
+search_query = st.text_input("Search for a pitcher (partial name ok):", "")
+
+if search_query.strip():
+    q = normalize(search_query)
+    matches = df_player_preds[df_player_preds["normalized"].str.contains(q, na=False)]
+else:
+    matches = pd.DataFrame()
+
+if search_query.strip() and matches.empty:
+    st.warning("No players found.")
+
+selected_player = None
+if not matches.empty:
+    selected_player = st.selectbox("Select a player:", matches["Player"].unique().tolist())
+
+
+
+# ---------------------------------------------------------
+# Display Data
+# ---------------------------------------------------------
+if selected_player:
+
+    # Pull rows from both dataframes
+    pred_row = df_player_preds[df_player_preds["Player"] == selected_player].iloc[0]
+    stats_row = df_player_stats[df_player_stats["Player"] == selected_player].iloc[0]
+
+    # =====================================================
+    # SUMMARY METRICS (Model Predictions + Actual HOF)
+    # =====================================================
+    st.subheader(f"📌 Summary for {selected_player}")
+
+    # True Hall of Fame value
+    true_hof = pred_row["Hall of Fame"]
+    true_hof_display = "Yes" if true_hof == 1 else "No"
+
+    # List of model prediction columns
+    model_cols = ["Logreg Pred", "DTree Pred", "RFC Pred", "ETC Pred", "GBC Pred", "SVC Pred"]
+
+    # Convert to Yes/No for display
+    model_results = {
+        col: ("Yes" if pred_row[col] == 1 else "No")
+        for col in model_cols
+    }
+
+    # Create columns for the metrics
+    col1, col2, col3, col4, col5, col6, col7 = st.columns(7)
+
+    col1.metric("Actual HOF?", true_hof_display)
+    col2.metric("LogReg", model_results["Logreg Pred"])
+    col3.metric("Decision Tree", model_results["DTree Pred"])
+    col4.metric("Random Forest", model_results["RFC Pred"])
+    col5.metric("Extra Trees", model_results["ETC Pred"])
+    col6.metric("Gradient Boosting", model_results["GBC Pred"])
+    col7.metric("SVC", model_results["SVC Pred"])
+
+
+    st.markdown("---")
+
+    # =====================================================
+    # MODEL PREDICTIONS TABLE (from df_player_preds)
+    # =====================================================
+    st.subheader("🔮 Model Predictions (Probabilities)")
+
+    prediction_cols = [c for c in df_player_preds.columns if c.startswith("Pred_")]
+    prediction_df = pred_row[prediction_cols].to_frame("Predicted Probability")
+
+    st.dataframe(prediction_df)
+
+    st.markdown("---")
+
+    # =====================================================
+    # FULL STATS TABLE (from df_player_stats)
+    # =====================================================
+    st.subheader("📘 Full Career Statistics")
+
+    exclude_cols = ["Player", "normalized"]
+    full_stats_df = stats_row.drop(labels=exclude_cols).to_frame("Value")
+
+    st.dataframe(full_stats_df)
+
+
+
+st.title("🕥What I hope to add later")
+st.write("""
+I also intended to use a Neural Network. However, I chose to exclude it for the time being, as I have not been able to approximate prediction accuracy as with the machine learning models.
+
+I'd also like to be able to add images for each player.
+""")
