@@ -57,8 +57,9 @@ For each of my models, I ran K-Fold regularization so that every player would be
 
 For most of the machine learning models, I ran GridSearchCV to find optimal hyperparameters. Since there is no real-world harm to be done by an incorrect prediction, in theory, Precision and Recall should be equally important. For this reason, my GridSearches were originally run on F1 Score. However, finding a good Precision score proved to be the biggest challenge, which is to say that many players were falsely predicted to be Hall of Famers when in fact they are not. Therefore, I also ran the GridSearch on Precision and Recall, each also combined with both standard and stratified K-Folds, to see the tradeoffs.
 
-I did not run a GridSearch on the Logistic Regression due to its simplicity, but I did run a ridge and lasso. Furthermore, the Support Vector Machine did not run a GridSearch in over 30 minutes, so I was forced to suspend it for time purposes, but I was able to run both versions of K-Folds. 
-and the Support Vector Machine
+I did not run a GridSearch on the Logistic Regression due to its simplicity. Furthermore, the Support Vector Machine did not run a GridSearch in over 30 minutes, so I was forced to suspend it for time purposes, but I was able to run both versions of K-Folds. 
+
+In some cases, using default settings with no GridSearch output better results than any GridSearch combination I tried.
 
 I used a Standard Scaler on the Logistic Regression, SVM, and Neural Network, but tree-based models were not scaled, as doing so reduced performance. I also tried using a feature-reduced version of my dataset, but in each model the performance was slightly worse. Furthermore, I also attempted inverting "lower is better" features such as ERA, so that a higher number would always be more favorable, but this had almost zero bearing on performance. 
 
