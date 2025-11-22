@@ -70,7 +70,7 @@ https://github.com/matthewcavanaugh96/magnimind/tree/main/Capstone
 
 st.title("📊🤼‍♂️📊 Model comparison")
 st.write("""
-In addition to the standard metrics provided by Scikit-learn, I also manually calculated what I'm calling Prediction Score. I found this by using predict_proba to pull the confidence in the prediction, and compared it with the actual result. Incorrect predictions are penalized, especially with high confidence. For example, Roger Clemens is not a Hall of Famer (steroid controversy), despite models predicting he would be with 99% confidence, so his Prediction Score is ___. Here is how each model did on both the default metrics and mine.
+In addition to the standard metrics provided by Scikit-learn, I also manually calculated what I'm calling Adjusted Prediction Score (APS). I found this by using predict_proba to pull the confidence in the prediction, and compared it with the actual result. The more confident an incorrect prediction, the lower the APS. Here is how each model did on both the default metrics and mine.
 """)
 
 
@@ -86,7 +86,7 @@ import unicodedata
 # --------------------------------------
 # Load your final dataframe
 # --------------------------------------
-df = pd.read_csv("stored_datasets/All Pitchers Cleaned.csv")
+df2 = pd.read_csv("stored_datasets/All Pitchers Cleaned.csv")
 
 # Function to normalize names for accent-insensitive search
 def normalize(s):
@@ -94,7 +94,7 @@ def normalize(s):
     return ''.join(c for c in s if unicodedata.category(c) != 'Mn').lower()
 
 # Create normalized lookup column (safe to do here too)
-df["normalized"] = df["Player"].apply(normalize)
+df2["normalized"] = df2["Player"].apply(normalize)
 
 st.title("MLB Hall of Fame Pitcher Prediction Explorer")
 
@@ -107,7 +107,7 @@ matches = []
 
 if search_query.strip() != "":
     q = normalize(search_query)
-    matches = df[df["normalized"].str.contains(q)]["Player"].tolist()
+    matches = df2[df2["normalized"].str.contains(q)]["Player"].tolist()
 
     if len(matches) == 0:
         st.warning("No players found.")
@@ -120,12 +120,13 @@ else:
 # Show player stats only after they pick
 # --------------------------------------
 if selected_player:
-    player_row = df[df["Player"] == selected_player].iloc[0]
+    player_row = df2[df2["Player"] == selected_player].iloc[0]
 
     st.subheader(f"📌 {selected_player}")
 
     # Example metrics
     col1, col2, col3, col4 = st.columns(4)
+    
     col1.metric("HOF Status", player_row["Hall of Fame"])
     col2.metric("Wins", f"{player_row['Wins']:.2f}")
     col3.metric("Earned Run Average", f"{player_row['Earned Run Average']:.2f}")
