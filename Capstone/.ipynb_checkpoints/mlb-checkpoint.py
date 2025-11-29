@@ -74,7 +74,7 @@ https://github.com/matthewcavanaugh96/magnimind/tree/main/Capstone
 
 st.title("📊🤼‍♂️📊 Model comparison")
 st.write("""
-In addition to the standard metrics provided by Scikit-learn, I also manually calculated what I'm calling Adjusted Prediction Score (APS). I found this by using predict_proba to pull the confidence in the prediction, and compared it with the actual result. The more confident an incorrect prediction, the lower the APS. Here is how each model did on both the default metrics and mine. Listed with the model names are the GridSearch parameters that produced the best overall metrics.
+In addition to the standard metrics provided by Scikit-learn, I also manually calculated what I'm calling Adjusted Prediction Score (APS). I found this by using predict_proba to pull the confidence in the prediction, and compared it with the actual result. On a scale of 1 to -1, confidently correct predictions get the highest score, unconfident predictions get a mediocre score, and confidently incorrect predictions receive the lowest scores. Here is how each model did on both the default metrics and mine. Listed with the model names are the GridSearch parameters that produced the best overall metrics.
 """)
 
 #st.markdown("---")
