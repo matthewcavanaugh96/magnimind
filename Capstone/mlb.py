@@ -20,7 +20,7 @@ df_model_comp = pd.read_csv('final_tables/model_comparison.csv')
 st.set_page_config(page_title="Machine learning with MLB statistics", page_icon="⚾️", layout="centered")
 
 img_sabathia = Image.open("saved pics/cc_sabathia.jpeg")
-st.image(img_sabathia, caption='CC Sabathia, inducted to the Baseball Hall of Fame in 2025, his first year of eligibility.', use_container_width=True)
+st.image(img_sabathia, caption='CC Sabathia, inducted to the Baseball Hall of Fame in 2025, his first year of eligibility.')
 
 st.title("⚾️ MLB statistics and machine learning")
 st.write("""
@@ -34,7 +34,7 @@ from PIL import Image
 
 st.title("🖥️ About the source")
 image = Image.open("saved pics/stathead-br.jpg")
-st.image(image, use_container_width=True)
+st.image(image)
 st.write("""
 Stathead Baseball contains detailed statistics on all levels of professional and college baseball stretching as far back as 1871, including full play-by-play data on all MLB games since 1952. Their parent company Sports Reference also operates Basketball Reference, Pro Football Reference, and many others. Stathead helpfully separates batting from pitching statistics, preventing players from being penalized by occasional, likely poor, appearances in roles opposite their normal one. Their built-in filters allow for a multitude of insights, and I was able to download my dataset easily with little cleaning required.
 """)
