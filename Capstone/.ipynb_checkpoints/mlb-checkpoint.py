@@ -240,7 +240,7 @@ blurb5 = "✅ The consensus was correct, but there was a vocal minority of two."
 blurb4 = "🤷 Seems like the models weren’t sure what to do here. Four got it right, three got it wrong. How to break this tie? Rock paper scissors?"
 blurb3 = "🤷 Seems like the models weren’t sure what to do here. Three got it right, four got it wrong. How to break this tie? First one to AGI?"
 blurb2 = "😵‍💫 Most of the models were wrong - only two were smart (dumb?) enough to go against the grain. Or is it the HOF voters’ fault?"
-blurb1 = "🤯 Only one model got this right! Bragging rights for days!"
+blurb1 = "🤯 Only one model got this right. Bragging rights!"
 blurb0 = "❌❌❌❌❌❌❌ The models were unanimously wrong about this player! What happened here? I blame the BBWAA."
 
 
