@@ -198,11 +198,7 @@ if selected_player:
     col7.metric("SVC", model_results["SVC Pred"])
     col8.metric("XGBoost", model_results["XGB Pred"])
 
-    
-    # Second row: Mean APS alone
-    st.markdown("")  # spacing
-    col8 = st.columns(1)[0]
-    col8.metric("Mean Adjusted Prediction Score (Highest possible 1, lowest possible -1)", f"{pred_row['Mean Adjusted Prediction Score']:.3f}")
+ 
 
 
     # ---------------------------------------------------------
@@ -231,6 +227,13 @@ if selected_player:
 #    st.markdown("---")
 #    st.subheader("📣 Model Consensus Summary")
     st.write(blurbs[correct_count])
+
+
+   
+    # Second row: Mean APS alone
+    st.markdown("")  # spacing
+    col8 = st.columns(1)[0]
+    col8.metric("Mean Adjusted Prediction Score (Highest possible 1, lowest possible -1)", f"{pred_row['Mean Adjusted Prediction Score']:.3f}")
 
 
 # These may be redundant.
@@ -274,7 +277,7 @@ blurb0 = "❌❌❌❌❌❌❌ The models were unanimously wrong about this pla
 
 st.title("🕥 What I hope to add later")
 st.write("""
-I worked with a primitive Neural Network which I intended to incorporate alongside the machine learning models. You can still see it in the model breakdown, but it is excluded from most aggregates, as I have not been able to approximate prediction accuracy in the same manner as the other models. A possible workaround would be to scale confidence for each model, but this may distort insights about the models themselves. If I can surmount this issue, I'd like to experiment with multiple neural networks, with different activation functions, numbers of layers and neurons, and so on.
+I worked with a primitive Neural Network which I intended to incorporate alongside the machine learning models. You can still see it in the model breakdown, but it is excluded from most aggregates, as I have not been able to approximate prediction accuracy in the same manner as the other models. A possible workaround would be to scale confidence for each prediction on a per-model basis, but this may distort insights about the models themselves. If I can surmount this issue, I'd like to experiment with multiple neural networks, with different activation functions, numbers of layers and neurons, and so on.
 
 I'd also like to be able to add images for each player.
 
