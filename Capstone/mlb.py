@@ -33,7 +33,7 @@ from PIL import Image
 
 st.title("🖥️ About the source")
 image = Image.open("saved pics/stathead-br.jpg")
-st.image(image, caption="Bartolo", use_container_width=True)
+st.image(image, use_container_width=True)
 st.write("""
 Stathead Baseball contains detailed statistics on all levels of professional and college baseball stretching as far back as 1871, including full play-by-play data on all MLB games since 1952. Their parent company Sports Reference also operates Basketball Reference, Pro Football Reference, and many others. Stathead helpfully separates batting from pitching statistics, preventing players from being penalized by occasional, likely poor, appearances in roles opposite their normal one. Their built-in filters allow for a multitude of insights, and I was able to download my dataset easily with little cleaning required.
 """)
@@ -55,7 +55,7 @@ I wanted to see how the models could handle these quirks.
 
 st.title("✨🧠 About my models and process")
 st.write("""
-I used six classification models: Logistic Regression, Decision Tree, Random Forest, Extra Trees, Gradient Booster, and Support Vector Classifier.
+I used seven classification models: Logistic Regression, Decision Tree, Random Forest, Extra Trees, Gradient Booster, XGBoost, and Support Vector Classifier.
 
 For each of my models, I ran K-Fold regularization so that every player would be predicted. This was to have more data points to work with, and to compare predictions for the same player across all models.
 
@@ -163,14 +163,14 @@ if selected_player:
     # =====================================================
     # SUMMARY METRICS (Model Predictions + Actual HOF)
     # =====================================================
-    st.subheader(f"📌 Summary for {selected_player}")
+    st.subheader(f"📌 Summary for {selected_player} : HOF Status and Predictions")
 
     # True Hall of Fame value
     true_hof = pred_row["Hall of Fame"]
     true_hof_display = "Yes" if true_hof == 1 else "No"
 
     # List of model prediction columns
-    model_cols = ["Logreg Pred", "DTree Pred", "RFC Pred", "ETC Pred", "GBC Pred", "SVC Pred"]
+    model_cols = ["Logreg Pred", "DTree Pred", "RFC Pred", "ETC Pred", "GBC Pred", "SVC Pred", "XGB Pred"]
 
     # Convert to Yes/No for display
     model_results = {
@@ -179,7 +179,7 @@ if selected_player:
     }
 
     # Create columns for the metrics
-    col1, col2, col3, col4, col5, col6, col7 = st.columns(7)
+    col1, col2, col3, col4, col5, col6, col7, col8 = st.columns(8)
 
     col1.metric("Actual HOF?", true_hof_display)
     col2.metric("LogReg", model_results["Logreg Pred"])
@@ -188,12 +188,53 @@ if selected_player:
     col5.metric("Extra Trees", model_results["ETC Pred"])
     col6.metric("Gradient Boosting", model_results["GBC Pred"])
     col7.metric("SVC", model_results["SVC Pred"])
+    col8.metric("XGBoost", model_results["XGB Pred"])
 
     
     # Second row: Mean APS alone
     st.markdown("")  # spacing
     col8 = st.columns(1)[0]
-    col8.metric("Mean Adjusted Prediction Score", f"{pred_row['Mean Adjusted Prediction Score']:.3f}")
+    col8.metric("Mean Adjusted Prediction Score (Highest possible 1, lowest possible -1)", f"{pred_row['Mean Adjusted Prediction Score']:.3f}")
+
+
+    # ---------------------------------------------------------
+    # Blurb based on number of correct models
+    # ---------------------------------------------------------
+
+    # Count how many models predicted correctly
+    correct_count = 0
+    for col in model_cols:
+        if pred_row[col] == true_hof:
+            correct_count += 1
+
+    # Blurb dictionary
+    blurbs = {
+        7: "🚀 Right on the money! All models correctly predicted this player.",
+        6: "🤏 So close to perfection! We only had one straggler.",
+        5: "✅ The consensus was correct, but there was a vocal minority of two.",
+        4: "🤷 Seems like the models weren’t sure what to do here. Four got it right, three got it wrong. How to break this tie? Rock paper scissors?",
+        3: "🤷 Seems like the models weren’t sure what to do here. Three got it right, four got it wrong. How to break this tie? First one to AGI?",
+        2: "😵‍💫 Most of the models were wrong - only two were smart (dumb?) enough to go against the grain. Or is it the HOF voters’ fault?",
+        1: "🤯 Only one model got this right! Bragging rights for days!",
+        0: "❌❌❌❌❌❌❌ The models were unanimously wrong about this player! What happened here? I blame the BBWAA."
+    }
+
+    # Display blurb
+    st.markdown("---")
+    st.subheader("📣 Model Consensus Summary")
+    st.write(blurbs[correct_count])
+
+
+
+# These may be redundant.
+blurb7 = "🚀 Right on the money! All models correctly predicted this player."
+blurb6 = "🤏 So close to perfection! We only had one straggler."
+blurb5 = "✅ The consensus was correct, but there was a vocal minority of two."
+blurb4 = "🤷 Seems like the models weren’t sure what to do here. Four got it right, three got it wrong. How to break this tie? Rock paper scissors?"
+blurb3 = "🤷 Seems like the models weren’t sure what to do here. Three got it right, four got it wrong. How to break this tie? First one to AGI?"
+blurb2 = "😵‍💫 Most of the models were wrong - only two were smart (dumb?) enough to go against the grain. Or is it the HOF voters’ fault?"
+blurb1 = "🤯 Only one model got this right! Bragging rights for days!"
+blurb0 = "❌❌❌❌❌❌❌ The models were unanimously wrong about this player! What happened here? I blame the BBWAA."
 
 
 # -------------
@@ -224,11 +265,13 @@ if selected_player:
 # ------------
 
 
-st.title("🤔🕥 What I hope to add later")
+st.title("🕥 What I hope to add later")
 st.write("""
 I worked with a primitive Neural Network which I intended to incorporate alongside the machine learning models. You can still see it in the model breakdown, but it is excluded from most aggregates, as I have not been able to approximate prediction accuracy in the same manner as the other models. A possible workaround would be to scale confidence for each model, but this may distort insights about the models themselves. If I can surmount this issue, I'd like to experiment with multiple neural networks, with different activation functions, numbers of layers and neurons, and so on.
 
 I'd also like to be able to add images for each player.
 
 I am curious about what would happen if I re-ran this dataset while dropping the players that confused the model the most (i.e. consistenly predicted incorrect with high degrees of confidence). Would the models improve and would confidence improve for the other players?
+
+I am thinking about ways to make the player search more accessible to users unfamiliar with baseball players' names. The problem is that there are over 1200 players to search through, making a drop-down impractical.
 """)
