@@ -8,6 +8,7 @@ import pandas as pd
 import unicodedata
 import streamlit as st
 from PIL import Image
+import random
 
 # Define datasets
 df_player_stats = pd.read_csv('final_tables/Player_stats.csv')
@@ -116,10 +117,10 @@ df_player_stats["normalized"] = df_player_stats["Player"].apply(normalize)
 # ---------------------------------------------------------
 # Search + dropdown on ONE BAR
 # ---------------------------------------------------------
-col_search, col_select = st.columns([1.2, 1])
+col_search, col_select, col_random = st.columns([1.2, 1, 0.6])
 
 with col_search:
-    search_query = st.text_input("Search for a pitcher:", "")
+    search_query = st.text_input("Search for a pitcher:", "", key="pitcher_search")
 
 # Process matches
 if search_query.strip():
@@ -143,6 +144,13 @@ else:
             selected = st.selectbox("Matches:", options)
 
             selected_player = None if selected == "-- Select --" else selected
+
+# ---------------------------------------------------------
+# 🎲 RANDOM PLAYER BUTTON
+# ---------------------------------------------------------
+with col_random:
+    if st.button("🎲 Random Player"):
+        selected_player = random.choice(df_player_preds["Player"].unique().tolist())
 
 # -------
 # -------
@@ -220,10 +228,9 @@ if selected_player:
     }
 
     # Display blurb
-    st.markdown("---")
-    st.subheader("📣 Model Consensus Summary")
+#    st.markdown("---")
+#    st.subheader("📣 Model Consensus Summary")
     st.write(blurbs[correct_count])
-
 
 
 # These may be redundant.
