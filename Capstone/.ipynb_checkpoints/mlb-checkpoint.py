@@ -279,6 +279,4 @@ I worked with a primitive Neural Network which I intended to incorporate alongsi
 I'd also like to be able to add images for each player.
 
 I am curious about what would happen if I re-ran this dataset while dropping the players that confused the model the most (i.e. consistenly predicted incorrect with high degrees of confidence). Would the models improve and would confidence improve for the other players?
-
-I am thinking about ways to make the player search more accessible to users unfamiliar with baseball players' names. The problem is that there are over 1200 players to search through, making a drop-down impractical.
 """)
