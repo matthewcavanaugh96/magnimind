@@ -1,15 +1,21 @@
 TO DO
 
+
+
+
+
 Average Duration of Gaps - EXLCUDE churn (under 28 days), exclude any days where churn was happening
 
 Did a single user churn more than once? Maybe limit to user's first churn.
-
-Need to add more rows for all users to end of data, as churn may have happened after the user's last transaction
 
 Day of week for each transactions - mark weekday or weekend, weekends inactive - Saturday and Sunday use Friday amount
 
 Maybe try XGBoost
 
-
-
 Build a model whether the person will churn on any given day - tomorrow
+
+
+
+
+DONE
+Need to add more rows for all users to end of data, as churn may have happened after the user's last transaction
