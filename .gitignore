@@ -2,8 +2,8 @@ Deep Learning/model.cat_dog.keras
 Deep Learning/best_vgg16_celeb_small.keras
 Deep Learning/model.celeb_man_female.keras
 TNT/model.celeb_man_female.keras
-TNT/tnt_vgg16_fold1.keras
-TNT/tnt_vgg16_fold2.keras
-TNT/tnt_vgg16_fold3.keras
-TNT/tnt_vgg16_fold4.keras
-TNT/tnt_vgg16_fold5.keras
+TNT/models/tnt_vgg16_fold1.keras
+TNT/models/tnt_vgg16_fold2.keras
+TNT/models/tnt_vgg16_fold3.keras
+TNT/models/tnt_vgg16_fold4.keras
+TNT/models/tnt_vgg16_fold5.keras
