@@ -7,3 +7,4 @@ TNT/models/tnt_vgg16_fold2.keras
 TNT/models/tnt_vgg16_fold3.keras
 TNT/models/tnt_vgg16_fold4.keras
 TNT/models/tnt_vgg16_fold5.keras
+TNT/model.tnt_256_vgg16.keras
