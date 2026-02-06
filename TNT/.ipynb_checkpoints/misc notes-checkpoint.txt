@@ -1,6 +1,43 @@
-MISCELLANOUS NOTES
+MISCELLANOUS NOTES AND IDEAS
 
 
 
 
-Did a quick visual inspection of the training tiles, 'm05_x01280_y00512_yellow0.png' has a yellow line but is labeled a 0. This seems to be the only 'false negative' out of 432 tiles. Debated changing the label manually but curious to see how the model handles it.
+Did a quick visual inspection of the 256 labeled, 'm05_x01280_y00512_yellow0.png' has a yellow line but is labeled a 0. This seems to be the only 'false negative' out of 432 tiles. Debated changing the label manually but curious to see how the model handles it.
+
+
+
+Add K-Folds. Logic for this somewhere in one of my scrap notebooks.
+
+
+
+Can I add tracking of which epoch each prediction was made in? Maybe then, a confidently incorrect image that was made very early can be chalked up to a model that hadn't learned much yet. Try this later:
+
+class EpochPredictionLogger(tf.keras.callbacks.Callback):
+    def __init__(self, generator):
+        self.generator = generator
+        self.epoch_preds = {}
+
+    def on_epoch_end(self, epoch, logs=None):
+        self.generator.reset()
+        preds = self.model.predict(self.generator, verbose=0).ravel()
+        self.epoch_preds[epoch + 1] = preds
+
+--
+
+epoch_pred_logger = EpochPredictionLogger(valid_generator)
+
+history = model.fit(
+    train_generator,
+    validation_data=valid_generator,
+    epochs=30,
+    callbacks=[earlystop, checkpoint, epoch_pred_logger],
+)
+
+--
+
+Then later
+
+epoch = 5
+df_pred["pred_conf_epoch5"] = epoch_pred_logger.epoch_preds[epoch]
+
