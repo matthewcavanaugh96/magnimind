@@ -3,7 +3,15 @@ MISCELLANOUS NOTES AND IDEAS
 
 
 
+Maybe find a way to avoid cutting a TNT in the middle. Only call a 1 if whole tnt. hOW WOULD i DO THIS, DEFINE EDGE PIXLE hex CODES?
+
+
 Did a quick visual inspection of the 256 labeled, 'm05_x01280_y00512_yellow0.png' has a yellow line but is labeled a 0. This seems to be the only 'false negative' out of 432 tiles. Debated changing the label manually but curious to see how the model handles it.
+
+
+
+
+For the 128p version, may need to increase patience.
 
 
 
