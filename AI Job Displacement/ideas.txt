@@ -1,0 +1,8 @@
+IDEAS
+
+
+For each job, find jobs that are similar based on similar tasks.
+
+If a task is supplemental at one job but core at another, coudl be an indicator that a person could easily be able to find a job in another field.
+
+If a Job Title has only a small number of Software Examples, maybe they are more protected. BUT, if these Examples are also extremely common, maybe they are at risk.
