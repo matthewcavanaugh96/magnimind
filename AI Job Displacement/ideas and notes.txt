@@ -1,6 +1,22 @@
+FIND ATTRIBUTES
+Is a task repetitive?
+Does it require cognitive effort?
+Physical requirements?
+Uniqueness of tech used?
+
+Give each attribute a score - for example scale 1 to 5
+How to weigh each attribute - is technology more important than
+
+Use a AI API - Gemini, GPT
+Give it the attributes and give it scores based on those
+
+User could pick a Job Title from a dropdown menu
+It will show tasks, skills, tech, tools etc
+the AI will then tell the user which of the skills are at risk of being replaced
+
+
+
 IDEAS
-
-
 For each job, find jobs that are similar based on similar tasks.
 
 If a task is supplemental at one job but core at another, coudl be an indicator that a person could easily be able to find a job in another field.
@@ -21,3 +37,8 @@ In the Tools Used dataset, the Commodity Title 'Freeze dryers or lypholizers' ha
 
 TO DO NEXT
 Feb 17, or after meeting - Continue with Notebook 1-2 to agg Tools by Jobs
+
+
+
+IDEA
+Build a small database, use SQL - For practice
