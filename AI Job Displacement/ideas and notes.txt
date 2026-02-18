@@ -1,0 +1,14 @@
+IDEAS
+
+
+For each job, find jobs that are similar based on similar tasks.
+
+If a task is supplemental at one job but core at another, coudl be an indicator that a person could easily be able to find a job in another field.
+
+If a Job Title has only a small number of Tech Skills, maybe they are more protected. BUT, if these Examples are also extremely common, maybe they are at risk.
+
+Maybe low Tech Skills, and high Tools, means more hands-on work.
+
+
+
+In the Tools Used dataset, the Commodity Title 'Freeze dryers or lypholizers' has two Commodity Codes associated. Out of 4127 total Commodity Titles, this is the only Commodity for which this is the case. I am assuming this was accidental. As part of my ETL process, in Part 1-2, I manually changed instances of the less common code (23151807) to the more common one (41104701). Raw data as downloaded is unaffected, so this change can be bypassed.
