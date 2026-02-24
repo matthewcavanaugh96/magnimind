@@ -1,3 +1,9 @@
+NEXT
+Find uniqueness scores for tasks, tools, and tech. 
+Then aggregate uniqueness for each job.
+
+
+
 FIND ATTRIBUTES
 Is a task repetitive?
 Does it require cognitive effort?
