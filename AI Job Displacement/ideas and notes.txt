@@ -18,6 +18,11 @@ the AI will then tell the user which of the skills are at risk of being replaced
 
 
 
+NOTE ABOUT 00
+Skills, Abilities, and Activities each have a score for 894 positions. Maybe eliminate positions outside of those for scope?
+
+
+
 
 In 1-4 and 1-5, for SKILL and ABILITIY z-scores, maybe add more, such as mean excluding the largest handful, etc.
 
