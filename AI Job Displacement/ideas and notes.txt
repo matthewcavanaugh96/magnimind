@@ -1,6 +1,6 @@
 NEXT
 Find uniqueness scores for tasks, tools, and tech. 
-Then aggregate uniqueness for each job.
+Then aggregate uniqueness for eac
 
 
 
