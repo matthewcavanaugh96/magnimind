@@ -17,7 +17,13 @@ the AI will then tell the user which of the skills are at risk of being replaced
 
 
 
-IDEAS
+
+
+In 1-4 and 1-5, prefix column names with SKILLS and ABILITIES.
+
+
+
+
 For each job, find jobs that are similar based on similar tasks.
 
 If a task is supplemental at one job but core at another, coudl be an indicator that a person could easily be able to find a job in another field.
