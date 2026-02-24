@@ -19,7 +19,10 @@ the AI will then tell the user which of the skills are at risk of being replaced
 
 
 
-In 1-4 and 1-5, prefix column names with SKILLS and ABILITIES.
+In 1-4 and 1-5, for SKILL and ABILITIY z-scores, maybe add more, such as mean excluding the largest handful, etc.
+
+
+1-6 may benefit from NLP.
 
 
 
