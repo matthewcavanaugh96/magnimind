@@ -24,10 +24,13 @@ Skills, Abilities, and Activities each have a score for 894 positions. Maybe eli
 
 
 
-In 1-4 and 1-5, for SKILL and ABILITIY z-scores, maybe add more, such as mean excluding the largest handful, etc.
+In 1-4, 1-5, 1-7, 1-8, and 1-9 
+for SKILLS ABILITIES ACTIVITIES KNOWLEDGE CONTEXT 
+z-score aggregates,
+maybe add more, such as mean excluding the largest handful, etc.
 
 
-1-6 may benefit from NLP.
+1-6 may benefit from NLP to find common words and classify on such. Or maybe AI could do it?
 
 
 
@@ -57,3 +60,10 @@ Feb 17, or after meeting - Continue with Notebook 1-2 to agg Tools by Jobs
 
 IDEA
 Build a small database, use SQL - For practice
+
+
+
+
+
+TRANSFORMED DATA DICTIONARY
+9 - Work Context - 
