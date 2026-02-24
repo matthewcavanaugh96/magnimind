@@ -1,0 +1,1553 @@
+O*NET-SOC Code,Title,Alias
+11-1011.00,Chief Executives,Chief Executive
+11-1011.00,Chief Executives,CEO
+11-1011.03,Chief Sustainability Officers,Chief Sustainability Officer
+11-1011.03,Chief Sustainability Officers,Chief Sustainability
+11-1011.03,Chief Sustainability Officers,CSO
+11-1021.00,General and Operations Managers,Operations Manager
+11-1021.00,General and Operations Managers,management job
+11-1021.00,General and Operations Managers,General & Operations Managers
+11-1021.00,General and Operations Managers,General and Operations
+11-1021.00,General and Operations Managers,General and Operations Manager
+11-1021.00,General and Operations Managers,Ops Manager
+11-1021.00,General and Operations Managers,General Manager
+11-1031.00,Legislators,Legislator
+11-2011.00,Advertising and Promotions Managers,Advertising and Promotions
+11-2011.00,Advertising and Promotions Managers,management job
+11-2011.00,Advertising and Promotions Managers,Advertising and Promotions Manager
+11-2011.00,Advertising and Promotions Managers,Advertising & Promotions Managers
+11-2021.00,Marketing Managers,Marketing
+11-2021.00,Marketing Managers,Marketing Manager
+11-2021.00,Marketing Managers,management job
+11-2022.00,Sales Managers,management job
+11-2022.00,Sales Managers,Sales Manager
+11-2022.00,Sales Managers,Sales
+11-2032.00,Public Relations Managers,Public Relations
+11-2032.00,Public Relations Managers,management job
+11-2032.00,Public Relations Managers,Public Relations Manager
+11-2033.00,Fundraising Managers,Fundraising Manager
+11-2033.00,Fundraising Managers,Fundraising
+11-2033.00,Fundraising Managers,management job
+11-3012.00,Administrative Services Managers,Administrative Services
+11-3012.00,Administrative Services Managers,management job
+11-3012.00,Administrative Services Managers,Administrative Services Manager
+11-3013.00,Facilities Managers,management job
+11-3013.00,Facilities Managers,Facilities Manager
+11-3013.00,Facilities Managers,Facilities
+11-3013.01,Security Managers,management job
+11-3013.01,Security Managers,Security Manager
+11-3013.01,Security Managers,Security
+11-3021.00,Computer and Information Systems Managers,Computer and Information Systems
+11-3021.00,Computer and Information Systems Managers,management job
+11-3021.00,Computer and Information Systems Managers,Computer and Information Systems Manager
+11-3021.00,Computer and Information Systems Managers,Computer & Information Systems Managers
+11-3031.00,Financial Managers,Financial
+11-3031.00,Financial Managers,Financial Manager
+11-3031.00,Financial Managers,management job
+11-3031.01,Treasurers and Controllers,Treasurers and Controller
+11-3031.01,Treasurers and Controllers,Treasurers & Controllers
+11-3031.03,Investment Fund Managers,Investment Fund Manager
+11-3031.03,Investment Fund Managers,Investment Fund
+11-3031.03,Investment Fund Managers,management job
+11-3051.00,Industrial Production Managers,Industrial Production
+11-3051.00,Industrial Production Managers,management job
+11-3051.00,Industrial Production Managers,Industrial Production Manager
+11-3051.01,Quality Control Systems Managers,Quality Control Systems Manager
+11-3051.01,Quality Control Systems Managers,management job
+11-3051.01,Quality Control Systems Managers,Quality Control Systems
+11-3051.02,Geothermal Production Managers,Geothermal Production Manager
+11-3051.02,Geothermal Production Managers,management job
+11-3051.02,Geothermal Production Managers,Geothermal Production
+11-3051.03,Biofuels Production Managers,management job
+11-3051.03,Biofuels Production Managers,Biofuels Production
+11-3051.03,Biofuels Production Managers,Biofuels Production Manager
+11-3051.04,Biomass Power Plant Managers,Biomass Power Plant Manager
+11-3051.04,Biomass Power Plant Managers,management job
+11-3051.04,Biomass Power Plant Managers,Biomass Power Plant
+11-3051.06,Hydroelectric Production Managers,Hydroelectric Production
+11-3051.06,Hydroelectric Production Managers,management job
+11-3051.06,Hydroelectric Production Managers,Hydroelectric Production Manager
+11-3061.00,Purchasing Managers,Purchasing Manager
+11-3061.00,Purchasing Managers,management job
+11-3061.00,Purchasing Managers,Purchasing
+11-3071.00,"Transportation, Storage, and Distribution Managers","Transportation, Storage, & Distribution Managers"
+11-3071.00,"Transportation, Storage, and Distribution Managers",management job
+11-3071.00,"Transportation, Storage, and Distribution Managers","Transportation, Storage, and Distribution"
+11-3071.00,"Transportation, Storage, and Distribution Managers","Transportation, Storage, and Distribution Manager"
+11-3071.04,Supply Chain Managers,Supply Chain
+11-3071.04,Supply Chain Managers,Supply Chain Manager
+11-3071.04,Supply Chain Managers,management job
+11-3111.00,Compensation and Benefits Managers,Compensation and Benefits Manager
+11-3111.00,Compensation and Benefits Managers,Compensation & Benefits Managers
+11-3111.00,Compensation and Benefits Managers,management job
+11-3111.00,Compensation and Benefits Managers,Compensation and Benefits
+11-3121.00,Human Resources Managers,People Operations Manager
+11-3121.00,Human Resources Managers,management job
+11-3121.00,Human Resources Managers,Human Resources Manager
+11-3121.00,Human Resources Managers,Human Resources
+11-3121.00,Human Resources Managers,HR Manager
+11-3131.00,Training and Development Managers,management job
+11-3131.00,Training and Development Managers,Training & Development Managers
+11-3131.00,Training and Development Managers,Training and Development
+11-3131.00,Training and Development Managers,Training and Development Manager
+11-9013.00,"Farmers, Ranchers, and Other Agricultural Managers",management job
+11-9013.00,"Farmers, Ranchers, and Other Agricultural Managers","Farmers, Ranchers, and Other Agricultural Manager"
+11-9013.00,"Farmers, Ranchers, and Other Agricultural Managers","Farmers, Ranchers, and Other Agricultural"
+11-9013.00,"Farmers, Ranchers, and Other Agricultural Managers","Farmers, Ranchers, & Other Agricultural Managers"
+11-9021.00,Construction Managers,Construction
+11-9021.00,Construction Managers,management job
+11-9021.00,Construction Managers,Construction Manager
+11-9031.00,"Education and Childcare Administrators, Preschool and Daycare","Education & Childcare Administrators, Preschool & Daycare"
+11-9041.00,Architectural and Engineering Managers,management job
+11-9041.00,Architectural and Engineering Managers,Architectural & Engineering Managers
+11-9041.00,Architectural and Engineering Managers,Architectural and Engineering
+11-9041.00,Architectural and Engineering Managers,Architectural and Engineering Manager
+11-9041.01,Biofuels/Biodiesel Technology and Product Development Managers,Biofuels/Biodiesel Technology and Product Development Manager
+11-9041.01,Biofuels/Biodiesel Technology and Product Development Managers,management job
+11-9041.01,Biofuels/Biodiesel Technology and Product Development Managers,Biofuels/Biodiesel Technology & Product Development Managers
+11-9041.01,Biofuels/Biodiesel Technology and Product Development Managers,Biofuels/Biodiesel Technology and Product Development
+11-9051.00,Food Service Managers,management job
+11-9051.00,Food Service Managers,Food Service Manager
+11-9051.00,Food Service Managers,Food Service
+11-9071.00,Gambling Managers,Gambling Manager
+11-9071.00,Gambling Managers,management job
+11-9071.00,Gambling Managers,Gambling
+11-9072.00,"Entertainment and Recreation Managers, Except Gambling",management job
+11-9072.00,"Entertainment and Recreation Managers, Except Gambling","Entertainment & Recreation Managers, Except Gambling"
+11-9081.00,Lodging Managers,management job
+11-9081.00,Lodging Managers,Lodging Manager
+11-9081.00,Lodging Managers,Lodging
+11-9111.00,Medical and Health Services Managers,Medical and Health Services
+11-9111.00,Medical and Health Services Managers,management job
+11-9111.00,Medical and Health Services Managers,Medical and Health Services Manager
+11-9111.00,Medical and Health Services Managers,Medical & Health Services Managers
+11-9121.00,Natural Sciences Managers,management job
+11-9121.00,Natural Sciences Managers,Natural Sciences Manager
+11-9121.00,Natural Sciences Managers,Natural Sciences
+11-9121.01,Clinical Research Coordinators,Clinical Research Coordinator
+11-9121.02,Water Resource Specialists,Water Resource
+11-9121.02,Water Resource Specialists,Water Resource Specialist
+11-9131.00,Postmasters and Mail Superintendents,Postmasters & Mail Superintendents
+11-9131.00,Postmasters and Mail Superintendents,Postmasters and Mail Superintendent
+11-9141.00,"Property, Real Estate, and Community Association Managers",management job
+11-9141.00,"Property, Real Estate, and Community Association Managers","Property, Real Estate, & Community Association Managers"
+11-9141.00,"Property, Real Estate, and Community Association Managers","Property, Real Estate, and Community Association Manager"
+11-9141.00,"Property, Real Estate, and Community Association Managers","Property, Real Estate, and Community Association"
+11-9151.00,Social and Community Service Managers,Social and Community Service Manager
+11-9151.00,Social and Community Service Managers,Social and Community Service
+11-9151.00,Social and Community Service Managers,Social & Community Service Managers
+11-9151.00,Social and Community Service Managers,management job
+11-9161.00,Emergency Management Directors,Emergency Management Director
+11-9171.00,Funeral Home Managers,management job
+11-9171.00,Funeral Home Managers,Funeral Home Manager
+11-9171.00,Funeral Home Managers,Funeral Home
+11-9179.00,"Personal Service Managers, All Other",management job
+11-9179.01,Fitness and Wellness Coordinators,Fitness and Wellness Coordinator
+11-9179.01,Fitness and Wellness Coordinators,Fitness & Wellness Coordinators
+11-9179.02,Spa Managers,Spa Manager
+11-9179.02,Spa Managers,management job
+11-9179.02,Spa Managers,Spa
+11-9199.00,"Managers, All Other",management job
+11-9199.01,Regulatory Affairs Managers,management job
+11-9199.01,Regulatory Affairs Managers,Regulatory Affairs
+11-9199.01,Regulatory Affairs Managers,Regulatory Affairs Manager
+11-9199.02,Compliance Managers,management job
+11-9199.02,Compliance Managers,Compliance Manager
+11-9199.02,Compliance Managers,Compliance
+11-9199.08,Loss Prevention Managers,Loss Prevention Manager
+11-9199.08,Loss Prevention Managers,management job
+11-9199.08,Loss Prevention Managers,Loss Prevention
+11-9199.09,Wind Energy Operations Managers,Wind Energy Operations Manager
+11-9199.09,Wind Energy Operations Managers,management job
+11-9199.09,Wind Energy Operations Managers,Wind Energy Operations
+11-9199.10,Wind Energy Development Managers,Wind Energy Development Manager
+11-9199.10,Wind Energy Development Managers,management job
+11-9199.10,Wind Energy Development Managers,Wind Energy Development
+11-9199.11,Brownfield Redevelopment Specialists and Site Managers,Brownfield Redevelopment Specialists & Site Managers
+11-9199.11,Brownfield Redevelopment Specialists and Site Managers,management job
+11-9199.11,Brownfield Redevelopment Specialists and Site Managers,Brownfield Redevelopment Specialists and Site Manager
+11-9199.11,Brownfield Redevelopment Specialists and Site Managers,Brownfield Redevelopment Specialists and Site
+13-1011.00,"Agents and Business Managers of Artists, Performers, and Athletes",management job
+13-1011.00,"Agents and Business Managers of Artists, Performers, and Athletes","Agents & Business Managers of Artists, Performers, & Athletes"
+13-1011.00,"Agents and Business Managers of Artists, Performers, and Athletes","Agents and Business Managers of Artists, Performers, and Athlete"
+13-1021.00,"Buyers and Purchasing Agents, Farm Products","Buyers & Purchasing Agents, Farm Products"
+13-1021.00,"Buyers and Purchasing Agents, Farm Products","Buyers and Purchasing Agents, Farm Product"
+13-1022.00,"Wholesale and Retail Buyers, Except Farm Products","Wholesale & Retail Buyers, Except Farm Products"
+13-1022.00,"Wholesale and Retail Buyers, Except Farm Products","Wholesale and Retail Buyers, Except Farm Product"
+13-1023.00,"Purchasing Agents, Except Wholesale, Retail, and Farm Products","Purchasing Agents, Except Wholesale, Retail, & Farm Products"
+13-1023.00,"Purchasing Agents, Except Wholesale, Retail, and Farm Products","Purchasing Agents, Except Wholesale, Retail, and Farm Product"
+13-1031.00,"Claims Adjusters, Examiners, and Investigators","Claims Adjusters, Examiners, & Investigators"
+13-1031.00,"Claims Adjusters, Examiners, and Investigators","Claims Adjusters, Examiners, and Investigator"
+13-1041.00,Compliance Officers,Compliance Officer
+13-1041.00,Compliance Officers,Compliance
+13-1041.01,Environmental Compliance Inspectors,Environmental Compliance Inspector
+13-1041.03,Equal Opportunity Representatives and Officers,Equal Opportunity Representatives and
+13-1041.03,Equal Opportunity Representatives and Officers,Equal Opportunity Representatives & Officers
+13-1041.03,Equal Opportunity Representatives and Officers,Equal Opportunity Representatives and Officer
+13-1041.04,Government Property Inspectors and Investigators,Government Property Inspectors and Investigator
+13-1041.04,Government Property Inspectors and Investigators,Government Property Inspectors & Investigators
+13-1041.06,Coroners,Coroner
+13-1041.07,Regulatory Affairs Specialists,Regulatory Affairs Specialist
+13-1041.07,Regulatory Affairs Specialists,Regulatory Affairs
+13-1041.08,Customs Brokers,Customs Broker
+13-1051.00,Cost Estimators,Cost Estimator
+13-1071.00,Human Resources Specialists,HR Specialist
+13-1071.00,Human Resources Specialists,Human Resources
+13-1071.00,Human Resources Specialists,Human Resources Specialist
+13-1074.00,Farm Labor Contractors,Farm Labor Contractor
+13-1075.00,Labor Relations Specialists,Labor Relations Specialist
+13-1075.00,Labor Relations Specialists,Labor Relations
+13-1081.00,Logisticians,Logistician
+13-1081.01,Logistics Engineers,Logistics Engineer
+13-1081.02,Logistics Analysts,Logistics Analyst
+13-1081.02,Logistics Analysts,analysis job
+13-1082.00,Project Management Specialists,Project Management Specialist
+13-1082.00,Project Management Specialists,Project Management
+13-1111.00,Management Analysts,analysis job
+13-1111.00,Management Analysts,Management Analyst
+13-1121.00,"Meeting, Convention, and Event Planners","Meeting, Convention, and Event Planner"
+13-1121.00,"Meeting, Convention, and Event Planners","Meeting, Convention, & Event Planners"
+13-1131.00,Fundraisers,Fundraiser
+13-1141.00,"Compensation, Benefits, and Job Analysis Specialists","Compensation, Benefits, and Job Analysis"
+13-1141.00,"Compensation, Benefits, and Job Analysis Specialists","Compensation, Benefits, and Job Analysis Specialist"
+13-1141.00,"Compensation, Benefits, and Job Analysis Specialists","Compensation, Benefits, & Job Analysis Specialists"
+13-1151.00,Training and Development Specialists,Training & Development Specialists
+13-1151.00,Training and Development Specialists,Training and Development Specialist
+13-1151.00,Training and Development Specialists,Training and Development
+13-1161.00,Market Research Analysts and Marketing Specialists,Market Research Analysts & Marketing Specialists
+13-1161.00,Market Research Analysts and Marketing Specialists,Market Research Analysts and Marketing
+13-1161.00,Market Research Analysts and Marketing Specialists,analysis job
+13-1161.00,Market Research Analysts and Marketing Specialists,Market Research Analysts and Marketing Specialist
+13-1161.01,Search Marketing Strategists,Search Marketing Strategist
+13-1199.04,Business Continuity Planners,Business Continuity Planner
+13-1199.05,Sustainability Specialists,Sustainability
+13-1199.05,Sustainability Specialists,Sustainability Specialist
+13-1199.06,Online Merchants,Online Merchant
+13-1199.07,Security Management Specialists,Security Management
+13-1199.07,Security Management Specialists,Security Management Specialist
+13-2011.00,Accountants and Auditors,Accountants & Auditors
+13-2011.00,Accountants and Auditors,Accountants and Auditor
+13-2022.00,Appraisers of Personal and Business Property,Appraisers of Personal & Business Property
+13-2023.00,Appraisers and Assessors of Real Estate,Appraisers & Assessors of Real Estate
+13-2031.00,Budget Analysts,analysis job
+13-2031.00,Budget Analysts,Budget Analyst
+13-2041.00,Credit Analysts,Credit Analyst
+13-2041.00,Credit Analysts,analysis job
+13-2051.00,Financial and Investment Analysts,Financial & Investment Analysts
+13-2051.00,Financial and Investment Analysts,analysis job
+13-2051.00,Financial and Investment Analysts,Financial and Investment Analyst
+13-2052.00,Personal Financial Advisors,Personal Financial Advisor
+13-2053.00,Insurance Underwriters,Insurance Underwriter
+13-2054.00,Financial Risk Specialists,Financial Risk Specialist
+13-2054.00,Financial Risk Specialists,Financial Risk
+13-2061.00,Financial Examiners,Financial Examiner
+13-2071.00,Credit Counselors,Credit Counselor
+13-2072.00,Loan Officers,Loan
+13-2072.00,Loan Officers,Loan Officer
+13-2081.00,"Tax Examiners and Collectors, and Revenue Agents","Tax Examiners and Collectors, and Revenue Agent"
+13-2081.00,"Tax Examiners and Collectors, and Revenue Agents","Tax Examiners & Collectors, & Revenue Agents"
+13-2082.00,Tax Preparers,Tax Preparer
+13-2099.01,Financial Quantitative Analysts,Financial Quantitative Analyst
+13-2099.01,Financial Quantitative Analysts,analysis job
+13-2099.04,"Fraud Examiners, Investigators and Analysts","Fraud Examiners, Investigators & Analysts"
+13-2099.04,"Fraud Examiners, Investigators and Analysts","Fraud Examiners, Investigators and Analyst"
+13-2099.04,"Fraud Examiners, Investigators and Analysts",analysis job
+15-1211.00,Computer Systems Analysts,Computer Systems Analyst
+15-1211.00,Computer Systems Analysts,analysis job
+15-1211.01,Health Informatics Specialists,Health Informatics
+15-1211.01,Health Informatics Specialists,Health Informatics Specialist
+15-1212.00,Information Security Analysts,analysis job
+15-1212.00,Information Security Analysts,InfoSec Analyst
+15-1212.00,Information Security Analysts,Information Security Analyst
+15-1212.00,Information Security Analysts,Cybersecurity Analyst
+15-1221.00,Computer and Information Research Scientists,Computer & Information Research Scientists
+15-1221.00,Computer and Information Research Scientists,Computer and Information Research Scientist
+15-1231.00,Computer Network Support Specialists,Computer Network Support Specialist
+15-1231.00,Computer Network Support Specialists,Computer Network Support
+15-1232.00,Computer User Support Specialists,Computer User Support
+15-1232.00,Computer User Support Specialists,Computer User Support Specialist
+15-1241.00,Computer Network Architects,Computer Network Architect
+15-1241.01,Telecommunications Engineering Specialists,Telecommunications Engineering
+15-1241.01,Telecommunications Engineering Specialists,Telecommunications Engineering Specialist
+15-1242.00,Database Administrators,Database Administrator
+15-1243.00,Database Architects,Database Architect
+15-1243.01,Data Warehousing Specialists,Data Warehousing
+15-1243.01,Data Warehousing Specialists,Data Warehousing Specialist
+15-1244.00,Network and Computer Systems Administrators,Network & Computer Systems Administrators
+15-1244.00,Network and Computer Systems Administrators,Network and Computer Systems Administrator
+15-1251.00,Computer Programmers,Computer Programmer
+15-1252.00,Software Developers,tech job
+15-1252.00,Software Developers,Dev
+15-1252.00,Software Developers,Software Engineer
+15-1252.00,Software Developers,coding job
+15-1252.00,Software Developers,Programmer
+15-1252.00,Software Developers,Coder
+15-1252.00,Software Developers,Software Developer
+15-1253.00,Software Quality Assurance Analysts and Testers,Software Quality Assurance Analysts and Tester
+15-1253.00,Software Quality Assurance Analysts and Testers,tech job
+15-1253.00,Software Quality Assurance Analysts and Testers,coding job
+15-1253.00,Software Quality Assurance Analysts and Testers,analysis job
+15-1253.00,Software Quality Assurance Analysts and Testers,Software Quality Assurance Analysts & Testers
+15-1254.00,Web Developers,Web Developer
+15-1255.00,Web and Digital Interface Designers,Web & Digital Interface Designers
+15-1255.00,Web and Digital Interface Designers,Web and Digital Interface Designer
+15-1255.01,Video Game Designers,Video Game Designer
+15-1299.01,Web Administrators,Web Administrator
+15-1299.02,Geographic Information Systems Technologists and Technicians,Geographic Information Systems Technologists & Technicians
+15-1299.02,Geographic Information Systems Technologists and Technicians,Geographic Information Systems Technologists and
+15-1299.02,Geographic Information Systems Technologists and Technicians,Geographic Information Systems Technologists and Technician
+15-1299.03,Document Management Specialists,Document Management
+15-1299.03,Document Management Specialists,Document Management Specialist
+15-1299.04,Penetration Testers,Penetration Tester
+15-1299.05,Information Security Engineers,Information Security Engineer
+15-1299.06,Digital Forensics Analysts,Digital Forensics Analyst
+15-1299.06,Digital Forensics Analysts,analysis job
+15-1299.07,Blockchain Engineers,Blockchain Engineer
+15-1299.08,Computer Systems Engineers/Architects,Computer Systems Engineers/Architect
+15-1299.09,Information Technology Project Managers,Information Technology Project Manager
+15-1299.09,Information Technology Project Managers,Information Technology Project
+15-1299.09,Information Technology Project Managers,management job
+15-2011.00,Actuaries,Actuary
+15-2021.00,Mathematicians,Mathematician
+15-2031.00,Operations Research Analysts,analysis job
+15-2031.00,Operations Research Analysts,Operations Research Analyst
+15-2041.00,Statisticians,Statistician
+15-2041.01,Biostatisticians,Biostatistician
+15-2051.00,Data Scientists,Data Scientist
+15-2051.01,Business Intelligence Analysts,analysis job
+15-2051.01,Business Intelligence Analysts,Business Intelligence Analyst
+15-2051.02,Clinical Data Managers,Clinical Data Manager
+15-2051.02,Clinical Data Managers,management job
+15-2051.02,Clinical Data Managers,Clinical Data
+15-2099.01,Bioinformatics Technicians,Bioinformatics Technician
+15-2099.01,Bioinformatics Technicians,Bioinformatics
+17-1011.00,"Architects, Except Landscape and Naval","Architects, Except Landscape & Naval"
+17-1012.00,Landscape Architects,Landscape Architect
+17-1021.00,Cartographers and Photogrammetrists,Cartographers & Photogrammetrists
+17-1021.00,Cartographers and Photogrammetrists,Cartographers and Photogrammetrist
+17-1022.00,Surveyors,Surveyor
+17-1022.01,Geodetic Surveyors,Geodetic Surveyor
+17-2011.00,Aerospace Engineers,Aerospace Engineer
+17-2021.00,Agricultural Engineers,Agricultural Engineer
+17-2031.00,Bioengineers and Biomedical Engineers,Bioengineers & Biomedical Engineers
+17-2031.00,Bioengineers and Biomedical Engineers,Bioengineers and Biomedical Engineer
+17-2041.00,Chemical Engineers,Chemical Engineer
+17-2051.00,Civil Engineers,Civil Engineer
+17-2051.01,Transportation Engineers,Transportation Engineer
+17-2051.02,Water/Wastewater Engineers,Water/Wastewater Engineer
+17-2061.00,Computer Hardware Engineers,Computer Hardware Engineer
+17-2071.00,Electrical Engineers,Electrical Engineer
+17-2072.01,Radio Frequency Identification Device Specialists,Radio Frequency Identification Device Specialist
+17-2072.01,Radio Frequency Identification Device Specialists,Radio Frequency Identification Device
+17-2081.00,Environmental Engineers,Environmental Engineer
+17-2111.00,"Health and Safety Engineers, Except Mining Safety Engineers and Inspectors","Health and Safety Engineers, Except Mining Safety Engineers and Inspector"
+17-2111.00,"Health and Safety Engineers, Except Mining Safety Engineers and Inspectors","Health & Safety Engineers, Except Mining Safety Engineers & Inspectors"
+17-2111.02,Fire-Prevention and Protection Engineers,Fire-Prevention & Protection Engineers
+17-2111.02,Fire-Prevention and Protection Engineers,Fire-Prevention and Protection Engineer
+17-2112.00,Industrial Engineers,Industrial Engineer
+17-2112.01,Human Factors Engineers and Ergonomists,Human Factors Engineers and Ergonomist
+17-2112.01,Human Factors Engineers and Ergonomists,Human Factors Engineers & Ergonomists
+17-2112.02,Validation Engineers,Validation Engineer
+17-2112.03,Manufacturing Engineers,Manufacturing Engineer
+17-2121.00,Marine Engineers and Naval Architects,Marine Engineers & Naval Architects
+17-2121.00,Marine Engineers and Naval Architects,Marine Engineers and Naval Architect
+17-2131.00,Materials Engineers,Materials Engineer
+17-2141.00,Mechanical Engineers,Mechanical Engineer
+17-2141.01,Fuel Cell Engineers,Fuel Cell Engineer
+17-2141.02,Automotive Engineers,Automotive Engineer
+17-2151.00,"Mining and Geological Engineers, Including Mining Safety Engineers","Mining & Geological Engineers, Including Mining Safety Engineers"
+17-2151.00,"Mining and Geological Engineers, Including Mining Safety Engineers","Mining and Geological Engineers, Including Mining Safety Engineer"
+17-2161.00,Nuclear Engineers,Nuclear Engineer
+17-2171.00,Petroleum Engineers,Petroleum Engineer
+17-2199.03,"Energy Engineers, Except Wind and Solar","Energy Engineers, Except Wind & Solar"
+17-2199.05,Mechatronics Engineers,Mechatronics Engineer
+17-2199.06,Microsystems Engineers,Microsystems Engineer
+17-2199.07,Photonics Engineers,Photonics Engineer
+17-2199.08,Robotics Engineers,Robotics Engineer
+17-2199.09,Nanosystems Engineers,Nanosystems Engineer
+17-2199.10,Wind Energy Engineers,Wind Energy Engineer
+17-2199.11,Solar Energy Systems Engineers,Solar Energy Systems Engineer
+17-3011.00,Architectural and Civil Drafters,Architectural and Civil Drafter
+17-3011.00,Architectural and Civil Drafters,Architectural & Civil Drafters
+17-3012.00,Electrical and Electronics Drafters,Electrical & Electronics Drafters
+17-3012.00,Electrical and Electronics Drafters,Electrical and Electronics Drafter
+17-3013.00,Mechanical Drafters,Mechanical Drafter
+17-3021.00,Aerospace Engineering and Operations Technologists and Technicians,Aerospace Engineering and Operations Technologists and
+17-3021.00,Aerospace Engineering and Operations Technologists and Technicians,Aerospace Engineering and Operations Technologists and Technician
+17-3021.00,Aerospace Engineering and Operations Technologists and Technicians,Aerospace Engineering & Operations Technologists & Technicians
+17-3022.00,Civil Engineering Technologists and Technicians,Civil Engineering Technologists and Technician
+17-3022.00,Civil Engineering Technologists and Technicians,Civil Engineering Technologists and
+17-3022.00,Civil Engineering Technologists and Technicians,Civil Engineering Technologists & Technicians
+17-3023.00,Electrical and Electronic Engineering Technologists and Technicians,Electrical & Electronic Engineering Technologists & Technicians
+17-3023.00,Electrical and Electronic Engineering Technologists and Technicians,Electrical and Electronic Engineering Technologists and Technician
+17-3023.00,Electrical and Electronic Engineering Technologists and Technicians,Electrical and Electronic Engineering Technologists and
+17-3024.00,Electro-Mechanical and Mechatronics Technologists and Technicians,Electro-Mechanical and Mechatronics Technologists and
+17-3024.00,Electro-Mechanical and Mechatronics Technologists and Technicians,Electro-Mechanical & Mechatronics Technologists & Technicians
+17-3024.00,Electro-Mechanical and Mechatronics Technologists and Technicians,Electro-Mechanical and Mechatronics Technologists and Technician
+17-3024.01,Robotics Technicians,Robotics
+17-3024.01,Robotics Technicians,Robotics Technician
+17-3025.00,Environmental Engineering Technologists and Technicians,Environmental Engineering Technologists and Technician
+17-3025.00,Environmental Engineering Technologists and Technicians,Environmental Engineering Technologists & Technicians
+17-3025.00,Environmental Engineering Technologists and Technicians,Environmental Engineering Technologists and
+17-3026.00,Industrial Engineering Technologists and Technicians,Industrial Engineering Technologists and Technician
+17-3026.00,Industrial Engineering Technologists and Technicians,Industrial Engineering Technologists & Technicians
+17-3026.00,Industrial Engineering Technologists and Technicians,Industrial Engineering Technologists and
+17-3026.01,Nanotechnology Engineering Technologists and Technicians,Nanotechnology Engineering Technologists and Technician
+17-3026.01,Nanotechnology Engineering Technologists and Technicians,Nanotechnology Engineering Technologists and
+17-3026.01,Nanotechnology Engineering Technologists and Technicians,Nanotechnology Engineering Technologists & Technicians
+17-3027.00,Mechanical Engineering Technologists and Technicians,Mechanical Engineering Technologists & Technicians
+17-3027.00,Mechanical Engineering Technologists and Technicians,Mechanical Engineering Technologists and Technician
+17-3027.00,Mechanical Engineering Technologists and Technicians,Mechanical Engineering Technologists and
+17-3027.01,Automotive Engineering Technicians,Automotive Engineering
+17-3027.01,Automotive Engineering Technicians,Automotive Engineering Technician
+17-3028.00,Calibration Technologists and Technicians,Calibration Technologists and
+17-3028.00,Calibration Technologists and Technicians,Calibration Technologists and Technician
+17-3028.00,Calibration Technologists and Technicians,Calibration Technologists & Technicians
+17-3029.00,"Engineering Technologists and Technicians, Except Drafters, All Other","Engineering Technologists & Technicians, Except Drafters, All Other"
+17-3029.01,Non-Destructive Testing Specialists,Non-Destructive Testing
+17-3029.01,Non-Destructive Testing Specialists,Non-Destructive Testing Specialist
+17-3029.08,Photonics Technicians,Photonics Technician
+17-3029.08,Photonics Technicians,Photonics
+17-3031.00,Surveying and Mapping Technicians,Surveying and Mapping Technician
+17-3031.00,Surveying and Mapping Technicians,Surveying & Mapping Technicians
+17-3031.00,Surveying and Mapping Technicians,Surveying and Mapping
+19-1011.00,Animal Scientists,Animal Scientist
+19-1012.00,Food Scientists and Technologists,Food Scientists and Technologist
+19-1012.00,Food Scientists and Technologists,Food Scientists & Technologists
+19-1013.00,Soil and Plant Scientists,Soil and Plant Scientist
+19-1013.00,Soil and Plant Scientists,Soil & Plant Scientists
+19-1021.00,Biochemists and Biophysicists,Biochemists and Biophysicist
+19-1021.00,Biochemists and Biophysicists,Biochemists & Biophysicists
+19-1022.00,Microbiologists,Microbiologist
+19-1023.00,Zoologists and Wildlife Biologists,Zoologists & Wildlife Biologists
+19-1023.00,Zoologists and Wildlife Biologists,Zoologists and Wildlife Biologist
+19-1029.01,Bioinformatics Scientists,Bioinformatics Scientist
+19-1029.02,Molecular and Cellular Biologists,Molecular and Cellular Biologist
+19-1029.02,Molecular and Cellular Biologists,Molecular & Cellular Biologists
+19-1029.03,Geneticists,Geneticist
+19-1029.04,Biologists,Biologist
+19-1031.00,Conservation Scientists,Conservation Scientist
+19-1031.02,Range Managers,management job
+19-1031.02,Range Managers,Range Manager
+19-1031.02,Range Managers,Range
+19-1031.03,Park Naturalists,Park Naturalist
+19-1032.00,Foresters,Forester
+19-1041.00,Epidemiologists,Epidemiologist
+19-1042.00,"Medical Scientists, Except Epidemiologists","Medical Scientists, Except Epidemiologist"
+19-2011.00,Astronomers,Astronomer
+19-2012.00,Physicists,Physicist
+19-2021.00,Atmospheric and Space Scientists,Atmospheric and Space Scientist
+19-2021.00,Atmospheric and Space Scientists,Atmospheric & Space Scientists
+19-2031.00,Chemists,Chemist
+19-2032.00,Materials Scientists,Materials Scientist
+19-2041.00,"Environmental Scientists and Specialists, Including Health","Environmental Scientists & Specialists, Including Health"
+19-2041.01,Climate Change Policy Analysts,analysis job
+19-2041.01,Climate Change Policy Analysts,Climate Change Policy Analyst
+19-2041.02,Environmental Restoration Planners,Environmental Restoration Planner
+19-2041.03,Industrial Ecologists,Industrial Ecologist
+19-2042.00,"Geoscientists, Except Hydrologists and Geographers","Geoscientists, Except Hydrologists & Geographers"
+19-2042.00,"Geoscientists, Except Hydrologists and Geographers","Geoscientists, Except Hydrologists and Geographer"
+19-2043.00,Hydrologists,Hydrologist
+19-2099.01,Remote Sensing Scientists and Technologists,Remote Sensing Scientists and Technologist
+19-2099.01,Remote Sensing Scientists and Technologists,Remote Sensing Scientists & Technologists
+19-3011.00,Economists,Economist
+19-3011.01,Environmental Economists,Environmental Economist
+19-3022.00,Survey Researchers,Survey Researcher
+19-3032.00,Industrial-Organizational Psychologists,Industrial-Organizational Psychologist
+19-3033.00,Clinical and Counseling Psychologists,Clinical and Counseling Psychologist
+19-3033.00,Clinical and Counseling Psychologists,Clinical & Counseling Psychologists
+19-3034.00,School Psychologists,School Psychologist
+19-3039.02,Neuropsychologists,Neuropsychologist
+19-3039.03,Clinical Neuropsychologists,Clinical Neuropsychologist
+19-3041.00,Sociologists,Sociologist
+19-3051.00,Urban and Regional Planners,Urban and Regional Planner
+19-3051.00,Urban and Regional Planners,Urban & Regional Planners
+19-3091.00,Anthropologists and Archeologists,Anthropologists and Archeologist
+19-3091.00,Anthropologists and Archeologists,Anthropologists & Archeologists
+19-3092.00,Geographers,Geographer
+19-3093.00,Historians,Historian
+19-3094.00,Political Scientists,Political Scientist
+19-3099.00,"Social Scientists and Related Workers, All Other","Social Scientists & Related Workers, All Other"
+19-3099.01,Transportation Planners,Transportation Planner
+19-4012.00,Agricultural Technicians,Agricultural
+19-4012.00,Agricultural Technicians,Agricultural Technician
+19-4012.01,Precision Agriculture Technicians,Precision Agriculture
+19-4012.01,Precision Agriculture Technicians,Precision Agriculture Technician
+19-4013.00,Food Science Technicians,Food Science
+19-4013.00,Food Science Technicians,Food Science Technician
+19-4021.00,Biological Technicians,Biological Technician
+19-4021.00,Biological Technicians,Biological
+19-4031.00,Chemical Technicians,Chemical Technician
+19-4031.00,Chemical Technicians,Chemical
+19-4042.00,"Environmental Science and Protection Technicians, Including Health","Environmental Science & Protection Technicians, Including Health"
+19-4043.00,"Geological Technicians, Except Hydrologic Technicians","Geological Technicians, Except Hydrologic Technician"
+19-4043.00,"Geological Technicians, Except Hydrologic Technicians","Geological , Except Hydrologic"
+19-4044.00,Hydrologic Technicians,Hydrologic Technician
+19-4044.00,Hydrologic Technicians,Hydrologic
+19-4051.00,Nuclear Technicians,Nuclear Technician
+19-4051.00,Nuclear Technicians,Nuclear
+19-4051.02,Nuclear Monitoring Technicians,Nuclear Monitoring Technician
+19-4051.02,Nuclear Monitoring Technicians,Nuclear Monitoring
+19-4061.00,Social Science Research Assistants,Social Science Research Assistant
+19-4071.00,Forest and Conservation Technicians,Forest & Conservation Technicians
+19-4071.00,Forest and Conservation Technicians,Forest and Conservation Technician
+19-4071.00,Forest and Conservation Technicians,Forest and Conservation
+19-4092.00,Forensic Science Technicians,Forensic Science
+19-4092.00,Forensic Science Technicians,Forensic Science Technician
+19-4099.00,"Life, Physical, and Social Science Technicians, All Other","Life, Physical, & Social Science Technicians, All Other"
+19-4099.01,Quality Control Analysts,analysis job
+19-4099.01,Quality Control Analysts,Quality Control Analyst
+19-4099.03,Remote Sensing Technicians,Remote Sensing Technician
+19-4099.03,Remote Sensing Technicians,Remote Sensing
+19-5011.00,Occupational Health and Safety Specialists,Occupational Health and Safety
+19-5011.00,Occupational Health and Safety Specialists,Occupational Health & Safety Specialists
+19-5011.00,Occupational Health and Safety Specialists,Occupational Health and Safety Specialist
+19-5012.00,Occupational Health and Safety Technicians,Occupational Health and Safety Technician
+19-5012.00,Occupational Health and Safety Technicians,Occupational Health and Safety
+19-5012.00,Occupational Health and Safety Technicians,Occupational Health & Safety Technicians
+21-1011.00,Substance Abuse and Behavioral Disorder Counselors,Substance Abuse and Behavioral Disorder Counselor
+21-1011.00,Substance Abuse and Behavioral Disorder Counselors,Substance Abuse & Behavioral Disorder Counselors
+21-1012.00,"Educational, Guidance, and Career Counselors and Advisors","Educational, Guidance, & Career Counselors & Advisors"
+21-1012.00,"Educational, Guidance, and Career Counselors and Advisors","Educational, Guidance, and Career Counselors and Advisor"
+21-1013.00,Marriage and Family Therapists,Marriage and Family Therapist
+21-1013.00,Marriage and Family Therapists,Marriage & Family Therapists
+21-1014.00,Mental Health Counselors,Mental Health Counselor
+21-1015.00,Rehabilitation Counselors,Rehabilitation Counselor
+21-1021.00,"Child, Family, and School Social Workers","Child, Family, & School Social Workers"
+21-1021.00,"Child, Family, and School Social Workers","Child, Family, and School Social Worker"
+21-1022.00,Healthcare Social Workers,Healthcare Social Worker
+21-1023.00,Mental Health and Substance Abuse Social Workers,Mental Health and Substance Abuse Social Worker
+21-1023.00,Mental Health and Substance Abuse Social Workers,Mental Health & Substance Abuse Social Workers
+21-1091.00,Health Education Specialists,Health Education Specialist
+21-1091.00,Health Education Specialists,Health Education
+21-1092.00,Probation Officers and Correctional Treatment Specialists,Probation Officers and Correctional Treatment
+21-1092.00,Probation Officers and Correctional Treatment Specialists,Probation Officers & Correctional Treatment Specialists
+21-1092.00,Probation Officers and Correctional Treatment Specialists,Probation Officers and Correctional Treatment Specialist
+21-1093.00,Social and Human Service Assistants,Social and Human Service Assistant
+21-1093.00,Social and Human Service Assistants,Social & Human Service Assistants
+21-1094.00,Community Health Workers,Community Health Worker
+21-1099.00,"Community and Social Service Specialists, All Other","Community & Social Service Specialists, All Other"
+21-2021.00,"Directors, Religious Activities and Education","Directors, Religious Activities & Education"
+23-1011.00,Lawyers,Lawyer
+23-1012.00,Judicial Law Clerks,Judicial Law Clerk
+23-1021.00,"Administrative Law Judges, Adjudicators, and Hearing Officers","Administrative Law Judges, Adjudicators, & Hearing Officers"
+23-1021.00,"Administrative Law Judges, Adjudicators, and Hearing Officers","Administrative Law Judges, Adjudicators, and Hearing"
+23-1021.00,"Administrative Law Judges, Adjudicators, and Hearing Officers","Administrative Law Judges, Adjudicators, and Hearing Officer"
+23-1022.00,"Arbitrators, Mediators, and Conciliators","Arbitrators, Mediators, and Conciliator"
+23-1022.00,"Arbitrators, Mediators, and Conciliators","Arbitrators, Mediators, & Conciliators"
+23-1023.00,"Judges, Magistrate Judges, and Magistrates","Judges, Magistrate Judges, and Magistrate"
+23-1023.00,"Judges, Magistrate Judges, and Magistrates","Judges, Magistrate Judges, & Magistrates"
+23-2011.00,Paralegals and Legal Assistants,Paralegals & Legal Assistants
+23-2011.00,Paralegals and Legal Assistants,Paralegals and Legal Assistant
+23-2093.00,"Title Examiners, Abstractors, and Searchers","Title Examiners, Abstractors, & Searchers"
+23-2093.00,"Title Examiners, Abstractors, and Searchers","Title Examiners, Abstractors, and Searcher"
+25-1011.00,"Business Teachers, Postsecondary",teaching job
+25-1021.00,"Computer Science Teachers, Postsecondary",teaching job
+25-1022.00,"Mathematical Science Teachers, Postsecondary",teaching job
+25-1031.00,"Architecture Teachers, Postsecondary",teaching job
+25-1032.00,"Engineering Teachers, Postsecondary",teaching job
+25-1041.00,"Agricultural Sciences Teachers, Postsecondary",teaching job
+25-1042.00,"Biological Science Teachers, Postsecondary",teaching job
+25-1043.00,"Forestry and Conservation Science Teachers, Postsecondary",teaching job
+25-1043.00,"Forestry and Conservation Science Teachers, Postsecondary","Forestry & Conservation Science Teachers, Postsecondary"
+25-1051.00,"Atmospheric, Earth, Marine, and Space Sciences Teachers, Postsecondary",teaching job
+25-1051.00,"Atmospheric, Earth, Marine, and Space Sciences Teachers, Postsecondary","Atmospheric, Earth, Marine, & Space Sciences Teachers, Postsecondary"
+25-1052.00,"Chemistry Teachers, Postsecondary",teaching job
+25-1053.00,"Environmental Science Teachers, Postsecondary",teaching job
+25-1054.00,"Physics Teachers, Postsecondary",teaching job
+25-1061.00,"Anthropology and Archeology Teachers, Postsecondary",teaching job
+25-1061.00,"Anthropology and Archeology Teachers, Postsecondary","Anthropology & Archeology Teachers, Postsecondary"
+25-1062.00,"Area, Ethnic, and Cultural Studies Teachers, Postsecondary",teaching job
+25-1062.00,"Area, Ethnic, and Cultural Studies Teachers, Postsecondary","Area, Ethnic, & Cultural Studies Teachers, Postsecondary"
+25-1063.00,"Economics Teachers, Postsecondary",teaching job
+25-1064.00,"Geography Teachers, Postsecondary",teaching job
+25-1065.00,"Political Science Teachers, Postsecondary",teaching job
+25-1066.00,"Psychology Teachers, Postsecondary",teaching job
+25-1067.00,"Sociology Teachers, Postsecondary",teaching job
+25-1069.00,"Social Sciences Teachers, Postsecondary, All Other",teaching job
+25-1071.00,"Health Specialties Teachers, Postsecondary",teaching job
+25-1072.00,"Nursing Instructors and Teachers, Postsecondary","Nursing Instructors & Teachers, Postsecondary"
+25-1072.00,"Nursing Instructors and Teachers, Postsecondary",teaching job
+25-1081.00,"Education Teachers, Postsecondary",teaching job
+25-1082.00,"Library Science Teachers, Postsecondary",teaching job
+25-1111.00,"Criminal Justice and Law Enforcement Teachers, Postsecondary",teaching job
+25-1111.00,"Criminal Justice and Law Enforcement Teachers, Postsecondary","Criminal Justice & Law Enforcement Teachers, Postsecondary"
+25-1112.00,"Law Teachers, Postsecondary",teaching job
+25-1113.00,"Social Work Teachers, Postsecondary",teaching job
+25-1121.00,"Art, Drama, and Music Teachers, Postsecondary",teaching job
+25-1121.00,"Art, Drama, and Music Teachers, Postsecondary","Art, Drama, & Music Teachers, Postsecondary"
+25-1122.00,"Communications Teachers, Postsecondary",teaching job
+25-1123.00,"English Language and Literature Teachers, Postsecondary",teaching job
+25-1123.00,"English Language and Literature Teachers, Postsecondary","English Language & Literature Teachers, Postsecondary"
+25-1124.00,"Foreign Language and Literature Teachers, Postsecondary",teaching job
+25-1124.00,"Foreign Language and Literature Teachers, Postsecondary","Foreign Language & Literature Teachers, Postsecondary"
+25-1125.00,"History Teachers, Postsecondary",teaching job
+25-1126.00,"Philosophy and Religion Teachers, Postsecondary",teaching job
+25-1126.00,"Philosophy and Religion Teachers, Postsecondary","Philosophy & Religion Teachers, Postsecondary"
+25-1192.00,"Family and Consumer Sciences Teachers, Postsecondary",teaching job
+25-1192.00,"Family and Consumer Sciences Teachers, Postsecondary","Family & Consumer Sciences Teachers, Postsecondary"
+25-1193.00,"Recreation and Fitness Studies Teachers, Postsecondary",teaching job
+25-1193.00,"Recreation and Fitness Studies Teachers, Postsecondary","Recreation & Fitness Studies Teachers, Postsecondary"
+25-1194.00,"Career/Technical Education Teachers, Postsecondary",teaching job
+25-1199.00,"Postsecondary Teachers, All Other",teaching job
+25-2011.00,"Preschool Teachers, Except Special Education",teaching job
+25-2012.00,"Kindergarten Teachers, Except Special Education",teaching job
+25-2021.00,"Elementary School Teachers, Except Special Education",teaching job
+25-2022.00,"Middle School Teachers, Except Special and Career/Technical Education",teaching job
+25-2022.00,"Middle School Teachers, Except Special and Career/Technical Education","Middle School Teachers, Except Special & Career/Technical Education"
+25-2023.00,"Career/Technical Education Teachers, Middle School",teaching job
+25-2031.00,"Secondary School Teachers, Except Special and Career/Technical Education",teaching job
+25-2031.00,"Secondary School Teachers, Except Special and Career/Technical Education","Secondary School Teachers, Except Special & Career/Technical Education"
+25-2032.00,"Career/Technical Education Teachers, Secondary School",teaching job
+25-2051.00,"Special Education Teachers, Preschool",teaching job
+25-2055.00,"Special Education Teachers, Kindergarten",teaching job
+25-2056.00,"Special Education Teachers, Elementary School",teaching job
+25-2057.00,"Special Education Teachers, Middle School",teaching job
+25-2058.00,"Special Education Teachers, Secondary School",teaching job
+25-2059.00,"Special Education Teachers, All Other",teaching job
+25-2059.01,Adapted Physical Education Specialists,Adapted Physical Education Specialist
+25-2059.01,Adapted Physical Education Specialists,Adapted Physical Education
+25-3011.00,"Adult Basic Education, Adult Secondary Education, and English as a Second Language Instructors","Adult Basic Education, Adult Secondary Education, and English as a Second Language Instructor"
+25-3011.00,"Adult Basic Education, Adult Secondary Education, and English as a Second Language Instructors","Adult Basic Education, Adult Secondary Education, & English as a Second Language Instructors"
+25-3021.00,Self-Enrichment Teachers,teaching job
+25-3021.00,Self-Enrichment Teachers,Self-Enrichment Teacher
+25-3031.00,"Substitute Teachers, Short-Term",teaching job
+25-3041.00,Tutors,Tutor
+25-3099.00,"Teachers and Instructors, All Other",teaching job
+25-3099.00,"Teachers and Instructors, All Other","Teachers & Instructors, All Other"
+25-4011.00,Archivists,Archivist
+25-4012.00,Curators,Curator
+25-4013.00,Museum Technicians and Conservators,Museum Technicians & Conservators
+25-4013.00,Museum Technicians and Conservators,Museum Technicians and Conservator
+25-4022.00,Librarians and Media Collections Specialists,Librarians & Media Collections Specialists
+25-4022.00,Librarians and Media Collections Specialists,Librarians and Media Collections Specialist
+25-4022.00,Librarians and Media Collections Specialists,Librarians and Media Collections
+25-4031.00,Library Technicians,Library
+25-4031.00,Library Technicians,Library Technician
+25-9021.00,Farm and Home Management Educators,Farm & Home Management Educators
+25-9021.00,Farm and Home Management Educators,Farm and Home Management Educator
+25-9031.00,Instructional Coordinators,Instructional Coordinator
+25-9042.00,"Teaching Assistants, Preschool, Elementary, Middle, and Secondary School, Except Special Education","Teaching Assistants, Preschool, Elementary, Middle, & Secondary School, Except Special Education"
+25-9099.00,"Educational Instruction and Library Workers, All Other","Educational Instruction & Library Workers, All Other"
+27-1011.00,Art Directors,Art Director
+27-1012.00,Craft Artists,Craft Artist
+27-1013.00,"Fine Artists, Including Painters, Sculptors, and Illustrators","Fine Artists, Including Painters, Sculptors, and Illustrator"
+27-1013.00,"Fine Artists, Including Painters, Sculptors, and Illustrators","Fine Artists, Including Painters, Sculptors, & Illustrators"
+27-1014.00,Special Effects Artists and Animators,Special Effects Artists & Animators
+27-1014.00,Special Effects Artists and Animators,Special Effects Artists and Animator
+27-1019.00,"Artists and Related Workers, All Other","Artists & Related Workers, All Other"
+27-1021.00,Commercial and Industrial Designers,Commercial & Industrial Designers
+27-1021.00,Commercial and Industrial Designers,Commercial and Industrial Designer
+27-1022.00,Fashion Designers,Fashion Designer
+27-1023.00,Floral Designers,Floral Designer
+27-1024.00,Graphic Designers,Graphic Designer
+27-1025.00,Interior Designers,Interior Designer
+27-1026.00,Merchandise Displayers and Window Trimmers,Merchandise Displayers and Window Trimmer
+27-1026.00,Merchandise Displayers and Window Trimmers,Merchandise Displayers & Window Trimmers
+27-1027.00,Set and Exhibit Designers,Set and Exhibit Designer
+27-1027.00,Set and Exhibit Designers,Set & Exhibit Designers
+27-2011.00,Actors,Actor
+27-2012.00,Producers and Directors,Producers & Directors
+27-2012.00,Producers and Directors,Producers and Director
+27-2012.03,Media Programming Directors,Media Programming Director
+27-2012.04,Talent Directors,Talent Director
+27-2012.05,Media Technical Directors/Managers,management job
+27-2012.05,Media Technical Directors/Managers,Media Technical Directors/Manager
+27-2012.05,Media Technical Directors/Managers,Media Technical Directors/
+27-2021.00,Athletes and Sports Competitors,Athletes and Sports Competitor
+27-2021.00,Athletes and Sports Competitors,Athletes & Sports Competitors
+27-2022.00,Coaches and Scouts,Coaches & Scouts
+27-2022.00,Coaches and Scouts,Coaches and Scout
+27-2023.00,"Umpires, Referees, and Other Sports Officials","Umpires, Referees, and Other Sports Official"
+27-2023.00,"Umpires, Referees, and Other Sports Officials","Umpires, Referees, & Other Sports Officials"
+27-2031.00,Dancers,Dancer
+27-2032.00,Choreographers,Choreographer
+27-2041.00,Music Directors and Composers,Music Directors and Composer
+27-2041.00,Music Directors and Composers,Music Directors & Composers
+27-2042.00,Musicians and Singers,Musicians and Singer
+27-2042.00,Musicians and Singers,Musicians & Singers
+27-2099.00,"Entertainers and Performers, Sports and Related Workers, All Other","Entertainers & Performers, Sports & Related Workers, All Other"
+27-3011.00,Broadcast Announcers and Radio Disc Jockeys,Broadcast Announcers and Radio Disc Jockey
+27-3011.00,Broadcast Announcers and Radio Disc Jockeys,Broadcast Announcers & Radio Disc Jockeys
+27-3023.00,"News Analysts, Reporters, and Journalists","News Analysts, Reporters, & Journalists"
+27-3023.00,"News Analysts, Reporters, and Journalists",analysis job
+27-3023.00,"News Analysts, Reporters, and Journalists","News Analysts, Reporters, and Journalist"
+27-3031.00,Public Relations Specialists,Public Relations Specialist
+27-3031.00,Public Relations Specialists,Public Relations
+27-3041.00,Editors,Editor
+27-3042.00,Technical Writers,Technical Writer
+27-3043.00,Writers and Authors,Writers & Authors
+27-3043.00,Writers and Authors,Writers and Author
+27-3043.05,"Poets, Lyricists and Creative Writers","Poets, Lyricists and Creative Writer"
+27-3043.05,"Poets, Lyricists and Creative Writers","Poets, Lyricists & Creative Writers"
+27-3091.00,Interpreters and Translators,Interpreters and Translator
+27-3091.00,Interpreters and Translators,Interpreters & Translators
+27-3092.00,Court Reporters and Simultaneous Captioners,Court Reporters and Simultaneous Captioner
+27-3092.00,Court Reporters and Simultaneous Captioners,Court Reporters & Simultaneous Captioners
+27-3099.00,"Media and Communication Workers, All Other","Media & Communication Workers, All Other"
+27-4011.00,Audio and Video Technicians,Audio and Video Technician
+27-4011.00,Audio and Video Technicians,Audio & Video Technicians
+27-4011.00,Audio and Video Technicians,Audio and Video
+27-4012.00,Broadcast Technicians,Broadcast
+27-4012.00,Broadcast Technicians,Broadcast Technician
+27-4014.00,Sound Engineering Technicians,Sound Engineering Technician
+27-4014.00,Sound Engineering Technicians,Sound Engineering
+27-4015.00,Lighting Technicians,Lighting Technician
+27-4015.00,Lighting Technicians,Lighting
+27-4021.00,Photographers,Photographer
+27-4031.00,"Camera Operators, Television, Video, and Film","Camera Operators, Television, Video, & Film"
+27-4032.00,Film and Video Editors,Film and Video Editor
+27-4032.00,Film and Video Editors,Film & Video Editors
+27-4099.00,"Media and Communication Equipment Workers, All Other","Media & Communication Equipment Workers, All Other"
+29-1011.00,Chiropractors,Chiropractor
+29-1022.00,Oral and Maxillofacial Surgeons,Oral & Maxillofacial Surgeons
+29-1022.00,Oral and Maxillofacial Surgeons,Oral and Maxillofacial Surgeon
+29-1023.00,Orthodontists,Orthodontist
+29-1024.00,Prosthodontists,Prosthodontist
+29-1029.00,"Dentists, All Other Specialists","Dentists, All Other Specialist"
+29-1029.00,"Dentists, All Other Specialists","Dentists, All Other"
+29-1031.00,Dietitians and Nutritionists,Dietitians and Nutritionist
+29-1031.00,Dietitians and Nutritionists,Dietitians & Nutritionists
+29-1041.00,Optometrists,Optometrist
+29-1051.00,Pharmacists,Pharmacist
+29-1071.00,Physician Assistants,Physician Assistant
+29-1071.01,Anesthesiologist Assistants,Anesthesiologist Assistant
+29-1081.00,Podiatrists,Podiatrist
+29-1122.00,Occupational Therapists,Occupational Therapist
+29-1122.01,"Low Vision Therapists, Orientation and Mobility Specialists, and Vision Rehabilitation Therapists","Low Vision Therapists, Orientation and Mobility Specialists, and Vision Rehabilitation Therapist"
+29-1122.01,"Low Vision Therapists, Orientation and Mobility Specialists, and Vision Rehabilitation Therapists","Low Vision Therapists, Orientation & Mobility Specialists, & Vision Rehabilitation Therapists"
+29-1123.00,Physical Therapists,Physical Therapist
+29-1124.00,Radiation Therapists,Radiation Therapist
+29-1125.00,Recreational Therapists,Recreational Therapist
+29-1126.00,Respiratory Therapists,Respiratory Therapist
+29-1127.00,Speech-Language Pathologists,Speech-Language Pathologist
+29-1128.00,Exercise Physiologists,Exercise Physiologist
+29-1129.01,Art Therapists,Art Therapist
+29-1129.02,Music Therapists,Music Therapist
+29-1131.00,Veterinarians,Veterinarian
+29-1141.00,Registered Nurses,nurse
+29-1141.00,Registered Nurses,Staff Nurse
+29-1141.00,Registered Nurses,Registered Nurse
+29-1141.01,Acute Care Nurses,Acute Care Nurse
+29-1141.01,Acute Care Nurses,nurse
+29-1141.02,Advanced Practice Psychiatric Nurses,nurse
+29-1141.02,Advanced Practice Psychiatric Nurses,Advanced Practice Psychiatric Nurse
+29-1141.03,Critical Care Nurses,nurse
+29-1141.03,Critical Care Nurses,Critical Care Nurse
+29-1141.04,Clinical Nurse Specialists,nurse
+29-1141.04,Clinical Nurse Specialists,Clinical Nurse Specialist
+29-1141.04,Clinical Nurse Specialists,Clinical Nurse
+29-1151.00,Nurse Anesthetists,nurse
+29-1151.00,Nurse Anesthetists,Nurse Anesthetist
+29-1161.00,Nurse Midwives,Nurse Midwive
+29-1161.00,Nurse Midwives,nurse
+29-1171.00,Nurse Practitioners,nurse
+29-1171.00,Nurse Practitioners,Nurse Practitioner
+29-1181.00,Audiologists,Audiologist
+29-1211.00,Anesthesiologists,Anesthesiologist
+29-1212.00,Cardiologists,Cardiologist
+29-1213.00,Dermatologists,Dermatologist
+29-1214.00,Emergency Medicine Physicians,Emergency Medicine Physician
+29-1215.00,Family Medicine Physicians,Family Medicine Physician
+29-1216.00,General Internal Medicine Physicians,General Internal Medicine Physician
+29-1217.00,Neurologists,Neurologist
+29-1218.00,Obstetricians and Gynecologists,Obstetricians and Gynecologist
+29-1218.00,Obstetricians and Gynecologists,Obstetricians & Gynecologists
+29-1222.00,"Physicians, Pathologists","Physicians, Pathologist"
+29-1223.00,Psychiatrists,Psychiatrist
+29-1224.00,Radiologists,Radiologist
+29-1229.01,Allergists and Immunologists,Allergists & Immunologists
+29-1229.01,Allergists and Immunologists,Allergists and Immunologist
+29-1229.02,Hospitalists,Hospitalist
+29-1229.03,Urologists,Urologist
+29-1229.04,Physical Medicine and Rehabilitation Physicians,Physical Medicine and Rehabilitation Physician
+29-1229.04,Physical Medicine and Rehabilitation Physicians,Physical Medicine & Rehabilitation Physicians
+29-1229.05,Preventive Medicine Physicians,Preventive Medicine Physician
+29-1229.06,Sports Medicine Physicians,Sports Medicine Physician
+29-1243.00,Pediatric Surgeons,Pediatric Surgeon
+29-1291.00,Acupuncturists,Acupuncturist
+29-1292.00,Dental Hygienists,Dental Hygienist
+29-1299.01,Naturopathic Physicians,Naturopathic Physician
+29-1299.02,Orthoptists,Orthoptist
+29-2011.00,Medical and Clinical Laboratory Technologists,Medical and Clinical Laboratory Technologist
+29-2011.00,Medical and Clinical Laboratory Technologists,Medical & Clinical Laboratory Technologists
+29-2011.01,Cytogenetic Technologists,Cytogenetic Technologist
+29-2011.02,Cytotechnologists,Cytotechnologist
+29-2011.04,Histotechnologists,Histotechnologist
+29-2012.00,Medical and Clinical Laboratory Technicians,Medical and Clinical Laboratory
+29-2012.00,Medical and Clinical Laboratory Technicians,Medical and Clinical Laboratory Technician
+29-2012.00,Medical and Clinical Laboratory Technicians,Medical & Clinical Laboratory Technicians
+29-2012.01,Histology Technicians,Histology
+29-2012.01,Histology Technicians,Histology Technician
+29-2031.00,Cardiovascular Technologists and Technicians,Cardiovascular Technologists & Technicians
+29-2031.00,Cardiovascular Technologists and Technicians,Cardiovascular Technologists and Technician
+29-2031.00,Cardiovascular Technologists and Technicians,Cardiovascular Technologists and
+29-2032.00,Diagnostic Medical Sonographers,Diagnostic Medical Sonographer
+29-2033.00,Nuclear Medicine Technologists,Nuclear Medicine Technologist
+29-2034.00,Radiologic Technologists and Technicians,Radiologic Technologists and Technician
+29-2034.00,Radiologic Technologists and Technicians,Radiologic Technologists and
+29-2034.00,Radiologic Technologists and Technicians,Radiologic Technologists & Technicians
+29-2035.00,Magnetic Resonance Imaging Technologists,Magnetic Resonance Imaging Technologist
+29-2036.00,Medical Dosimetrists,Medical Dosimetrist
+29-2042.00,Emergency Medical Technicians,Emergency Medical Technician
+29-2042.00,Emergency Medical Technicians,Emergency Medical
+29-2043.00,Paramedics,Paramedic
+29-2051.00,Dietetic Technicians,Dietetic Technician
+29-2051.00,Dietetic Technicians,Dietetic
+29-2052.00,Pharmacy Technicians,Pharmacy
+29-2052.00,Pharmacy Technicians,Pharmacy Technician
+29-2053.00,Psychiatric Technicians,Psychiatric
+29-2053.00,Psychiatric Technicians,Psychiatric Technician
+29-2055.00,Surgical Technologists,Surgical Technologist
+29-2056.00,Veterinary Technologists and Technicians,Veterinary Technologists & Technicians
+29-2056.00,Veterinary Technologists and Technicians,Veterinary Technologists and Technician
+29-2056.00,Veterinary Technologists and Technicians,Veterinary Technologists and
+29-2057.00,Ophthalmic Medical Technicians,Ophthalmic Medical
+29-2057.00,Ophthalmic Medical Technicians,Ophthalmic Medical Technician
+29-2061.00,Licensed Practical and Licensed Vocational Nurses,nurse
+29-2061.00,Licensed Practical and Licensed Vocational Nurses,Licensed Practical & Licensed Vocational Nurses
+29-2061.00,Licensed Practical and Licensed Vocational Nurses,Licensed Practical and Licensed Vocational Nurse
+29-2072.00,Medical Records Specialists,Medical Records Specialist
+29-2072.00,Medical Records Specialists,Medical Records
+29-2091.00,Orthotists and Prosthetists,Orthotists and Prosthetist
+29-2091.00,Orthotists and Prosthetists,Orthotists & Prosthetists
+29-2092.00,Hearing Aid Specialists,Hearing Aid
+29-2092.00,Hearing Aid Specialists,Hearing Aid Specialist
+29-2099.00,"Health Technologists and Technicians, All Other","Health Technologists & Technicians, All Other"
+29-2099.01,Neurodiagnostic Technologists,Neurodiagnostic Technologist
+29-2099.05,Ophthalmic Medical Technologists,Ophthalmic Medical Technologist
+29-2099.08,Patient Representatives,Patient Representative
+29-9021.00,Health Information Technologists and Medical Registrars,Health Information Technologists and Medical Registrar
+29-9021.00,Health Information Technologists and Medical Registrars,Health Information Technologists & Medical Registrars
+29-9091.00,Athletic Trainers,Athletic Trainer
+29-9092.00,Genetic Counselors,Genetic Counselor
+29-9093.00,Surgical Assistants,Surgical Assistant
+29-9099.00,"Healthcare Practitioners and Technical Workers, All Other","Healthcare Practitioners & Technical Workers, All Other"
+29-9099.01,Midwives,Midwive
+31-1121.00,Home Health Aides,Home Health Aide
+31-1122.00,Personal Care Aides,Personal Care Aide
+31-1131.00,Nursing Assistants,Nursing Assistant
+31-1132.00,Orderlies,Orderly
+31-1133.00,Psychiatric Aides,Psychiatric Aide
+31-2011.00,Occupational Therapy Assistants,Occupational Therapy Assistant
+31-2012.00,Occupational Therapy Aides,Occupational Therapy Aide
+31-2021.00,Physical Therapist Assistants,Physical Therapist Assistant
+31-2022.00,Physical Therapist Aides,Physical Therapist Aide
+31-9011.00,Massage Therapists,Massage Therapist
+31-9091.00,Dental Assistants,Dental Assistant
+31-9092.00,Medical Assistants,Medical Assistant
+31-9093.00,Medical Equipment Preparers,Medical Equipment Preparer
+31-9094.00,Medical Transcriptionists,Medical Transcriptionist
+31-9095.00,Pharmacy Aides,Pharmacy Aide
+31-9096.00,Veterinary Assistants and Laboratory Animal Caretakers,Veterinary Assistants and Laboratory Animal Caretaker
+31-9096.00,Veterinary Assistants and Laboratory Animal Caretakers,Veterinary Assistants & Laboratory Animal Caretakers
+31-9097.00,Phlebotomists,Phlebotomist
+31-9099.01,Speech-Language Pathology Assistants,Speech-Language Pathology Assistant
+31-9099.02,Endoscopy Technicians,Endoscopy Technician
+31-9099.02,Endoscopy Technicians,Endoscopy
+33-1011.00,First-Line Supervisors of Correctional Officers,First-Line Supervisors of Correctional Officer
+33-1011.00,First-Line Supervisors of Correctional Officers,First-Line Supervisors of Correctional
+33-1012.00,First-Line Supervisors of Police and Detectives,First-Line Supervisors of Police and Detective
+33-1012.00,First-Line Supervisors of Police and Detectives,First-Line Supervisors of Police & Detectives
+33-1021.00,First-Line Supervisors of Firefighting and Prevention Workers,First-Line Supervisors of Firefighting and Prevention Worker
+33-1021.00,First-Line Supervisors of Firefighting and Prevention Workers,First-Line Supervisors of Firefighting & Prevention Workers
+33-1091.00,First-Line Supervisors of Security Workers,First-Line Supervisors of Security Worker
+33-2011.00,Firefighters,Firefighter
+33-2021.00,Fire Inspectors and Investigators,Fire Inspectors & Investigators
+33-2021.00,Fire Inspectors and Investigators,Fire Inspectors and Investigator
+33-2022.00,Forest Fire Inspectors and Prevention Specialists,Forest Fire Inspectors and Prevention Specialist
+33-2022.00,Forest Fire Inspectors and Prevention Specialists,Forest Fire Inspectors and Prevention
+33-2022.00,Forest Fire Inspectors and Prevention Specialists,Forest Fire Inspectors & Prevention Specialists
+33-3011.00,Bailiffs,Bailiff
+33-3012.00,Correctional Officers and Jailers,Correctional Officers and Jailer
+33-3012.00,Correctional Officers and Jailers,Correctional Officers & Jailers
+33-3021.00,Detectives and Criminal Investigators,Detectives and Criminal Investigator
+33-3021.00,Detectives and Criminal Investigators,Detectives & Criminal Investigators
+33-3021.02,Police Identification and Records Officers,Police Identification & Records Officers
+33-3021.02,Police Identification and Records Officers,Police Identification and Records Officer
+33-3021.02,Police Identification and Records Officers,Police Identification and Records
+33-3021.06,Intelligence Analysts,Intelligence Analyst
+33-3021.06,Intelligence Analysts,analysis job
+33-3031.00,Fish and Game Wardens,Fish and Game Warden
+33-3031.00,Fish and Game Wardens,Fish & Game Wardens
+33-3041.00,Parking Enforcement Workers,Parking Enforcement Worker
+33-3051.00,Police and Sheriff's Patrol Officers,Police and Sheriff's Patrol
+33-3051.00,Police and Sheriff's Patrol Officers,Police & Sheriff's Patrol Officers
+33-3051.00,Police and Sheriff's Patrol Officers,Police and Sheriff's Patrol Officer
+33-3051.04,Customs and Border Protection Officers,Customs & Border Protection Officers
+33-3051.04,Customs and Border Protection Officers,Customs and Border Protection Officer
+33-3051.04,Customs and Border Protection Officers,Customs and Border Protection
+33-3052.00,Transit and Railroad Police,Transit & Railroad Police
+33-9011.00,Animal Control Workers,Animal Control Worker
+33-9021.00,Private Detectives and Investigators,Private Detectives and Investigator
+33-9021.00,Private Detectives and Investigators,Private Detectives & Investigators
+33-9031.00,Gambling Surveillance Officers and Gambling Investigators,Gambling Surveillance Officers and Gambling Investigator
+33-9031.00,Gambling Surveillance Officers and Gambling Investigators,Gambling Surveillance Officers & Gambling Investigators
+33-9032.00,Security Guards,Security Guard
+33-9091.00,Crossing Guards and Flaggers,Crossing Guards & Flaggers
+33-9091.00,Crossing Guards and Flaggers,Crossing Guards and Flagger
+33-9092.00,"Lifeguards, Ski Patrol, and Other Recreational Protective Service Workers","Lifeguards, Ski Patrol, and Other Recreational Protective Service Worker"
+33-9092.00,"Lifeguards, Ski Patrol, and Other Recreational Protective Service Workers","Lifeguards, Ski Patrol, & Other Recreational Protective Service Workers"
+33-9093.00,Transportation Security Screeners,Transportation Security Screener
+33-9094.00,School Bus Monitors,School Bus Monitor
+33-9099.02,Retail Loss Prevention Specialists,Retail Loss Prevention
+33-9099.02,Retail Loss Prevention Specialists,Retail Loss Prevention Specialist
+35-1011.00,Chefs and Head Cooks,Chefs & Head Cooks
+35-1011.00,Chefs and Head Cooks,Chefs and Head Cook
+35-1012.00,First-Line Supervisors of Food Preparation and Serving Workers,First-Line Supervisors of Food Preparation and Serving Worker
+35-1012.00,First-Line Supervisors of Food Preparation and Serving Workers,First-Line Supervisors of Food Preparation & Serving Workers
+35-2012.00,"Cooks, Institution and Cafeteria","Cooks, Institution & Cafeteria"
+35-2021.00,Food Preparation Workers,Food Preparation Worker
+35-3011.00,Bartenders,Bartender
+35-3023.00,Fast Food and Counter Workers,Fast Food and Counter Worker
+35-3023.00,Fast Food and Counter Workers,Fast Food & Counter Workers
+35-3023.01,Baristas,Barista
+35-3031.00,Waiters and Waitresses,Waiters and Waitresse
+35-3031.00,Waiters and Waitresses,Waiters & Waitresses
+35-9011.00,Dining Room and Cafeteria Attendants and Bartender Helpers,Dining Room and Cafeteria Attendants and Bartender Helper
+35-9011.00,Dining Room and Cafeteria Attendants and Bartender Helpers,Dining Room & Cafeteria Attendants & Bartender Helpers
+35-9021.00,Dishwashers,Dishwasher
+35-9031.00,"Hosts and Hostesses, Restaurant, Lounge, and Coffee Shop","Hosts & Hostesses, Restaurant, Lounge, & Coffee Shop"
+35-9099.00,"Food Preparation and Serving Related Workers, All Other","Food Preparation & Serving Related Workers, All Other"
+37-1011.00,First-Line Supervisors of Housekeeping and Janitorial Workers,First-Line Supervisors of Housekeeping and Janitorial Worker
+37-1011.00,First-Line Supervisors of Housekeeping and Janitorial Workers,First-Line Supervisors of Housekeeping & Janitorial Workers
+37-1012.00,"First-Line Supervisors of Landscaping, Lawn Service, and Groundskeeping Workers","First-Line Supervisors of Landscaping, Lawn Service, & Groundskeeping Workers"
+37-1012.00,"First-Line Supervisors of Landscaping, Lawn Service, and Groundskeeping Workers","First-Line Supervisors of Landscaping, Lawn Service, and Groundskeeping Worker"
+37-2011.00,"Janitors and Cleaners, Except Maids and Housekeeping Cleaners","Janitors & Cleaners, Except Maids & Housekeeping Cleaners"
+37-2011.00,"Janitors and Cleaners, Except Maids and Housekeeping Cleaners","Janitors and Cleaners, Except Maids and Housekeeping Cleaner"
+37-2012.00,Maids and Housekeeping Cleaners,Maids and Housekeeping Cleaner
+37-2012.00,Maids and Housekeeping Cleaners,Maids & Housekeeping Cleaners
+37-2021.00,Pest Control Workers,Pest Control Worker
+37-3011.00,Landscaping and Groundskeeping Workers,Landscaping and Groundskeeping Worker
+37-3011.00,Landscaping and Groundskeeping Workers,Landscaping & Groundskeeping Workers
+37-3012.00,"Pesticide Handlers, Sprayers, and Applicators, Vegetation","Pesticide Handlers, Sprayers, & Applicators, Vegetation"
+37-3013.00,Tree Trimmers and Pruners,Tree Trimmers and Pruner
+37-3013.00,Tree Trimmers and Pruners,Tree Trimmers & Pruners
+39-1013.00,First-Line Supervisors of Gambling Services Workers,First-Line Supervisors of Gambling Services Worker
+39-1014.00,"First-Line Supervisors of Entertainment and Recreation Workers, Except Gambling Services","First-Line Supervisors of Entertainment & Recreation Workers, Except Gambling Services"
+39-1014.00,"First-Line Supervisors of Entertainment and Recreation Workers, Except Gambling Services","First-Line Supervisors of Entertainment and Recreation Workers, Except Gambling Service"
+39-1022.00,First-Line Supervisors of Personal Service Workers,First-Line Supervisors of Personal Service Worker
+39-2011.00,Animal Trainers,Animal Trainer
+39-2021.00,Animal Caretakers,Animal Caretaker
+39-3011.00,Gambling Dealers,Gambling Dealer
+39-3012.00,Gambling and Sports Book Writers and Runners,Gambling & Sports Book Writers & Runners
+39-3012.00,Gambling and Sports Book Writers and Runners,Gambling and Sports Book Writers and Runner
+39-3021.00,Motion Picture Projectionists,Motion Picture Projectionist
+39-3031.00,"Ushers, Lobby Attendants, and Ticket Takers","Ushers, Lobby Attendants, & Ticket Takers"
+39-3031.00,"Ushers, Lobby Attendants, and Ticket Takers","Ushers, Lobby Attendants, and Ticket Taker"
+39-3091.00,Amusement and Recreation Attendants,Amusement & Recreation Attendants
+39-3091.00,Amusement and Recreation Attendants,Amusement and Recreation Attendant
+39-3092.00,Costume Attendants,Costume Attendant
+39-3093.00,"Locker Room, Coatroom, and Dressing Room Attendants","Locker Room, Coatroom, and Dressing Room Attendant"
+39-3093.00,"Locker Room, Coatroom, and Dressing Room Attendants","Locker Room, Coatroom, & Dressing Room Attendants"
+39-3099.00,"Entertainment Attendants and Related Workers, All Other","Entertainment Attendants & Related Workers, All Other"
+39-4011.00,Embalmers,Embalmer
+39-4012.00,Crematory Operators,Crematory Operator
+39-4021.00,Funeral Attendants,Funeral Attendant
+39-4031.00,"Morticians, Undertakers, and Funeral Arrangers","Morticians, Undertakers, & Funeral Arrangers"
+39-4031.00,"Morticians, Undertakers, and Funeral Arrangers","Morticians, Undertakers, and Funeral Arranger"
+39-5011.00,Barbers,Barber
+39-5012.00,"Hairdressers, Hairstylists, and Cosmetologists","Hairdressers, Hairstylists, and Cosmetologist"
+39-5012.00,"Hairdressers, Hairstylists, and Cosmetologists","Hairdressers, Hairstylists, & Cosmetologists"
+39-5091.00,"Makeup Artists, Theatrical and Performance","Makeup Artists, Theatrical & Performance"
+39-5092.00,Manicurists and Pedicurists,Manicurists & Pedicurists
+39-5092.00,Manicurists and Pedicurists,Manicurists and Pedicurist
+39-5093.00,Shampooers,Shampooer
+39-5094.00,Skincare Specialists,Skincare
+39-5094.00,Skincare Specialists,Skincare Specialist
+39-6011.00,Baggage Porters and Bellhops,Baggage Porters and Bellhop
+39-6011.00,Baggage Porters and Bellhops,Baggage Porters & Bellhops
+39-6012.00,Concierges,Concierge
+39-7011.00,Tour Guides and Escorts,Tour Guides and Escort
+39-7011.00,Tour Guides and Escorts,Tour Guides & Escorts
+39-7012.00,Travel Guides,Travel Guide
+39-9011.00,Childcare Workers,Childcare Worker
+39-9011.01,Nannies,Nanny
+39-9031.00,Exercise Trainers and Group Fitness Instructors,Exercise Trainers & Group Fitness Instructors
+39-9031.00,Exercise Trainers and Group Fitness Instructors,Exercise Trainers and Group Fitness Instructor
+39-9032.00,Recreation Workers,Recreation Worker
+39-9041.00,Residential Advisors,Residential Advisor
+39-9099.00,"Personal Care and Service Workers, All Other","Personal Care & Service Workers, All Other"
+41-1011.00,First-Line Supervisors of Retail Sales Workers,First-Line Supervisors of Retail Sales Worker
+41-1012.00,First-Line Supervisors of Non-Retail Sales Workers,First-Line Supervisors of Non-Retail Sales Worker
+41-2011.00,Cashiers,Cashier
+41-2012.00,Gambling Change Persons and Booth Cashiers,Gambling Change Persons & Booth Cashiers
+41-2012.00,Gambling Change Persons and Booth Cashiers,Gambling Change Persons and Booth Cashier
+41-2021.00,Counter and Rental Clerks,Counter & Rental Clerks
+41-2021.00,Counter and Rental Clerks,Counter and Rental Clerk
+41-2022.00,Parts Salespersons,Parts Salesperson
+41-2031.00,Retail Salespersons,Retail Salesperson
+41-3011.00,Advertising Sales Agents,Advertising Sales Agent
+41-3021.00,Insurance Sales Agents,Insurance Sales Agent
+41-3031.00,"Securities, Commodities, and Financial Services Sales Agents","Securities, Commodities, & Financial Services Sales Agents"
+41-3031.00,"Securities, Commodities, and Financial Services Sales Agents","Securities, Commodities, and Financial Services Sales Agent"
+41-3041.00,Travel Agents,Travel Agent
+41-3091.00,"Sales Representatives of Services, Except Advertising, Insurance, Financial Services, and Travel","Sales Representatives of Services, Except Advertising, Insurance, Financial Services, & Travel"
+41-4011.00,"Sales Representatives, Wholesale and Manufacturing, Technical and Scientific Products","Sales Representatives, Wholesale and Manufacturing, Technical and Scientific Product"
+41-4011.00,"Sales Representatives, Wholesale and Manufacturing, Technical and Scientific Products","Sales Representatives, Wholesale & Manufacturing, Technical & Scientific Products"
+41-4011.07,Solar Sales Representatives and Assessors,Solar Sales Representatives and Assessor
+41-4011.07,Solar Sales Representatives and Assessors,Solar Sales Representatives & Assessors
+41-4012.00,"Sales Representatives, Wholesale and Manufacturing, Except Technical and Scientific Products","Sales Representatives, Wholesale and Manufacturing, Except Technical and Scientific Product"
+41-4012.00,"Sales Representatives, Wholesale and Manufacturing, Except Technical and Scientific Products","Sales Representatives, Wholesale & Manufacturing, Except Technical & Scientific Products"
+41-9011.00,Demonstrators and Product Promoters,Demonstrators & Product Promoters
+41-9011.00,Demonstrators and Product Promoters,Demonstrators and Product Promoter
+41-9012.00,Models,Model
+41-9021.00,Real Estate Brokers,Real Estate Broker
+41-9022.00,Real Estate Sales Agents,Real Estate Sales Agent
+41-9031.00,Sales Engineers,Sales Engineer
+41-9041.00,Telemarketers,Telemarketer
+41-9091.00,"Door-to-Door Sales Workers, News and Street Vendors, and Related Workers","Door-to-Door Sales Workers, News & Street Vendors, & Related Workers"
+41-9091.00,"Door-to-Door Sales Workers, News and Street Vendors, and Related Workers","Door-to-Door Sales Workers, News and Street Vendors, and Related Worker"
+41-9099.00,"Sales and Related Workers, All Other","Sales & Related Workers, All Other"
+43-1011.00,First-Line Supervisors of Office and Administrative Support Workers,First-Line Supervisors of Office and Administrative Support Worker
+43-1011.00,First-Line Supervisors of Office and Administrative Support Workers,First-Line Supervisors of Office & Administrative Support Workers
+43-2021.00,Telephone Operators,Telephone Operator
+43-3011.00,Bill and Account Collectors,Bill and Account Collector
+43-3011.00,Bill and Account Collectors,Bill & Account Collectors
+43-3021.00,Billing and Posting Clerks,Billing and Posting Clerk
+43-3021.00,Billing and Posting Clerks,Billing & Posting Clerks
+43-3031.00,"Bookkeeping, Accounting, and Auditing Clerks","Bookkeeping, Accounting, & Auditing Clerks"
+43-3031.00,"Bookkeeping, Accounting, and Auditing Clerks","Bookkeeping, Accounting, and Auditing Clerk"
+43-3041.00,Gambling Cage Workers,Gambling Cage Worker
+43-3051.00,Payroll and Timekeeping Clerks,Payroll and Timekeeping Clerk
+43-3051.00,Payroll and Timekeeping Clerks,Payroll & Timekeeping Clerks
+43-3061.00,Procurement Clerks,Procurement Clerk
+43-3071.00,Tellers,Teller
+43-4011.00,Brokerage Clerks,Brokerage Clerk
+43-4021.00,Correspondence Clerks,Correspondence Clerk
+43-4031.00,"Court, Municipal, and License Clerks","Court, Municipal, and License Clerk"
+43-4031.00,"Court, Municipal, and License Clerks","Court, Municipal, & License Clerks"
+43-4041.00,"Credit Authorizers, Checkers, and Clerks","Credit Authorizers, Checkers, and Clerk"
+43-4041.00,"Credit Authorizers, Checkers, and Clerks","Credit Authorizers, Checkers, & Clerks"
+43-4051.00,Customer Service Representatives,Customer Service Representative
+43-4061.00,"Eligibility Interviewers, Government Programs","Eligibility Interviewers, Government Program"
+43-4071.00,File Clerks,File Clerk
+43-4081.00,"Hotel, Motel, and Resort Desk Clerks","Hotel, Motel, and Resort Desk Clerk"
+43-4081.00,"Hotel, Motel, and Resort Desk Clerks","Hotel, Motel, & Resort Desk Clerks"
+43-4111.00,"Interviewers, Except Eligibility and Loan","Interviewers, Except Eligibility & Loan"
+43-4131.00,Loan Interviewers and Clerks,Loan Interviewers and Clerk
+43-4131.00,Loan Interviewers and Clerks,Loan Interviewers & Clerks
+43-4141.00,New Accounts Clerks,New Accounts Clerk
+43-4151.00,Order Clerks,Order Clerk
+43-4161.00,"Human Resources Assistants, Except Payroll and Timekeeping","Human Resources Assistants, Except Payroll & Timekeeping"
+43-4171.00,Receptionists and Information Clerks,Receptionists & Information Clerks
+43-4171.00,Receptionists and Information Clerks,Receptionists and Information Clerk
+43-4181.00,Reservation and Transportation Ticket Agents and Travel Clerks,Reservation & Transportation Ticket Agents & Travel Clerks
+43-4181.00,Reservation and Transportation Ticket Agents and Travel Clerks,Reservation and Transportation Ticket Agents and Travel Clerk
+43-4199.00,"Information and Record Clerks, All Other","Information & Record Clerks, All Other"
+43-5011.00,Cargo and Freight Agents,Cargo & Freight Agents
+43-5011.00,Cargo and Freight Agents,Cargo and Freight Agent
+43-5011.01,Freight Forwarders,Freight Forwarder
+43-5021.00,Couriers and Messengers,Couriers and Messenger
+43-5021.00,Couriers and Messengers,Couriers & Messengers
+43-5031.00,Public Safety Telecommunicators,Public Safety Telecommunicator
+43-5032.00,"Dispatchers, Except Police, Fire, and Ambulance","Dispatchers, Except Police, Fire, & Ambulance"
+43-5041.00,"Meter Readers, Utilities","Meter Readers, Utility"
+43-5051.00,Postal Service Clerks,Postal Service Clerk
+43-5052.00,Postal Service Mail Carriers,Postal Service Mail Carrier
+43-5053.00,"Postal Service Mail Sorters, Processors, and Processing Machine Operators","Postal Service Mail Sorters, Processors, and Processing Machine Operator"
+43-5053.00,"Postal Service Mail Sorters, Processors, and Processing Machine Operators","Postal Service Mail Sorters, Processors, & Processing Machine Operators"
+43-5061.00,"Production, Planning, and Expediting Clerks","Production, Planning, and Expediting Clerk"
+43-5061.00,"Production, Planning, and Expediting Clerks","Production, Planning, & Expediting Clerks"
+43-5071.00,"Shipping, Receiving, and Inventory Clerks","Shipping, Receiving, and Inventory Clerk"
+43-5071.00,"Shipping, Receiving, and Inventory Clerks","Shipping, Receiving, & Inventory Clerks"
+43-5111.00,"Weighers, Measurers, Checkers, and Samplers, Recordkeeping","Weighers, Measurers, Checkers, & Samplers, Recordkeeping"
+43-6011.00,Executive Secretaries and Executive Administrative Assistants,Executive Secretaries and Executive Administrative Assistant
+43-6011.00,Executive Secretaries and Executive Administrative Assistants,Executive Secretaries & Executive Administrative Assistants
+43-6012.00,Legal Secretaries and Administrative Assistants,Legal Secretaries & Administrative Assistants
+43-6012.00,Legal Secretaries and Administrative Assistants,Legal Secretaries and Administrative Assistant
+43-6013.00,Medical Secretaries and Administrative Assistants,Medical Secretaries and Administrative Assistant
+43-6013.00,Medical Secretaries and Administrative Assistants,Medical Secretaries & Administrative Assistants
+43-6014.00,"Secretaries and Administrative Assistants, Except Legal, Medical, and Executive","Secretaries & Administrative Assistants, Except Legal, Medical, & Executive"
+43-9021.00,Data Entry Keyers,Data Entry Keyer
+43-9022.00,Word Processors and Typists,Word Processors and Typist
+43-9022.00,Word Processors and Typists,Word Processors & Typists
+43-9031.00,Desktop Publishers,Desktop Publisher
+43-9041.00,Insurance Claims and Policy Processing Clerks,Insurance Claims & Policy Processing Clerks
+43-9041.00,Insurance Claims and Policy Processing Clerks,Insurance Claims and Policy Processing Clerk
+43-9051.00,"Mail Clerks and Mail Machine Operators, Except Postal Service","Mail Clerks & Mail Machine Operators, Except Postal Service"
+43-9081.00,Proofreaders and Copy Markers,Proofreaders & Copy Markers
+43-9081.00,Proofreaders and Copy Markers,Proofreaders and Copy Marker
+43-9111.00,Statistical Assistants,Statistical Assistant
+43-9199.00,"Office and Administrative Support Workers, All Other","Office & Administrative Support Workers, All Other"
+45-1011.00,"First-Line Supervisors of Farming, Fishing, and Forestry Workers","First-Line Supervisors of Farming, Fishing, and Forestry Worker"
+45-1011.00,"First-Line Supervisors of Farming, Fishing, and Forestry Workers","First-Line Supervisors of Farming, Fishing, & Forestry Workers"
+45-2011.00,Agricultural Inspectors,Agricultural Inspector
+45-2021.00,Animal Breeders,Animal Breeder
+45-2041.00,"Graders and Sorters, Agricultural Products","Graders and Sorters, Agricultural Product"
+45-2041.00,"Graders and Sorters, Agricultural Products","Graders & Sorters, Agricultural Products"
+45-2091.00,Agricultural Equipment Operators,Agricultural Equipment Operator
+45-2092.00,"Farmworkers and Laborers, Crop, Nursery, and Greenhouse",nurse
+45-2092.00,"Farmworkers and Laborers, Crop, Nursery, and Greenhouse","Farmworkers & Laborers, Crop, Nursery, & Greenhouse"
+45-2093.00,"Farmworkers, Farm, Ranch, and Aquacultural Animals","Farmworkers, Farm, Ranch, & Aquacultural Animals"
+45-2093.00,"Farmworkers, Farm, Ranch, and Aquacultural Animals","Farmworkers, Farm, Ranch, and Aquacultural Animal"
+45-3031.00,Fishing and Hunting Workers,Fishing and Hunting Worker
+45-3031.00,Fishing and Hunting Workers,Fishing & Hunting Workers
+45-4011.00,Forest and Conservation Workers,Forest & Conservation Workers
+45-4011.00,Forest and Conservation Workers,Forest and Conservation Worker
+45-4021.00,Fallers,Faller
+45-4022.00,Logging Equipment Operators,Logging Equipment Operator
+45-4023.00,Log Graders and Scalers,Log Graders & Scalers
+45-4023.00,Log Graders and Scalers,Log Graders and Scaler
+47-1011.00,First-Line Supervisors of Construction Trades and Extraction Workers,First-Line Supervisors of Construction Trades and Extraction Worker
+47-1011.00,First-Line Supervisors of Construction Trades and Extraction Workers,First-Line Supervisors of Construction Trades & Extraction Workers
+47-1011.03,Solar Energy Installation Managers,Solar Energy Installation
+47-1011.03,Solar Energy Installation Managers,management job
+47-1011.03,Solar Energy Installation Managers,Solar Energy Installation Manager
+47-2011.00,Boilermakers,Boilermaker
+47-2021.00,Brickmasons and Blockmasons,Brickmasons and Blockmason
+47-2021.00,Brickmasons and Blockmasons,Brickmasons & Blockmasons
+47-2022.00,Stonemasons,Stonemason
+47-2031.00,Carpenters,Carpenter
+47-2041.00,Carpet Installers,Carpet Installer
+47-2042.00,"Floor Layers, Except Carpet, Wood, and Hard Tiles","Floor Layers, Except Carpet, Wood, & Hard Tiles"
+47-2042.00,"Floor Layers, Except Carpet, Wood, and Hard Tiles","Floor Layers, Except Carpet, Wood, and Hard Tile"
+47-2043.00,Floor Sanders and Finishers,Floor Sanders & Finishers
+47-2043.00,Floor Sanders and Finishers,Floor Sanders and Finisher
+47-2044.00,Tile and Stone Setters,Tile and Stone Setter
+47-2044.00,Tile and Stone Setters,Tile & Stone Setters
+47-2051.00,Cement Masons and Concrete Finishers,Cement Masons & Concrete Finishers
+47-2051.00,Cement Masons and Concrete Finishers,Cement Masons and Concrete Finisher
+47-2053.00,Terrazzo Workers and Finishers,Terrazzo Workers & Finishers
+47-2053.00,Terrazzo Workers and Finishers,Terrazzo Workers and Finisher
+47-2061.00,Construction Laborers,Construction Laborer
+47-2071.00,"Paving, Surfacing, and Tamping Equipment Operators","Paving, Surfacing, & Tamping Equipment Operators"
+47-2071.00,"Paving, Surfacing, and Tamping Equipment Operators","Paving, Surfacing, and Tamping Equipment Operator"
+47-2072.00,Pile Driver Operators,Pile Driver Operator
+47-2073.00,Operating Engineers and Other Construction Equipment Operators,Operating Engineers and Other Construction Equipment Operator
+47-2073.00,Operating Engineers and Other Construction Equipment Operators,Operating Engineers & Other Construction Equipment Operators
+47-2081.00,Drywall and Ceiling Tile Installers,Drywall and Ceiling Tile Installer
+47-2081.00,Drywall and Ceiling Tile Installers,Drywall & Ceiling Tile Installers
+47-2082.00,Tapers,Taper
+47-2111.00,Electricians,Electrician
+47-2121.00,Glaziers,Glazier
+47-2131.00,"Insulation Workers, Floor, Ceiling, and Wall","Insulation Workers, Floor, Ceiling, & Wall"
+47-2141.00,"Painters, Construction and Maintenance","Painters, Construction & Maintenance"
+47-2142.00,Paperhangers,Paperhanger
+47-2151.00,Pipelayers,Pipelayer
+47-2152.00,"Plumbers, Pipefitters, and Steamfitters","Plumbers, Pipefitters, and Steamfitter"
+47-2152.00,"Plumbers, Pipefitters, and Steamfitters","Plumbers, Pipefitters, & Steamfitters"
+47-2152.04,Solar Thermal Installers and Technicians,Solar Thermal Installers and Technician
+47-2152.04,Solar Thermal Installers and Technicians,Solar Thermal Installers and
+47-2152.04,Solar Thermal Installers and Technicians,Solar Thermal Installers & Technicians
+47-2161.00,Plasterers and Stucco Masons,Plasterers & Stucco Masons
+47-2161.00,Plasterers and Stucco Masons,Plasterers and Stucco Mason
+47-2171.00,Reinforcing Iron and Rebar Workers,Reinforcing Iron and Rebar Worker
+47-2171.00,Reinforcing Iron and Rebar Workers,Reinforcing Iron & Rebar Workers
+47-2181.00,Roofers,Roofer
+47-2211.00,Sheet Metal Workers,Sheet Metal Worker
+47-2221.00,Structural Iron and Steel Workers,Structural Iron & Steel Workers
+47-2221.00,Structural Iron and Steel Workers,Structural Iron and Steel Worker
+47-2231.00,Solar Photovoltaic Installers,Solar Photovoltaic Installer
+47-3011.00,"Helpers--Brickmasons, Blockmasons, Stonemasons, and Tile and Marble Setters","Helpers--Brickmasons, Blockmasons, Stonemasons, & Tile & Marble Setters"
+47-3011.00,"Helpers--Brickmasons, Blockmasons, Stonemasons, and Tile and Marble Setters","Helpers--Brickmasons, Blockmasons, Stonemasons, and Tile and Marble Setter"
+47-3012.00,Helpers--Carpenters,Helpers--Carpenter
+47-3013.00,Helpers--Electricians,Helpers--Electrician
+47-3014.00,"Helpers--Painters, Paperhangers, Plasterers, and Stucco Masons","Helpers--Painters, Paperhangers, Plasterers, and Stucco Mason"
+47-3014.00,"Helpers--Painters, Paperhangers, Plasterers, and Stucco Masons","Helpers--Painters, Paperhangers, Plasterers, & Stucco Masons"
+47-3015.00,"Helpers--Pipelayers, Plumbers, Pipefitters, and Steamfitters","Helpers--Pipelayers, Plumbers, Pipefitters, and Steamfitter"
+47-3015.00,"Helpers--Pipelayers, Plumbers, Pipefitters, and Steamfitters","Helpers--Pipelayers, Plumbers, Pipefitters, & Steamfitters"
+47-3016.00,Helpers--Roofers,Helpers--Roofer
+47-4011.00,Construction and Building Inspectors,Construction and Building Inspector
+47-4011.00,Construction and Building Inspectors,Construction & Building Inspectors
+47-4011.01,Energy Auditors,Energy Auditor
+47-4021.00,Elevator and Escalator Installers and Repairers,Elevator and Escalator Installers and Repairer
+47-4021.00,Elevator and Escalator Installers and Repairers,Elevator & Escalator Installers & Repairers
+47-4031.00,Fence Erectors,Fence Erector
+47-4041.00,Hazardous Materials Removal Workers,Hazardous Materials Removal Worker
+47-4051.00,Highway Maintenance Workers,Highway Maintenance Worker
+47-4061.00,Rail-Track Laying and Maintenance Equipment Operators,Rail-Track Laying & Maintenance Equipment Operators
+47-4061.00,Rail-Track Laying and Maintenance Equipment Operators,Rail-Track Laying and Maintenance Equipment Operator
+47-4071.00,Septic Tank Servicers and Sewer Pipe Cleaners,Septic Tank Servicers & Sewer Pipe Cleaners
+47-4071.00,Septic Tank Servicers and Sewer Pipe Cleaners,Septic Tank Servicers and Sewer Pipe Cleaner
+47-4091.00,Segmental Pavers,Segmental Paver
+47-4099.00,"Construction and Related Workers, All Other","Construction & Related Workers, All Other"
+47-4099.03,Weatherization Installers and Technicians,Weatherization Installers and
+47-4099.03,Weatherization Installers and Technicians,Weatherization Installers & Technicians
+47-4099.03,Weatherization Installers and Technicians,Weatherization Installers and Technician
+47-5011.00,"Derrick Operators, Oil and Gas","Derrick Operators, Oil and Ga"
+47-5011.00,"Derrick Operators, Oil and Gas","Derrick Operators, Oil & Gas"
+47-5012.00,"Rotary Drill Operators, Oil and Gas","Rotary Drill Operators, Oil and Ga"
+47-5012.00,"Rotary Drill Operators, Oil and Gas","Rotary Drill Operators, Oil & Gas"
+47-5013.00,"Service Unit Operators, Oil and Gas","Service Unit Operators, Oil and Ga"
+47-5013.00,"Service Unit Operators, Oil and Gas","Service Unit Operators, Oil & Gas"
+47-5022.00,"Excavating and Loading Machine and Dragline Operators, Surface Mining","Excavating & Loading Machine & Dragline Operators, Surface Mining"
+47-5023.00,"Earth Drillers, Except Oil and Gas","Earth Drillers, Except Oil and Ga"
+47-5023.00,"Earth Drillers, Except Oil and Gas","Earth Drillers, Except Oil & Gas"
+47-5032.00,"Explosives Workers, Ordnance Handling Experts, and Blasters","Explosives Workers, Ordnance Handling Experts, and Blaster"
+47-5032.00,"Explosives Workers, Ordnance Handling Experts, and Blasters","Explosives Workers, Ordnance Handling Experts, & Blasters"
+47-5041.00,Continuous Mining Machine Operators,Continuous Mining Machine Operator
+47-5044.00,"Loading and Moving Machine Operators, Underground Mining","Loading & Moving Machine Operators, Underground Mining"
+47-5071.00,"Roustabouts, Oil and Gas","Roustabouts, Oil and Ga"
+47-5071.00,"Roustabouts, Oil and Gas","Roustabouts, Oil & Gas"
+47-5081.00,Helpers--Extraction Workers,Helpers--Extraction Worker
+49-1011.00,"First-Line Supervisors of Mechanics, Installers, and Repairers","First-Line Supervisors of Mechanics, Installers, & Repairers"
+49-1011.00,"First-Line Supervisors of Mechanics, Installers, and Repairers","First-Line Supervisors of Mechanics, Installers, and Repairer"
+49-2011.00,"Computer, Automated Teller, and Office Machine Repairers","Computer, Automated Teller, & Office Machine Repairers"
+49-2011.00,"Computer, Automated Teller, and Office Machine Repairers","Computer, Automated Teller, and Office Machine Repairer"
+49-2021.00,"Radio, Cellular, and Tower Equipment Installers and Repairers","Radio, Cellular, and Tower Equipment Installers and Repairer"
+49-2021.00,"Radio, Cellular, and Tower Equipment Installers and Repairers","Radio, Cellular, & Tower Equipment Installers & Repairers"
+49-2022.00,"Telecommunications Equipment Installers and Repairers, Except Line Installers","Telecommunications Equipment Installers & Repairers, Except Line Installers"
+49-2022.00,"Telecommunications Equipment Installers and Repairers, Except Line Installers","Telecommunications Equipment Installers and Repairers, Except Line Installer"
+49-2091.00,Avionics Technicians,Avionics Technician
+49-2091.00,Avionics Technicians,Avionics
+49-2092.00,"Electric Motor, Power Tool, and Related Repairers","Electric Motor, Power Tool, & Related Repairers"
+49-2092.00,"Electric Motor, Power Tool, and Related Repairers","Electric Motor, Power Tool, and Related Repairer"
+49-2093.00,"Electrical and Electronics Installers and Repairers, Transportation Equipment","Electrical & Electronics Installers & Repairers, Transportation Equipment"
+49-2094.00,"Electrical and Electronics Repairers, Commercial and Industrial Equipment","Electrical & Electronics Repairers, Commercial & Industrial Equipment"
+49-2095.00,"Electrical and Electronics Repairers, Powerhouse, Substation, and Relay","Electrical & Electronics Repairers, Powerhouse, Substation, & Relay"
+49-2096.00,"Electronic Equipment Installers and Repairers, Motor Vehicles","Electronic Equipment Installers & Repairers, Motor Vehicles"
+49-2096.00,"Electronic Equipment Installers and Repairers, Motor Vehicles","Electronic Equipment Installers and Repairers, Motor Vehicle"
+49-2097.00,Audiovisual Equipment Installers and Repairers,Audiovisual Equipment Installers & Repairers
+49-2097.00,Audiovisual Equipment Installers and Repairers,Audiovisual Equipment Installers and Repairer
+49-2098.00,Security and Fire Alarm Systems Installers,Security & Fire Alarm Systems Installers
+49-2098.00,Security and Fire Alarm Systems Installers,Security and Fire Alarm Systems Installer
+49-3011.00,Aircraft Mechanics and Service Technicians,Aircraft Mechanics and Service
+49-3011.00,Aircraft Mechanics and Service Technicians,Aircraft Mechanics and Service Technician
+49-3011.00,Aircraft Mechanics and Service Technicians,Aircraft Mechanics & Service Technicians
+49-3021.00,Automotive Body and Related Repairers,Automotive Body and Related Repairer
+49-3021.00,Automotive Body and Related Repairers,Automotive Body & Related Repairers
+49-3022.00,Automotive Glass Installers and Repairers,Automotive Glass Installers and Repairer
+49-3022.00,Automotive Glass Installers and Repairers,Automotive Glass Installers & Repairers
+49-3023.00,Automotive Service Technicians and Mechanics,Automotive Service Technicians & Mechanics
+49-3023.00,Automotive Service Technicians and Mechanics,Automotive Service Technicians and Mechanic
+49-3031.00,Bus and Truck Mechanics and Diesel Engine Specialists,Bus and Truck Mechanics and Diesel Engine Specialist
+49-3031.00,Bus and Truck Mechanics and Diesel Engine Specialists,Bus and Truck Mechanics and Diesel Engine
+49-3031.00,Bus and Truck Mechanics and Diesel Engine Specialists,Bus & Truck Mechanics & Diesel Engine Specialists
+49-3041.00,Farm Equipment Mechanics and Service Technicians,Farm Equipment Mechanics & Service Technicians
+49-3041.00,Farm Equipment Mechanics and Service Technicians,Farm Equipment Mechanics and Service Technician
+49-3041.00,Farm Equipment Mechanics and Service Technicians,Farm Equipment Mechanics and Service
+49-3042.00,"Mobile Heavy Equipment Mechanics, Except Engines","Mobile Heavy Equipment Mechanics, Except Engine"
+49-3043.00,Rail Car Repairers,Rail Car Repairer
+49-3051.00,Motorboat Mechanics and Service Technicians,Motorboat Mechanics and Service Technician
+49-3051.00,Motorboat Mechanics and Service Technicians,Motorboat Mechanics and Service
+49-3051.00,Motorboat Mechanics and Service Technicians,Motorboat Mechanics & Service Technicians
+49-3052.00,Motorcycle Mechanics,Motorcycle Mechanic
+49-3053.00,Outdoor Power Equipment and Other Small Engine Mechanics,Outdoor Power Equipment and Other Small Engine Mechanic
+49-3053.00,Outdoor Power Equipment and Other Small Engine Mechanics,Outdoor Power Equipment & Other Small Engine Mechanics
+49-3091.00,Bicycle Repairers,Bicycle Repairer
+49-3092.00,Recreational Vehicle Service Technicians,Recreational Vehicle Service Technician
+49-3092.00,Recreational Vehicle Service Technicians,Recreational Vehicle Service
+49-3093.00,Tire Repairers and Changers,Tire Repairers and Changer
+49-3093.00,Tire Repairers and Changers,Tire Repairers & Changers
+49-9011.00,Mechanical Door Repairers,Mechanical Door Repairer
+49-9012.00,"Control and Valve Installers and Repairers, Except Mechanical Door","Control & Valve Installers & Repairers, Except Mechanical Door"
+49-9021.00,"Heating, Air Conditioning, and Refrigeration Mechanics and Installers","Heating, Air Conditioning, & Refrigeration Mechanics & Installers"
+49-9021.00,"Heating, Air Conditioning, and Refrigeration Mechanics and Installers","Heating, Air Conditioning, and Refrigeration Mechanics and Installer"
+49-9031.00,Home Appliance Repairers,Home Appliance Repairer
+49-9041.00,Industrial Machinery Mechanics,Industrial Machinery Mechanic
+49-9044.00,Millwrights,Millwright
+49-9045.00,"Refractory Materials Repairers, Except Brickmasons","Refractory Materials Repairers, Except Brickmason"
+49-9051.00,Electrical Power-Line Installers and Repairers,Electrical Power-Line Installers and Repairer
+49-9051.00,Electrical Power-Line Installers and Repairers,Electrical Power-Line Installers & Repairers
+49-9052.00,Telecommunications Line Installers and Repairers,Telecommunications Line Installers and Repairer
+49-9052.00,Telecommunications Line Installers and Repairers,Telecommunications Line Installers & Repairers
+49-9061.00,Camera and Photographic Equipment Repairers,Camera and Photographic Equipment Repairer
+49-9061.00,Camera and Photographic Equipment Repairers,Camera & Photographic Equipment Repairers
+49-9062.00,Medical Equipment Repairers,Medical Equipment Repairer
+49-9063.00,Musical Instrument Repairers and Tuners,Musical Instrument Repairers and Tuner
+49-9063.00,Musical Instrument Repairers and Tuners,Musical Instrument Repairers & Tuners
+49-9064.00,Watch and Clock Repairers,Watch and Clock Repairer
+49-9064.00,Watch and Clock Repairers,Watch & Clock Repairers
+49-9069.00,"Precision Instrument and Equipment Repairers, All Other","Precision Instrument & Equipment Repairers, All Other"
+49-9071.00,"Maintenance and Repair Workers, General","Maintenance & Repair Workers, General"
+49-9081.00,Wind Turbine Service Technicians,Wind Turbine Service
+49-9081.00,Wind Turbine Service Technicians,Wind Turbine Service Technician
+49-9091.00,"Coin, Vending, and Amusement Machine Servicers and Repairers","Coin, Vending, and Amusement Machine Servicers and Repairer"
+49-9091.00,"Coin, Vending, and Amusement Machine Servicers and Repairers","Coin, Vending, & Amusement Machine Servicers & Repairers"
+49-9092.00,Commercial Divers,Commercial Diver
+49-9094.00,Locksmiths and Safe Repairers,Locksmiths and Safe Repairer
+49-9094.00,Locksmiths and Safe Repairers,Locksmiths & Safe Repairers
+49-9095.00,Manufactured Building and Mobile Home Installers,Manufactured Building and Mobile Home Installer
+49-9095.00,Manufactured Building and Mobile Home Installers,Manufactured Building & Mobile Home Installers
+49-9096.00,Riggers,Rigger
+49-9097.00,Signal and Track Switch Repairers,Signal & Track Switch Repairers
+49-9097.00,Signal and Track Switch Repairers,Signal and Track Switch Repairer
+49-9098.00,"Helpers--Installation, Maintenance, and Repair Workers","Helpers--Installation, Maintenance, & Repair Workers"
+49-9098.00,"Helpers--Installation, Maintenance, and Repair Workers","Helpers--Installation, Maintenance, and Repair Worker"
+49-9099.00,"Installation, Maintenance, and Repair Workers, All Other","Installation, Maintenance, & Repair Workers, All Other"
+49-9099.01,Geothermal Technicians,Geothermal Technician
+49-9099.01,Geothermal Technicians,Geothermal
+51-1011.00,First-Line Supervisors of Production and Operating Workers,First-Line Supervisors of Production and Operating Worker
+51-1011.00,First-Line Supervisors of Production and Operating Workers,First-Line Supervisors of Production & Operating Workers
+51-2011.00,"Aircraft Structure, Surfaces, Rigging, and Systems Assemblers","Aircraft Structure, Surfaces, Rigging, and Systems Assembler"
+51-2011.00,"Aircraft Structure, Surfaces, Rigging, and Systems Assemblers","Aircraft Structure, Surfaces, Rigging, & Systems Assemblers"
+51-2021.00,"Coil Winders, Tapers, and Finishers","Coil Winders, Tapers, & Finishers"
+51-2021.00,"Coil Winders, Tapers, and Finishers","Coil Winders, Tapers, and Finisher"
+51-2022.00,Electrical and Electronic Equipment Assemblers,Electrical & Electronic Equipment Assemblers
+51-2022.00,Electrical and Electronic Equipment Assemblers,Electrical and Electronic Equipment Assembler
+51-2023.00,Electromechanical Equipment Assemblers,Electromechanical Equipment Assembler
+51-2031.00,Engine and Other Machine Assemblers,Engine and Other Machine Assembler
+51-2031.00,Engine and Other Machine Assemblers,Engine & Other Machine Assemblers
+51-2041.00,Structural Metal Fabricators and Fitters,Structural Metal Fabricators and Fitter
+51-2041.00,Structural Metal Fabricators and Fitters,Structural Metal Fabricators & Fitters
+51-2051.00,Fiberglass Laminators and Fabricators,Fiberglass Laminators & Fabricators
+51-2051.00,Fiberglass Laminators and Fabricators,Fiberglass Laminators and Fabricator
+51-2061.00,Timing Device Assemblers and Adjusters,Timing Device Assemblers and Adjuster
+51-2061.00,Timing Device Assemblers and Adjusters,Timing Device Assemblers & Adjusters
+51-2092.00,Team Assemblers,Team Assembler
+51-2099.00,"Assemblers and Fabricators, All Other","Assemblers & Fabricators, All Other"
+51-3011.00,Bakers,Baker
+51-3021.00,Butchers and Meat Cutters,Butchers and Meat Cutter
+51-3021.00,Butchers and Meat Cutters,Butchers & Meat Cutters
+51-3022.00,"Meat, Poultry, and Fish Cutters and Trimmers","Meat, Poultry, & Fish Cutters & Trimmers"
+51-3022.00,"Meat, Poultry, and Fish Cutters and Trimmers","Meat, Poultry, and Fish Cutters and Trimmer"
+51-3023.00,Slaughterers and Meat Packers,Slaughterers and Meat Packer
+51-3023.00,Slaughterers and Meat Packers,Slaughterers & Meat Packers
+51-3091.00,"Food and Tobacco Roasting, Baking, and Drying Machine Operators and Tenders","Food & Tobacco Roasting, Baking, & Drying Machine Operators & Tenders"
+51-3091.00,"Food and Tobacco Roasting, Baking, and Drying Machine Operators and Tenders","Food and Tobacco Roasting, Baking, and Drying Machine Operators and Tender"
+51-3092.00,Food Batchmakers,Food Batchmaker
+51-3093.00,Food Cooking Machine Operators and Tenders,Food Cooking Machine Operators and Tender
+51-3093.00,Food Cooking Machine Operators and Tenders,Food Cooking Machine Operators & Tenders
+51-4021.00,"Extruding and Drawing Machine Setters, Operators, and Tenders, Metal and Plastic","Extruding & Drawing Machine Setters, Operators, & Tenders, Metal & Plastic"
+51-4022.00,"Forging Machine Setters, Operators, and Tenders, Metal and Plastic","Forging Machine Setters, Operators, & Tenders, Metal & Plastic"
+51-4023.00,"Rolling Machine Setters, Operators, and Tenders, Metal and Plastic","Rolling Machine Setters, Operators, & Tenders, Metal & Plastic"
+51-4031.00,"Cutting, Punching, and Press Machine Setters, Operators, and Tenders, Metal and Plastic","Cutting, Punching, & Press Machine Setters, Operators, & Tenders, Metal & Plastic"
+51-4032.00,"Drilling and Boring Machine Tool Setters, Operators, and Tenders, Metal and Plastic","Drilling & Boring Machine Tool Setters, Operators, & Tenders, Metal & Plastic"
+51-4033.00,"Grinding, Lapping, Polishing, and Buffing Machine Tool Setters, Operators, and Tenders, Metal and Plastic","Grinding, Lapping, Polishing, & Buffing Machine Tool Setters, Operators, & Tenders, Metal & Plastic"
+51-4034.00,"Lathe and Turning Machine Tool Setters, Operators, and Tenders, Metal and Plastic","Lathe & Turning Machine Tool Setters, Operators, & Tenders, Metal & Plastic"
+51-4035.00,"Milling and Planing Machine Setters, Operators, and Tenders, Metal and Plastic","Milling & Planing Machine Setters, Operators, & Tenders, Metal & Plastic"
+51-4041.00,Machinists,Machinist
+51-4051.00,Metal-Refining Furnace Operators and Tenders,Metal-Refining Furnace Operators and Tender
+51-4051.00,Metal-Refining Furnace Operators and Tenders,Metal-Refining Furnace Operators & Tenders
+51-4052.00,"Pourers and Casters, Metal","Pourers & Casters, Metal"
+51-4061.00,"Model Makers, Metal and Plastic","Model Makers, Metal & Plastic"
+51-4062.00,"Patternmakers, Metal and Plastic","Patternmakers, Metal & Plastic"
+51-4071.00,Foundry Mold and Coremakers,Foundry Mold and Coremaker
+51-4071.00,Foundry Mold and Coremakers,Foundry Mold & Coremakers
+51-4072.00,"Molding, Coremaking, and Casting Machine Setters, Operators, and Tenders, Metal and Plastic","Molding, Coremaking, & Casting Machine Setters, Operators, & Tenders, Metal & Plastic"
+51-4081.00,"Multiple Machine Tool Setters, Operators, and Tenders, Metal and Plastic","Multiple Machine Tool Setters, Operators, & Tenders, Metal & Plastic"
+51-4111.00,Tool and Die Makers,Tool & Die Makers
+51-4111.00,Tool and Die Makers,Tool and Die Maker
+51-4121.00,"Welders, Cutters, Solderers, and Brazers","Welders, Cutters, Solderers, and Brazer"
+51-4121.00,"Welders, Cutters, Solderers, and Brazers","Welders, Cutters, Solderers, & Brazers"
+51-4122.00,"Welding, Soldering, and Brazing Machine Setters, Operators, and Tenders","Welding, Soldering, & Brazing Machine Setters, Operators, & Tenders"
+51-4122.00,"Welding, Soldering, and Brazing Machine Setters, Operators, and Tenders","Welding, Soldering, and Brazing Machine Setters, Operators, and Tender"
+51-4191.00,"Heat Treating Equipment Setters, Operators, and Tenders, Metal and Plastic","Heat Treating Equipment Setters, Operators, & Tenders, Metal & Plastic"
+51-4192.00,"Layout Workers, Metal and Plastic","Layout Workers, Metal & Plastic"
+51-4193.00,"Plating Machine Setters, Operators, and Tenders, Metal and Plastic","Plating Machine Setters, Operators, & Tenders, Metal & Plastic"
+51-4194.00,"Tool Grinders, Filers, and Sharpeners","Tool Grinders, Filers, & Sharpeners"
+51-4194.00,"Tool Grinders, Filers, and Sharpeners","Tool Grinders, Filers, and Sharpener"
+51-4199.00,"Metal Workers and Plastic Workers, All Other","Metal Workers & Plastic Workers, All Other"
+51-5111.00,Prepress Technicians and Workers,Prepress Technicians & Workers
+51-5111.00,Prepress Technicians and Workers,Prepress Technicians and Worker
+51-5112.00,Printing Press Operators,Printing Press Operator
+51-5113.00,Print Binding and Finishing Workers,Print Binding & Finishing Workers
+51-5113.00,Print Binding and Finishing Workers,Print Binding and Finishing Worker
+51-6011.00,Laundry and Dry-Cleaning Workers,Laundry and Dry-Cleaning Worker
+51-6011.00,Laundry and Dry-Cleaning Workers,Laundry & Dry-Cleaning Workers
+51-6021.00,"Pressers, Textile, Garment, and Related Materials","Pressers, Textile, Garment, and Related Material"
+51-6021.00,"Pressers, Textile, Garment, and Related Materials","Pressers, Textile, Garment, & Related Materials"
+51-6031.00,Sewing Machine Operators,Sewing Machine Operator
+51-6041.00,Shoe and Leather Workers and Repairers,Shoe & Leather Workers & Repairers
+51-6041.00,Shoe and Leather Workers and Repairers,Shoe and Leather Workers and Repairer
+51-6042.00,Shoe Machine Operators and Tenders,Shoe Machine Operators & Tenders
+51-6042.00,Shoe Machine Operators and Tenders,Shoe Machine Operators and Tender
+51-6052.00,"Tailors, Dressmakers, and Custom Sewers","Tailors, Dressmakers, and Custom Sewer"
+51-6052.00,"Tailors, Dressmakers, and Custom Sewers","Tailors, Dressmakers, & Custom Sewers"
+51-6061.00,Textile Bleaching and Dyeing Machine Operators and Tenders,Textile Bleaching and Dyeing Machine Operators and Tender
+51-6061.00,Textile Bleaching and Dyeing Machine Operators and Tenders,Textile Bleaching & Dyeing Machine Operators & Tenders
+51-6062.00,"Textile Cutting Machine Setters, Operators, and Tenders","Textile Cutting Machine Setters, Operators, & Tenders"
+51-6062.00,"Textile Cutting Machine Setters, Operators, and Tenders","Textile Cutting Machine Setters, Operators, and Tender"
+51-6063.00,"Textile Knitting and Weaving Machine Setters, Operators, and Tenders","Textile Knitting & Weaving Machine Setters, Operators, & Tenders"
+51-6063.00,"Textile Knitting and Weaving Machine Setters, Operators, and Tenders","Textile Knitting and Weaving Machine Setters, Operators, and Tender"
+51-6064.00,"Textile Winding, Twisting, and Drawing Out Machine Setters, Operators, and Tenders","Textile Winding, Twisting, & Drawing Out Machine Setters, Operators, & Tenders"
+51-6064.00,"Textile Winding, Twisting, and Drawing Out Machine Setters, Operators, and Tenders","Textile Winding, Twisting, and Drawing Out Machine Setters, Operators, and Tender"
+51-6091.00,"Extruding and Forming Machine Setters, Operators, and Tenders, Synthetic and Glass Fibers","Extruding and Forming Machine Setters, Operators, and Tenders, Synthetic and Glass Fiber"
+51-6091.00,"Extruding and Forming Machine Setters, Operators, and Tenders, Synthetic and Glass Fibers","Extruding & Forming Machine Setters, Operators, & Tenders, Synthetic & Glass Fibers"
+51-6092.00,Fabric and Apparel Patternmakers,Fabric & Apparel Patternmakers
+51-6092.00,Fabric and Apparel Patternmakers,Fabric and Apparel Patternmaker
+51-6093.00,Upholsterers,Upholsterer
+51-6099.00,"Textile, Apparel, and Furnishings Workers, All Other","Textile, Apparel, & Furnishings Workers, All Other"
+51-7011.00,Cabinetmakers and Bench Carpenters,Cabinetmakers & Bench Carpenters
+51-7011.00,Cabinetmakers and Bench Carpenters,Cabinetmakers and Bench Carpenter
+51-7021.00,Furniture Finishers,Furniture Finisher
+51-7041.00,"Sawing Machine Setters, Operators, and Tenders, Wood","Sawing Machine Setters, Operators, & Tenders, Wood"
+51-7042.00,"Woodworking Machine Setters, Operators, and Tenders, Except Sawing","Woodworking Machine Setters, Operators, & Tenders, Except Sawing"
+51-8011.00,Nuclear Power Reactor Operators,Nuclear Power Reactor Operator
+51-8012.00,Power Distributors and Dispatchers,Power Distributors and Dispatcher
+51-8012.00,Power Distributors and Dispatchers,Power Distributors & Dispatchers
+51-8013.00,Power Plant Operators,Power Plant Operator
+51-8013.03,Biomass Plant Technicians,Biomass Plant Technician
+51-8013.03,Biomass Plant Technicians,Biomass Plant
+51-8013.04,Hydroelectric Plant Technicians,Hydroelectric Plant Technician
+51-8013.04,Hydroelectric Plant Technicians,Hydroelectric Plant
+51-8021.00,Stationary Engineers and Boiler Operators,Stationary Engineers and Boiler Operator
+51-8021.00,Stationary Engineers and Boiler Operators,Stationary Engineers & Boiler Operators
+51-8031.00,Water and Wastewater Treatment Plant and System Operators,Water and Wastewater Treatment Plant and System Operator
+51-8031.00,Water and Wastewater Treatment Plant and System Operators,Water & Wastewater Treatment Plant & System Operators
+51-8091.00,Chemical Plant and System Operators,Chemical Plant and System Operator
+51-8091.00,Chemical Plant and System Operators,Chemical Plant & System Operators
+51-8092.00,Gas Plant Operators,Gas Plant Operator
+51-8093.00,"Petroleum Pump System Operators, Refinery Operators, and Gaugers","Petroleum Pump System Operators, Refinery Operators, & Gaugers"
+51-8093.00,"Petroleum Pump System Operators, Refinery Operators, and Gaugers","Petroleum Pump System Operators, Refinery Operators, and Gauger"
+51-8099.00,"Plant and System Operators, All Other","Plant & System Operators, All Other"
+51-8099.01,Biofuels Processing Technicians,Biofuels Processing Technician
+51-8099.01,Biofuels Processing Technicians,Biofuels Processing
+51-9011.00,Chemical Equipment Operators and Tenders,Chemical Equipment Operators & Tenders
+51-9011.00,Chemical Equipment Operators and Tenders,Chemical Equipment Operators and Tender
+51-9012.00,"Separating, Filtering, Clarifying, Precipitating, and Still Machine Setters, Operators, and Tenders","Separating, Filtering, Clarifying, Precipitating, and Still Machine Setters, Operators, and Tender"
+51-9012.00,"Separating, Filtering, Clarifying, Precipitating, and Still Machine Setters, Operators, and Tenders","Separating, Filtering, Clarifying, Precipitating, & Still Machine Setters, Operators, & Tenders"
+51-9021.00,"Crushing, Grinding, and Polishing Machine Setters, Operators, and Tenders","Crushing, Grinding, and Polishing Machine Setters, Operators, and Tender"
+51-9021.00,"Crushing, Grinding, and Polishing Machine Setters, Operators, and Tenders","Crushing, Grinding, & Polishing Machine Setters, Operators, & Tenders"
+51-9022.00,"Grinding and Polishing Workers, Hand","Grinding & Polishing Workers, Hand"
+51-9023.00,"Mixing and Blending Machine Setters, Operators, and Tenders","Mixing and Blending Machine Setters, Operators, and Tender"
+51-9023.00,"Mixing and Blending Machine Setters, Operators, and Tenders","Mixing & Blending Machine Setters, Operators, & Tenders"
+51-9031.00,"Cutters and Trimmers, Hand","Cutters & Trimmers, Hand"
+51-9032.00,"Cutting and Slicing Machine Setters, Operators, and Tenders","Cutting and Slicing Machine Setters, Operators, and Tender"
+51-9032.00,"Cutting and Slicing Machine Setters, Operators, and Tenders","Cutting & Slicing Machine Setters, Operators, & Tenders"
+51-9041.00,"Extruding, Forming, Pressing, and Compacting Machine Setters, Operators, and Tenders","Extruding, Forming, Pressing, and Compacting Machine Setters, Operators, and Tender"
+51-9041.00,"Extruding, Forming, Pressing, and Compacting Machine Setters, Operators, and Tenders","Extruding, Forming, Pressing, & Compacting Machine Setters, Operators, & Tenders"
+51-9051.00,"Furnace, Kiln, Oven, Drier, and Kettle Operators and Tenders","Furnace, Kiln, Oven, Drier, & Kettle Operators & Tenders"
+51-9051.00,"Furnace, Kiln, Oven, Drier, and Kettle Operators and Tenders","Furnace, Kiln, Oven, Drier, and Kettle Operators and Tender"
+51-9061.00,"Inspectors, Testers, Sorters, Samplers, and Weighers","Inspectors, Testers, Sorters, Samplers, & Weighers"
+51-9061.00,"Inspectors, Testers, Sorters, Samplers, and Weighers","Inspectors, Testers, Sorters, Samplers, and Weigher"
+51-9071.00,Jewelers and Precious Stone and Metal Workers,Jewelers and Precious Stone and Metal Worker
+51-9071.00,Jewelers and Precious Stone and Metal Workers,Jewelers & Precious Stone & Metal Workers
+51-9071.06,Gem and Diamond Workers,Gem & Diamond Workers
+51-9071.06,Gem and Diamond Workers,Gem and Diamond Worker
+51-9081.00,Dental Laboratory Technicians,Dental Laboratory Technician
+51-9081.00,Dental Laboratory Technicians,Dental Laboratory
+51-9082.00,Medical Appliance Technicians,Medical Appliance
+51-9082.00,Medical Appliance Technicians,Medical Appliance Technician
+51-9083.00,Ophthalmic Laboratory Technicians,Ophthalmic Laboratory Technician
+51-9083.00,Ophthalmic Laboratory Technicians,Ophthalmic Laboratory
+51-9111.00,Packaging and Filling Machine Operators and Tenders,Packaging & Filling Machine Operators & Tenders
+51-9111.00,Packaging and Filling Machine Operators and Tenders,Packaging and Filling Machine Operators and Tender
+51-9123.00,"Painting, Coating, and Decorating Workers","Painting, Coating, and Decorating Worker"
+51-9123.00,"Painting, Coating, and Decorating Workers","Painting, Coating, & Decorating Workers"
+51-9124.00,"Coating, Painting, and Spraying Machine Setters, Operators, and Tenders","Coating, Painting, and Spraying Machine Setters, Operators, and Tender"
+51-9124.00,"Coating, Painting, and Spraying Machine Setters, Operators, and Tenders","Coating, Painting, & Spraying Machine Setters, Operators, & Tenders"
+51-9141.00,Semiconductor Processing Technicians,Semiconductor Processing Technician
+51-9141.00,Semiconductor Processing Technicians,Semiconductor Processing
+51-9151.00,Photographic Process Workers and Processing Machine Operators,Photographic Process Workers and Processing Machine Operator
+51-9151.00,Photographic Process Workers and Processing Machine Operators,Photographic Process Workers & Processing Machine Operators
+51-9161.00,Computer Numerically Controlled Tool Operators,Computer Numerically Controlled Tool Operator
+51-9162.00,Computer Numerically Controlled Tool Programmers,Computer Numerically Controlled Tool Programmer
+51-9191.00,Adhesive Bonding Machine Operators and Tenders,Adhesive Bonding Machine Operators and Tender
+51-9191.00,Adhesive Bonding Machine Operators and Tenders,Adhesive Bonding Machine Operators & Tenders
+51-9192.00,"Cleaning, Washing, and Metal Pickling Equipment Operators and Tenders","Cleaning, Washing, and Metal Pickling Equipment Operators and Tender"
+51-9192.00,"Cleaning, Washing, and Metal Pickling Equipment Operators and Tenders","Cleaning, Washing, & Metal Pickling Equipment Operators & Tenders"
+51-9193.00,Cooling and Freezing Equipment Operators and Tenders,Cooling & Freezing Equipment Operators & Tenders
+51-9193.00,Cooling and Freezing Equipment Operators and Tenders,Cooling and Freezing Equipment Operators and Tender
+51-9194.00,Etchers and Engravers,Etchers and Engraver
+51-9194.00,Etchers and Engravers,Etchers & Engravers
+51-9195.00,"Molders, Shapers, and Casters, Except Metal and Plastic","Molders, Shapers, & Casters, Except Metal & Plastic"
+51-9195.03,"Stone Cutters and Carvers, Manufacturing","Stone Cutters & Carvers, Manufacturing"
+51-9195.04,"Glass Blowers, Molders, Benders, and Finishers","Glass Blowers, Molders, Benders, and Finisher"
+51-9195.04,"Glass Blowers, Molders, Benders, and Finishers","Glass Blowers, Molders, Benders, & Finishers"
+51-9196.00,"Paper Goods Machine Setters, Operators, and Tenders","Paper Goods Machine Setters, Operators, and Tender"
+51-9196.00,"Paper Goods Machine Setters, Operators, and Tenders","Paper Goods Machine Setters, Operators, & Tenders"
+51-9197.00,Tire Builders,Tire Builder
+51-9198.00,Helpers--Production Workers,Helpers--Production Worker
+53-1041.00,Aircraft Cargo Handling Supervisors,Aircraft Cargo Handling Supervisor
+53-1042.00,"First-Line Supervisors of Helpers, Laborers, and Material Movers, Hand","First-Line Supervisors of Helpers, Laborers, & Material Movers, Hand"
+53-1042.01,Recycling Coordinators,Recycling Coordinator
+53-1043.00,First-Line Supervisors of Material-Moving Machine and Vehicle Operators,First-Line Supervisors of Material-Moving Machine & Vehicle Operators
+53-1043.00,First-Line Supervisors of Material-Moving Machine and Vehicle Operators,First-Line Supervisors of Material-Moving Machine and Vehicle Operator
+53-1044.00,First-Line Supervisors of Passenger Attendants,First-Line Supervisors of Passenger Attendant
+53-2011.00,"Airline Pilots, Copilots, and Flight Engineers","Airline Pilots, Copilots, & Flight Engineers"
+53-2011.00,"Airline Pilots, Copilots, and Flight Engineers","Airline Pilots, Copilots, and Flight Engineer"
+53-2012.00,Commercial Pilots,Commercial Pilot
+53-2021.00,Air Traffic Controllers,Air Traffic Controller
+53-2022.00,Airfield Operations Specialists,Airfield Operations
+53-2022.00,Airfield Operations Specialists,Airfield Operations Specialist
+53-2031.00,Flight Attendants,Flight Attendant
+53-3011.00,"Ambulance Drivers and Attendants, Except Emergency Medical Technicians","Ambulance Drivers & Attendants, Except Emergency Medical Technicians"
+53-3011.00,"Ambulance Drivers and Attendants, Except Emergency Medical Technicians","Ambulance Drivers and Attendants, Except Emergency Medical Technician"
+53-3011.00,"Ambulance Drivers and Attendants, Except Emergency Medical Technicians","Ambulance Drivers and Attendants, Except Emergency Medical"
+53-3031.00,Driver/Sales Workers,Driver/Sales Worker
+53-3032.00,Heavy and Tractor-Trailer Truck Drivers,Heavy and Tractor-Trailer Truck Driver
+53-3032.00,Heavy and Tractor-Trailer Truck Drivers,Heavy & Tractor-Trailer Truck Drivers
+53-3033.00,Light Truck Drivers,Light Truck Driver
+53-3052.00,"Bus Drivers, Transit and Intercity","Bus Drivers, Transit & Intercity"
+53-3053.00,Shuttle Drivers and Chauffeurs,Shuttle Drivers and Chauffeur
+53-3053.00,Shuttle Drivers and Chauffeurs,Shuttle Drivers & Chauffeurs
+53-3054.00,Taxi Drivers,Taxi Driver
+53-4011.00,Locomotive Engineers,Locomotive Engineer
+53-4013.00,"Rail Yard Engineers, Dinkey Operators, and Hostlers","Rail Yard Engineers, Dinkey Operators, and Hostler"
+53-4013.00,"Rail Yard Engineers, Dinkey Operators, and Hostlers","Rail Yard Engineers, Dinkey Operators, & Hostlers"
+53-4022.00,"Railroad Brake, Signal, and Switch Operators and Locomotive Firers","Railroad Brake, Signal, and Switch Operators and Locomotive Firer"
+53-4022.00,"Railroad Brake, Signal, and Switch Operators and Locomotive Firers","Railroad Brake, Signal, & Switch Operators & Locomotive Firers"
+53-4031.00,Railroad Conductors and Yardmasters,Railroad Conductors & Yardmasters
+53-4031.00,Railroad Conductors and Yardmasters,Railroad Conductors and Yardmaster
+53-4041.00,Subway and Streetcar Operators,Subway & Streetcar Operators
+53-4041.00,Subway and Streetcar Operators,Subway and Streetcar Operator
+53-5011.00,Sailors and Marine Oilers,Sailors & Marine Oilers
+53-5011.00,Sailors and Marine Oilers,Sailors and Marine Oiler
+53-5021.00,"Captains, Mates, and Pilots of Water Vessels","Captains, Mates, & Pilots of Water Vessels"
+53-5021.00,"Captains, Mates, and Pilots of Water Vessels","Captains, Mates, and Pilots of Water Vessel"
+53-5022.00,Motorboat Operators,Motorboat Operator
+53-5031.00,Ship Engineers,Ship Engineer
+53-6011.00,Bridge and Lock Tenders,Bridge and Lock Tender
+53-6011.00,Bridge and Lock Tenders,Bridge & Lock Tenders
+53-6021.00,Parking Attendants,Parking Attendant
+53-6031.00,Automotive and Watercraft Service Attendants,Automotive and Watercraft Service Attendant
+53-6031.00,Automotive and Watercraft Service Attendants,Automotive & Watercraft Service Attendants
+53-6032.00,Aircraft Service Attendants,Aircraft Service Attendant
+53-6041.00,Traffic Technicians,Traffic Technician
+53-6041.00,Traffic Technicians,Traffic
+53-6051.00,Transportation Inspectors,Transportation Inspector
+53-6051.01,Aviation Inspectors,Aviation Inspector
+53-6051.07,"Transportation Vehicle, Equipment and Systems Inspectors, Except Aviation","Transportation Vehicle, Equipment & Systems Inspectors, Except Aviation"
+53-6061.00,Passenger Attendants,Passenger Attendant
+53-7011.00,Conveyor Operators and Tenders,Conveyor Operators & Tenders
+53-7011.00,Conveyor Operators and Tenders,Conveyor Operators and Tender
+53-7021.00,Crane and Tower Operators,Crane and Tower Operator
+53-7021.00,Crane and Tower Operators,Crane & Tower Operators
+53-7031.00,Dredge Operators,Dredge Operator
+53-7041.00,Hoist and Winch Operators,Hoist and Winch Operator
+53-7041.00,Hoist and Winch Operators,Hoist & Winch Operators
+53-7051.00,Industrial Truck and Tractor Operators,Industrial Truck and Tractor Operator
+53-7051.00,Industrial Truck and Tractor Operators,Industrial Truck & Tractor Operators
+53-7061.00,Cleaners of Vehicles and Equipment,Cleaners of Vehicles & Equipment
+53-7062.00,"Laborers and Freight, Stock, and Material Movers, Hand","Laborers & Freight, Stock, & Material Movers, Hand"
+53-7062.04,Recycling and Reclamation Workers,Recycling & Reclamation Workers
+53-7062.04,Recycling and Reclamation Workers,Recycling and Reclamation Worker
+53-7063.00,Machine Feeders and Offbearers,Machine Feeders & Offbearers
+53-7063.00,Machine Feeders and Offbearers,Machine Feeders and Offbearer
+53-7064.00,"Packers and Packagers, Hand","Packers & Packagers, Hand"
+53-7065.00,Stockers and Order Fillers,Stockers and Order Filler
+53-7065.00,Stockers and Order Fillers,Stockers & Order Fillers
+53-7071.00,Gas Compressor and Gas Pumping Station Operators,Gas Compressor & Gas Pumping Station Operators
+53-7071.00,Gas Compressor and Gas Pumping Station Operators,Gas Compressor and Gas Pumping Station Operator
+53-7072.00,"Pump Operators, Except Wellhead Pumpers","Pump Operators, Except Wellhead Pumper"
+53-7073.00,Wellhead Pumpers,Wellhead Pumper
+53-7081.00,Refuse and Recyclable Material Collectors,Refuse and Recyclable Material Collector
+53-7081.00,Refuse and Recyclable Material Collectors,Refuse & Recyclable Material Collectors
+53-7121.00,"Tank Car, Truck, and Ship Loaders","Tank Car, Truck, & Ship Loaders"
+53-7121.00,"Tank Car, Truck, and Ship Loaders","Tank Car, Truck, and Ship Loader"
+55-1011.00,Air Crew Officers,Air Crew Officer
+55-1011.00,Air Crew Officers,Air Crew
+55-1012.00,Aircraft Launch and Recovery Officers,Aircraft Launch and Recovery Officer
+55-1012.00,Aircraft Launch and Recovery Officers,Aircraft Launch & Recovery Officers
+55-1012.00,Aircraft Launch and Recovery Officers,Aircraft Launch and Recovery
+55-1013.00,Armored Assault Vehicle Officers,Armored Assault Vehicle Officer
+55-1013.00,Armored Assault Vehicle Officers,Armored Assault Vehicle
+55-1014.00,Artillery and Missile Officers,Artillery & Missile Officers
+55-1014.00,Artillery and Missile Officers,Artillery and Missile
+55-1014.00,Artillery and Missile Officers,Artillery and Missile Officer
+55-1015.00,Command and Control Center Officers,Command and Control Center
+55-1015.00,Command and Control Center Officers,Command & Control Center Officers
+55-1015.00,Command and Control Center Officers,Command and Control Center Officer
+55-1016.00,Infantry Officers,Infantry
+55-1016.00,Infantry Officers,Infantry Officer
+55-1017.00,Special Forces Officers,Special Forces
+55-1017.00,Special Forces Officers,Special Forces Officer
+55-1019.00,"Military Officer Special and Tactical Operations Leaders, All Other","Military Officer Special & Tactical Operations Leaders, All Other"
+55-2011.00,First-Line Supervisors of Air Crew Members,First-Line Supervisors of Air Crew Member
+55-2012.00,First-Line Supervisors of Weapons Specialists/Crew Members,First-Line Supervisors of Weapons Specialists/Crew Member
+55-2013.00,First-Line Supervisors of All Other Tactical Operations Specialists,First-Line Supervisors of All Other Tactical Operations
+55-2013.00,First-Line Supervisors of All Other Tactical Operations Specialists,First-Line Supervisors of All Other Tactical Operations Specialist
+55-3011.00,Air Crew Members,Air Crew Member
+55-3012.00,Aircraft Launch and Recovery Specialists,Aircraft Launch and Recovery Specialist
+55-3012.00,Aircraft Launch and Recovery Specialists,Aircraft Launch & Recovery Specialists
+55-3012.00,Aircraft Launch and Recovery Specialists,Aircraft Launch and Recovery
+55-3013.00,Armored Assault Vehicle Crew Members,Armored Assault Vehicle Crew Member
+55-3014.00,Artillery and Missile Crew Members,Artillery and Missile Crew Member
+55-3014.00,Artillery and Missile Crew Members,Artillery & Missile Crew Members
+55-3015.00,Command and Control Center Specialists,Command & Control Center Specialists
+55-3015.00,Command and Control Center Specialists,Command and Control Center
+55-3015.00,Command and Control Center Specialists,Command and Control Center Specialist
+55-3018.00,Special Forces,Special Force
+55-3019.00,"Military Enlisted Tactical Operations and Air/Weapons Specialists and Crew Members, All Other","Military Enlisted Tactical Operations & Air/Weapons Specialists & Crew Members, All Other"
