@@ -1,0 +1,16 @@
+Deep Learning/model.cat_dog.keras
+Deep Learning/best_vgg16_celeb_small.keras
+Deep Learning/model.celeb_man_female.keras
+TNT/model.celeb_man_female.keras
+TNT/models/tnt_vgg16_fold1.keras
+TNT/models/tnt_vgg16_fold2.keras
+TNT/models/tnt_vgg16_fold3.keras
+TNT/models/tnt_vgg16_fold4.keras
+TNT/models/tnt_vgg16_fold5.keras
+TNT/models/model.tnt_256_vgg16.keras
+TNT/models/model.tnt_128_vgg16_pat2.keras
+AI Job Displacement/db_30_1_excel/
+AI Job Displacement/ONET data/
+AI Job Displacement/transformed data/
+AI Job Displacement/API_Key_OpenAI.txt
+AI Job Displacement/.ipynb_checkpoints/API_Key_OpenAI-checkpoint.txt
