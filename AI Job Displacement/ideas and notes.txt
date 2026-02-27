@@ -3,11 +3,25 @@ Find uniqueness scores for tasks, tools, and tech.
 Then aggregate uniqueness for each
 
 
+
+
 MAYBE use the provided metrics already scaled, ask AI to categorize them within the 7 attributes, take averages, and then use those with the scale I decided.
+
+MAYBE an element could apply to multiple attributes - in that case would it be unfair to count twice? Could I reduce its weight within each attribute - for example, if it is in two, then only count 50% for each?
 
 MAYBE ask AI which metrics should be considered positive or negative.
 
+
+
+
+
+
+
+
 MAYBE ask AI to determine whether tech, tool, or task uniqueness should be weighed differently for different jobs.
+
+
+
 
 
 
