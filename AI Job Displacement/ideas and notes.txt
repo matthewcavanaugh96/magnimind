@@ -4,6 +4,11 @@ Then aggregate uniqueness for each
 
 
 
+First - create pipeline, where I can get some results from limited information, then gradually add. What is the impact of additional information?
+
+
+YASIN RECOMMENDS - Ok to assign an element to multiple groups, fine if this results in being weighed extra
+
 
 MAYBE use the provided metrics already scaled, ask AI to categorize them within the 7 attributes, take averages, and then use those with the scale I decided.
 
