@@ -1,0 +1,184 @@
+column_name,attributes,num_attributes
+Evaluating Information to Determine Compliance with Standards Combined,"[""Routine structure"", ""Cognitive complexity"", ""Decision accountability"", ""Data structure""]",4
+Developing Objectives and Strategies Combined,"[""Cognitive complexity"", ""Social interactions"", ""Creativity""]",3
+Analyzing Data or Information Combined,"[""Cognitive complexity"", ""Data structure""]",2
+Documenting/Recording Information Combined,"[""Cognitive complexity"", ""Data structure""]",2
+"Estimating the Quantifiable Characteristics of Products, Events, or Information Combined","[""Cognitive complexity"", ""Data structure""]",2
+"Exposed to Cramped Work Space, Awkward Positions","[""Routine structure"", ""Physical requirements""]",2
+Frequency of Decision Making,"[""Cognitive complexity"", ""Decision accountability""]",2
+Getting Information Combined,"[""Cognitive complexity"", ""Data structure""]",2
+Information Ordering Combined,"[""Cognitive complexity"", ""Data structure""]",2
+Interpreting the Meaning of Information for Others Combined,"[""Cognitive complexity"", ""Data structure""]",2
+Judgment and Decision Making Combined,"[""Cognitive complexity"", ""Decision accountability""]",2
+Processing Information Combined,"[""Cognitive complexity"", ""Data structure""]",2
+Thinking Creatively Combined,"[""Cognitive complexity"", ""Creativity""]",2
+Active Learning Combined,"[""Cognitive complexity""]",1
+Active Listening Combined,"[""Cognitive complexity""]",1
+Arm-Hand Steadiness Combined,"[""Cognitive complexity""]",1
+Assisting and Caring for Others Combined,"[""Social interactions""]",1
+Auditory Attention Combined,"[""Cognitive complexity""]",1
+Category Flexibility Combined,"[""Cognitive complexity""]",1
+Coaching and Developing Others Combined,"[""Social interactions""]",1
+Communicating with People Outside the Organization Combined,"[""Social interactions""]",1
+"Communicating with Supervisors, Peers, or Subordinates Combined","[""Social interactions""]",1
+Complex Problem Solving Combined,"[""Cognitive complexity""]",1
+Conflict Situations,"[""Social interactions""]",1
+Consequence of Error,"[""Decision accountability""]",1
+Contact With Others,"[""Social interactions""]",1
+Control Precision Combined,"[""Cognitive complexity""]",1
+Controlling Machines and Processes Combined,"[""Routine structure""]",1
+Coordinate or Lead Others in Accomplishing Work Activities,"[""Social interactions""]",1
+Coordinating the Work and Activities of Others Combined,"[""Cognitive complexity""]",1
+Coordination Combined,"[""Physical requirements""]",1
+Critical Thinking Combined,"[""Cognitive complexity""]",1
+Deal With External Customers or the Public in General,"[""Social interactions""]",1
+"Dealing With Unpleasant, Angry, or Discourteous People","[""Cognitive complexity""]",1
+Dealing with Violent or Physically Aggressive People,"[""Cognitive complexity""]",1
+Deductive Reasoning Combined,"[""Cognitive complexity""]",1
+Degree of Automation,"[""Routine structure""]",1
+Depth Perception Combined,"[""Cognitive complexity""]",1
+"Determine Tasks, Priorities and Goals","[""Cognitive complexity""]",1
+Developing and Building Teams Combined,"[""Social interactions""]",1
+"Drafting, Laying Out, and Specifying Technical Devices, Parts, and Equipment Combined","[""Cognitive complexity""]",1
+Dynamic Flexibility Combined,"[""Cognitive complexity""]",1
+Dynamic Strength Combined,"[""Physical requirements""]",1
+E-Mail,"[""Cognitive complexity""]",1
+Equipment Maintenance Combined,"[""Cognitive complexity""]",1
+Equipment Selection Combined,"[""Cognitive complexity""]",1
+Establishing and Maintaining Interpersonal Relationships Combined,"[""Cognitive complexity""]",1
+Explosive Strength Combined,"[""Physical requirements""]",1
+Exposed to Contaminants,"[""Physical requirements""]",1
+Exposed to Disease or Infections,"[""Physical requirements""]",1
+Exposed to Extremely Bright or Inadequate Lighting Conditions,"[""Physical requirements""]",1
+Exposed to Hazardous Conditions,"[""Physical requirements""]",1
+Exposed to Hazardous Equipment,"[""Physical requirements""]",1
+Exposed to High Places,"[""Physical requirements""]",1
+"Exposed to Minor Burns, Cuts, Bites, or Stings","[""Physical requirements""]",1
+Exposed to Radiation,"[""Physical requirements""]",1
+"Exposed to Sounds, Noise Levels that are Distracting or Uncomfortable","[""Physical requirements""]",1
+Exposed to Very Hot or Cold Temperatures,"[""Physical requirements""]",1
+Exposed to Whole Body Vibration,"[""Physical requirements""]",1
+Extent Flexibility Combined,"[""Cognitive complexity""]",1
+Face-to-Face Discussions with Individuals and Within Teams,"[""Social interactions""]",1
+Far Vision Combined,"[""Physical requirements""]",1
+Finger Dexterity Combined,"[""Physical requirements""]",1
+Flexibility of Closure Combined,"[""Cognitive complexity""]",1
+Fluency of Ideas Combined,"[""Creativity""]",1
+Freedom to Make Decisions,"[""Decision accountability""]",1
+Glare Sensitivity Combined,"[""Cognitive complexity""]",1
+Gross Body Coordination Combined,"[""Physical requirements""]",1
+Gross Body Equilibrium Combined,"[""Cognitive complexity""]",1
+"Guiding, Directing, and Motivating Subordinates Combined","[""Social interactions""]",1
+Handling and Moving Objects Combined,"[""Physical requirements""]",1
+Health and Safety of Other Workers,"[""Decision accountability""]",1
+Hearing Sensitivity Combined,"[""Physical requirements""]",1
+"Identifying Objects, Actions, and Events Combined","[""Cognitive complexity""]",1
+Impact of Decisions on Co-workers or Company Results,"[""Decision accountability""]",1
+Importance of Being Exact or Accurate,"[""Decision accountability""]",1
+Importance of Repeating Same Tasks,"[""Routine structure""]",1
+In an Enclosed Vehicle or Operate Enclosed Equipment,"[""Physical requirements""]",1
+In an Open Vehicle or Operating Equipment,"[""Cognitive complexity""]",1
+"Indoors, Environmentally Controlled","[""Cognitive complexity""]",1
+"Indoors, Not Environmentally Controlled","[""Cognitive complexity""]",1
+Inductive Reasoning Combined,"[""Cognitive complexity""]",1
+"Inspecting Equipment, Structures, or Materials Combined","[""Data structure""]",1
+Installation Combined,"[""Cognitive complexity""]",1
+Instructing Combined,"[""Cognitive complexity""]",1
+"Judging the Qualities of Objects, Services, or People Combined","[""Social interactions""]",1
+Learning Strategies Combined,"[""Cognitive complexity""]",1
+Level of Competition,"[""Cognitive complexity""]",1
+Making Decisions and Solving Problems Combined,"[""Decision accountability""]",1
+Management of Financial Resources Combined,"[""Cognitive complexity""]",1
+Management of Material Resources Combined,"[""Cognitive complexity""]",1
+Management of Personnel Resources Combined,"[""Cognitive complexity""]",1
+Manual Dexterity Combined,"[""Physical requirements""]",1
+Mathematical Reasoning Combined,"[""Cognitive complexity""]",1
+Mathematics Combined,"[""Cognitive complexity""]",1
+Memorization Combined,"[""Cognitive complexity""]",1
+Monitoring Combined,"[""Routine structure""]",1
+"Monitoring Processes, Materials, or Surroundings Combined","[""Routine structure""]",1
+Monitoring and Controlling Resources Combined,"[""Routine structure""]",1
+Multilimb Coordination Combined,"[""Physical requirements""]",1
+Near Vision Combined,"[""Physical requirements""]",1
+Negotiation Combined,"[""Social interactions""]",1
+Night Vision Combined,"[""Physical requirements""]",1
+Number Facility Combined,"[""Cognitive complexity""]",1
+"Operating Vehicles, Mechanized Devices, or Equipment Combined","[""Cognitive complexity""]",1
+Operation and Control Combined,"[""Cognitive complexity""]",1
+Operations Analysis Combined,"[""Cognitive complexity""]",1
+Operations Monitoring Combined,"[""Routine structure""]",1
+Oral Comprehension Combined,"[""Cognitive complexity""]",1
+Oral Expression Combined,"[""Cognitive complexity""]",1
+"Organizing, Planning, and Prioritizing Work Combined","[""Cognitive complexity""]",1
+Originality Combined,"[""Creativity""]",1
+"Outdoors, Exposed to All Weather Conditions","[""Physical requirements""]",1
+"Outdoors, Under Cover","[""Physical requirements""]",1
+Pace Determined by Speed of Equipment,"[""Routine structure""]",1
+Perceptual Speed Combined,"[""Cognitive complexity""]",1
+Performing Administrative Activities Combined,"[""Cognitive complexity""]",1
+Performing General Physical Activities Combined,"[""Cognitive complexity""]",1
+Performing for or Working Directly with the Public Combined,"[""Social interactions""]",1
+Peripheral Vision Combined,"[""Physical requirements""]",1
+Persuasion Combined,"[""Social interactions""]",1
+Physical Proximity,"[""Cognitive complexity""]",1
+Problem Sensitivity Combined,"[""Cognitive complexity""]",1
+Programming Combined,"[""Data structure""]",1
+Providing Consultation and Advice to Others Combined,"[""Cognitive complexity""]",1
+Public Speaking,"[""Social interactions""]",1
+Quality Control Analysis Combined,"[""Cognitive complexity""]",1
+Rate Control Combined,"[""Cognitive complexity""]",1
+Reaction Time Combined,"[""Physical requirements""]",1
+Reading Comprehension Combined,"[""Cognitive complexity""]",1
+Repairing Combined,"[""Cognitive complexity""]",1
+Repairing and Maintaining Electronic Equipment Combined,"[""Cognitive complexity""]",1
+Repairing and Maintaining Mechanical Equipment Combined,"[""Cognitive complexity""]",1
+Resolving Conflicts and Negotiating with Others Combined,"[""Social interactions""]",1
+Response Orientation Combined,"[""Cognitive complexity""]",1
+Scheduling Work and Activities Combined,"[""Cognitive complexity""]",1
+Science Combined,"[""Cognitive complexity""]",1
+Selective Attention Combined,"[""Cognitive complexity""]",1
+Selling or Influencing Others Combined,"[""Cognitive complexity""]",1
+Service Orientation Combined,"[""Social interactions""]",1
+Social Perceptiveness Combined,"[""Social interactions""]",1
+Sound Localization Combined,"[""Cognitive complexity""]",1
+Spatial Orientation Combined,"[""Physical requirements""]",1
+Speaking Combined,"[""Cognitive complexity""]",1
+Speech Clarity Combined,"[""Cognitive complexity""]",1
+Speech Recognition Combined,"[""Cognitive complexity""]",1
+Speed of Closure Combined,"[""Cognitive complexity""]",1
+Speed of Limb Movement Combined,"[""Cognitive complexity""]",1
+Spend Time Bending or Twisting Your Body,"[""Physical requirements""]",1
+"Spend Time Climbing Ladders, Scaffolds, or Poles","[""Physical requirements""]",1
+Spend Time Keeping or Regaining Balance,"[""Physical requirements""]",1
+"Spend Time Kneeling, Crouching, Stooping, or Crawling","[""Physical requirements""]",1
+Spend Time Making Repetitive Motions,"[""Routine structure""]",1
+Spend Time Sitting,"[""Physical requirements""]",1
+Spend Time Standing,"[""Physical requirements""]",1
+"Spend Time Using Your Hands to Handle, Control, or Feel Objects, Tools, or Controls","[""Physical requirements""]",1
+Spend Time Walking or Running,"[""Physical requirements""]",1
+Staffing Organizational Units Combined,"[""Cognitive complexity""]",1
+Stamina Combined,"[""Physical requirements""]",1
+Static Strength Combined,"[""Physical requirements""]",1
+Systems Analysis Combined,"[""Cognitive complexity""]",1
+Systems Evaluation Combined,"[""Cognitive complexity""]",1
+Technology Design Combined,"[""Creativity""]",1
+Telephone Conversations,"[""Cognitive complexity""]",1
+Time Management Combined,"[""Cognitive complexity""]",1
+Time Pressure,"[""Routine structure""]",1
+Time Sharing Combined,"[""Cognitive complexity""]",1
+Training and Teaching Others Combined,"[""Social interactions""]",1
+Troubleshooting Combined,"[""Cognitive complexity""]",1
+Trunk Strength Combined,"[""Physical requirements""]",1
+Updating and Using Relevant Knowledge Combined,"[""Cognitive complexity""]",1
+Visual Color Discrimination Combined,"[""Cognitive complexity""]",1
+Visualization Combined,"[""Cognitive complexity""]",1
+"Wear Common Protective or Safety Equipment such as Safety Shoes, Glasses, Gloves, Hearing Protection, Hard Hats, or Life Jackets","[""Physical requirements""]",1
+"Wear Specialized Protective or Safety Equipment such as Breathing Apparatus, Safety Harness, Full Protection Suits, or Radiation Protection","[""Physical requirements""]",1
+Work Outcomes and Results of Other Workers,"[""Cognitive complexity""]",1
+Work With or Contribute to a Work Group or Team,"[""Social interactions""]",1
+Working with Computers Combined,"[""Data structure""]",1
+Wrist-Finger Speed Combined,"[""Cognitive complexity""]",1
+Writing Combined,"[""Creativity""]",1
+Written Comprehension Combined,"[""Cognitive complexity""]",1
+Written Expression Combined,"[""Cognitive complexity""]",1
+Written Letters and Memos,"[""Cognitive complexity""]",1
