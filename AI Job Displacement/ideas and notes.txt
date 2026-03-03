@@ -1,49 +1,24 @@
-NEXT
-Find uniqueness scores for tasks, tools, and tech. 
-Then aggregate uniqueness for each
+'Controversy' is a measure of distance between the largest and smallest scores, i.e. a proxy for disagreement between models.
+
+For each job, users should also be able to see how its elements were classified.
+
+For each model, users should be able to see how it classified the elements.
+
+
+
+
+
+How to incorporate Tech, Tool, Task Uniqueness? Just plug it into the existing scale?
+MAYBE ask AI to determine whether tech, tool, or task uniqueness should be weighed differently for different jobs.
 
 
 
 First - create pipeline, where I can get some results from limited information, then gradually add. What is the impact of additional information?
 
 
-YASIN RECOMMENDS - Ok to assign an element to multiple groups, fine if this results in being weighed extra
+YASIN RECOMMENDS - Try additional runs where I assign an element to multiple groups, fine if this results in being weighed extra
 
 
-MAYBE use the provided metrics already scaled, ask AI to categorize them within the 7 attributes, take averages, and then use those with the scale I decided.
-
-MAYBE an element could apply to multiple attributes - in that case would it be unfair to count twice? Could I reduce its weight within each attribute - for example, if it is in two, then only count 50% for each?
-
-MAYBE ask AI which metrics should be considered positive or negative.
-
-
-
-
-
-
-
-
-MAYBE ask AI to determine whether tech, tool, or task uniqueness should be weighed differently for different jobs.
-
-
-
-
-
-
-
-
-
-FIND ATTRIBUTES
-Is a task repetitive?
-Does it require cognitive effort?
-Physical requirements?
-Uniqueness of tech used?
-
-Give each attribute a score - for example scale 1 to 5
-How to weigh each attribute - is technology more important than
-
-Use a AI API - Gemini, GPT
-Give it the attributes and give it scores based on those
 
 User could pick a Job Title from a dropdown menu
 It will show tasks, skills, tech, tools etc
@@ -66,7 +41,11 @@ maybe add more, such as mean excluding the largest handful, etc.
 May also want to adjust prefixes for most clarity.
 
 
+
 1-6 may benefit from NLP to find common words and classify on such. Or maybe AI could do it?
+
+
+
 
 
 
@@ -88,18 +67,4 @@ In the Tools Used dataset, the Commodity Title 'Freeze dryers or lypholizers' ha
 
 
 
-
-TO DO NEXT
-Feb 17, or after meeting - Continue with Notebook 1-2 to agg Tools by Jobs
-
-
-
-IDEA
-Build a small database, use SQL - For practice
-
-
-
-
-
-TRANSFORMED DATA DICTIONARY
-9 - Work Context - 
+SQL?
