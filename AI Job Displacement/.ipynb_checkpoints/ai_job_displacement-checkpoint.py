@@ -88,10 +88,6 @@ col_search, col_select, col_random = st.columns([1.2, 1, 0.6])
 
 
 
-
-# ======
-
-
 import re
 import pandas as pd
 import streamlit as st
@@ -103,38 +99,31 @@ def normalize_text(s: str) -> str:
     if pd.isna(s):
         return ""
     s = str(s).lower()
-    s = re.sub(r"[^a-z0-9\s]", " ", s)   # remove punctuation
-    s = re.sub(r"\s+", " ", s).strip()   # collapse spaces
+    s = re.sub(r"[^a-z0-9\s]", " ", s)
+    s = re.sub(r"\s+", " ", s).strip()
     return s
 
 def build_search_df(models_df: pd.DataFrame) -> pd.DataFrame:
     df = models_df.copy()
 
-    # Expecting an 'aliases' column soon; handle if missing
+    # required
+    df["__title_norm"] = df["Title"].map(normalize_text)
+
+    # optional aliases column (can be blank/NaN)
     if "aliases" not in df.columns:
         df["aliases"] = ""
+    df["__aliases_norm"] = df["aliases"].map(normalize_text)
 
-    # Search corpus = title + aliases
-    df["__search_corpus"] = (
-        df["Title"].fillna("").astype(str) + " " + df["aliases"].fillna("").astype(str)
-    )
-    df["__search_norm"] = df["__search_corpus"].map(normalize_text)
+    # searchable blob = title + aliases (you can add categories later too)
+    df["__search_blob"] = (df["__title_norm"] + " " + df["__aliases_norm"]).str.strip()
 
-    # Friendly label for selection + stable ID
+    # label shown in dropdown (use SOC to disambiguate)
     df["__label"] = df["Title"].astype(str) + "  —  " + df["O*NET-SOC Code"].astype(str)
-    df["__job_id"] = df["O*NET-SOC Code"].astype(str) + "||" + df["Title"].astype(str)
-
     return df
 
 def infer_model_columns(df: pd.DataFrame):
     candidates = [c for c in df.columns if "doubleweighed" in c.lower()]
     return [c for c in candidates if pd.api.types.is_numeric_dtype(df[c])]
-
-# -----------------------------
-# Session state init
-# -----------------------------
-if "selected_job_id" not in st.session_state:
-    st.session_state.selected_job_id = None
 
 # -----------------------------
 # UI
@@ -144,46 +133,56 @@ st.title("AI Job Displacement Lookup")
 df = build_search_df(models_df)
 model_cols = infer_model_columns(df)
 
-# Random job button
-col_a, col_b = st.columns([1, 3])
-with col_a:
-    if st.button("🎲 Random job", use_container_width=True):
-        rnd = df.sample(1, random_state=None).iloc[0]
-        st.session_state.selected_job_id = rnd["__job_id"]
-with col_b:
-    search = st.text_input(
-        "Start typing a job title (aliases included)",
-        placeholder="e.g., IT, I.T., software dev, registered nurse",
-    )
+search = st.text_input("Start typing a job title (searches Title + aliases)", placeholder="e.g., data scientist, RN, CEO")
 
-# Filter based on search
+# Filter list (substring on normalized blob)
 if search.strip():
     q = normalize_text(search)
-    filtered = df[df["__search_norm"].str.contains(q, na=False)].copy()
+    filtered = df[df["__search_blob"].str.contains(q, na=False)].copy()
 else:
-    filtered = df.sort_values("Consensus Rank").head(50).copy() if "Consensus Rank" in df.columns else df.head(50).copy()
+    filtered = df.copy()
 
 max_results = st.slider("Max results", 10, 200, 50, step=10)
+
+# Keep dropdown manageable (optionally by rank)
+if "Consensus Rank" in filtered.columns:
+    filtered = filtered.sort_values("Consensus Rank", ascending=True)
+
 filtered = filtered.head(max_results)
 
 if filtered.empty:
-    st.warning("No matches. Try fewer words, different spelling, or an alias.")
+    st.warning("No matches. Try fewer words or a different alias.")
     st.stop()
 
-# Determine default selection index (so random button snaps the dropdown)
-job_id_list = filtered["__job_id"].tolist()
-default_index = 0
-if st.session_state.selected_job_id in job_id_list:
-    default_index = job_id_list.index(st.session_state.selected_job_id)
+options = filtered["__label"].tolist()
 
-selected_label = st.selectbox(
-    "Select a job",
-    options=filtered["__label"].tolist(),
-    index=default_index,
-)
+# ---- Random button that actually changes selection ----
+# We control selectbox via session_state.
+# Key idea: update st.session_state["job_select"] to a valid option, then st.rerun()
+if "job_select" not in st.session_state:
+    st.session_state["job_select"] = options[0]  # default to first option shown
+
+c1, c2 = st.columns([1, 3])
+with c1:
+    if st.button("🎲 Random job", use_container_width=True):
+        # pick random from *current filtered options* (more intuitive)
+        st.session_state["job_select"] = filtered.sample(1)["__label"].iloc[0]
+        st.rerun()
+
+with c2:
+    selected_label = st.selectbox(
+        "Select a job",
+        options=options,
+        key="job_select",            # <-- controlled by session_state
+    )
+
+# If the current selection isn’t in the current options (can happen after changing search),
+# fall back gracefully.
+if selected_label not in set(options):
+    st.session_state["job_select"] = options[0]
+    st.rerun()
 
 selected_row = filtered.loc[filtered["__label"] == selected_label].iloc[0]
-st.session_state.selected_job_id = selected_row["__job_id"]
 
 # -----------------------------
 # Display
@@ -191,16 +190,15 @@ st.session_state.selected_job_id = selected_row["__job_id"]
 st.subheader(selected_row["Title"])
 st.caption(f"O*NET-SOC Code: {selected_row['O*NET-SOC Code']}")
 
-# Quick metrics
 c1, c2, c3, c4 = st.columns(4)
-if "Multi Model Consensus" in df.columns and pd.notna(selected_row["Multi Model Consensus"]):
+if "Multi Model Consensus" in df.columns:
     c1.metric("Consensus", f"{selected_row['Multi Model Consensus']:.3f}")
-if "Consensus Rank" in df.columns and pd.notna(selected_row["Consensus Rank"]):
-    c2.metric("Consensus rank", int(selected_row["Consensus Rank"]))
-if "Model Disagreement" in df.columns and pd.notna(selected_row["Model Disagreement"]):
-    c3.metric("Disagreement", f"{selected_row['Model Disagreement']:.3f}")
-if "Displacement Risk Category v2" in df.columns and pd.notna(selected_row["Displacement Risk Category v2"]):
-    c4.metric("Risk category", str(selected_row["Displacement Risk Category v2"]))
+if "Consensus Rank" in df.columns:
+    c2.metric("Consensus rank", int(selected_row["Consensus Rank"]) if pd.notna(selected_row["Consensus Rank"]) else "—")
+if "Model Disagreement" in df.columns:
+    c3.metric("Disagreement", f"{selected_row['Model Disagreement']:.3f}" if pd.notna(selected_row["Model Disagreement"]) else "—")
+if "Displacement Risk Category v2" in df.columns:
+    c4.metric("Risk category", selected_row["Displacement Risk Category v2"])
 
 st.divider()
 
@@ -218,9 +216,158 @@ if model_cols:
 else:
     st.info("No model columns found (expected columns containing 'doubleweighed').")
 
-with st.expander("Show aliases / search text"):
-    st.write("Aliases:", selected_row.get("aliases", ""))
-    st.write("Search corpus:", selected_row["__search_corpus"])
+with st.expander("Show aliases / search terms used"):
+    st.write({"aliases": selected_row.get("aliases", "")})
+
+
+
+
+
+
+
+
+
+
+
+
+# ======
+# ======
+# ======
+# ======
+# ======
+# ======
+# Basically worked except for random search button
+
+
+# import re
+# import pandas as pd
+# import streamlit as st
+
+# # -----------------------------
+# # Helpers
+# # -----------------------------
+# def normalize_text(s: str) -> str:
+#     if pd.isna(s):
+#         return ""
+#     s = str(s).lower()
+#     s = re.sub(r"[^a-z0-9\s]", " ", s)   # remove punctuation
+#     s = re.sub(r"\s+", " ", s).strip()   # collapse spaces
+#     return s
+
+# def build_search_df(models_df: pd.DataFrame) -> pd.DataFrame:
+#     df = models_df.copy()
+
+#     # Expecting an 'aliases' column soon; handle if missing
+#     if "aliases" not in df.columns:
+#         df["aliases"] = ""
+
+#     # Search corpus = title + aliases
+#     df["__search_corpus"] = (
+#         df["Title"].fillna("").astype(str) + " " + df["aliases"].fillna("").astype(str)
+#     )
+#     df["__search_norm"] = df["__search_corpus"].map(normalize_text)
+
+#     # Friendly label for selection + stable ID
+#     df["__label"] = df["Title"].astype(str) + "  —  " + df["O*NET-SOC Code"].astype(str)
+#     df["__job_id"] = df["O*NET-SOC Code"].astype(str) + "||" + df["Title"].astype(str)
+
+#     return df
+
+# def infer_model_columns(df: pd.DataFrame):
+#     candidates = [c for c in df.columns if "doubleweighed" in c.lower()]
+#     return [c for c in candidates if pd.api.types.is_numeric_dtype(df[c])]
+
+# # -----------------------------
+# # Session state init
+# # -----------------------------
+# if "selected_job_id" not in st.session_state:
+#     st.session_state.selected_job_id = None
+
+# # -----------------------------
+# # UI
+# # -----------------------------
+# st.title("AI Job Displacement Lookup")
+
+# df = build_search_df(models_df)
+# model_cols = infer_model_columns(df)
+
+# # Random job button
+# col_a, col_b = st.columns([1, 3])
+# with col_a:
+#     if st.button("🎲 Random job", use_container_width=True):
+#         rnd = df.sample(1, random_state=None).iloc[0]
+#         st.session_state.selected_job_id = rnd["__job_id"]
+# with col_b:
+#     search = st.text_input(
+#         "Start typing a job title (aliases included)",
+#         placeholder="e.g., IT, I.T., software dev, registered nurse",
+#     )
+
+# # Filter based on search
+# if search.strip():
+#     q = normalize_text(search)
+#     filtered = df[df["__search_norm"].str.contains(q, na=False)].copy()
+# else:
+#     filtered = df.sort_values("Consensus Rank").head(50).copy() if "Consensus Rank" in df.columns else df.head(50).copy()
+
+# max_results = st.slider("Max results", 10, 200, 50, step=10)
+# filtered = filtered.head(max_results)
+
+# if filtered.empty:
+#     st.warning("No matches. Try fewer words, different spelling, or an alias.")
+#     st.stop()
+
+# # Determine default selection index (so random button snaps the dropdown)
+# job_id_list = filtered["__job_id"].tolist()
+# default_index = 0
+# if st.session_state.selected_job_id in job_id_list:
+#     default_index = job_id_list.index(st.session_state.selected_job_id)
+
+# selected_label = st.selectbox(
+#     "Select a job",
+#     options=filtered["__label"].tolist(),
+#     index=default_index,
+# )
+
+# selected_row = filtered.loc[filtered["__label"] == selected_label].iloc[0]
+# st.session_state.selected_job_id = selected_row["__job_id"]
+
+# # -----------------------------
+# # Display
+# # -----------------------------
+# st.subheader(selected_row["Title"])
+# st.caption(f"O*NET-SOC Code: {selected_row['O*NET-SOC Code']}")
+
+# # Quick metrics
+# c1, c2, c3, c4 = st.columns(4)
+# if "Multi Model Consensus" in df.columns and pd.notna(selected_row["Multi Model Consensus"]):
+#     c1.metric("Consensus", f"{selected_row['Multi Model Consensus']:.3f}")
+# if "Consensus Rank" in df.columns and pd.notna(selected_row["Consensus Rank"]):
+#     c2.metric("Consensus rank", int(selected_row["Consensus Rank"]))
+# if "Model Disagreement" in df.columns and pd.notna(selected_row["Model Disagreement"]):
+#     c3.metric("Disagreement", f"{selected_row['Model Disagreement']:.3f}")
+# if "Displacement Risk Category v2" in df.columns and pd.notna(selected_row["Displacement Risk Category v2"]):
+#     c4.metric("Risk category", str(selected_row["Displacement Risk Category v2"]))
+
+# st.divider()
+
+# st.markdown("### Model predictions")
+# if model_cols:
+#     model_table = (
+#         pd.DataFrame({
+#             "Model": [c.replace("_doubleweighed", "") for c in model_cols],
+#             "Score": [selected_row[c] for c in model_cols],
+#         })
+#         .sort_values("Score", ascending=False)
+#         .reset_index(drop=True)
+#     )
+#     st.dataframe(model_table, use_container_width=True)
+# else:
+#     st.info("No model columns found (expected columns containing 'doubleweighed').")
+
+# with st.expander("Show aliases / search text"):
+#     st.write("Aliases:", selected_row.get("aliases", ""))
+#     st.write("Search corpus:", selected_row["__search_corpus"])
 
 
 

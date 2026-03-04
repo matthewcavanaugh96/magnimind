@@ -5,7 +5,7 @@ Version 2 uses three bins with intervals 0, 33, 66, 100
 Should there be more than three?
 
 
-Show ChatGPT's blind scoring, in which I asked it to score each job 1-5 by risk, only with Job Titles and my attributes. See how things changed once actual scaled ONET data was incorporated. See which elements, tasks/tech/tools are correlated with a score increase/decrease. 
+Show ChatGPT's blind scoring, in which I asked it to score each job 1-5 by risk, only with Job Titles and my attributes. See how things changed once actual scaled ONET data was incorporated. See which elements, or tasks/tech/tools are correlated with a score increase/decrease. 
 
 
 
@@ -13,7 +13,7 @@ Show ChatGPT's blind scoring, in which I asked it to score each job 1-5 by risk,
 
 'Controversy' is a measure of distance between the largest and smallest scores, i.e. a proxy for disagreement between models.
 
-For each job, users should also be able to see how its elements were classified.
+
 
 For each model, users should be able to see how it classified the elements.
 
