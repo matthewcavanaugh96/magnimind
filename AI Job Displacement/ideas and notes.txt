@@ -6,10 +6,26 @@ For each model, users should be able to see how it classified the elements.
 
 
 
+As of now, Tool/Tech/Tasks are not going into the scoring. I may adjust the scale to include them. Even if not, they could still be useful.
+
+
+
+IDEA - Plug in estimations back with Tools/Tech/Tasks, and try to find which of these tasks are highly correlated with automation risk estimation.
+
+
+
+IDEA - Using all my aggregates, add a function that can find jobs a person could adapt to.
+Find jobs that are similar in tools/tech/tasks. 
+
+
 
 
 How to incorporate Tech, Tool, Task Uniqueness? Just plug it into the existing scale?
 MAYBE ask AI to determine whether tech, tool, or task uniqueness should be weighed differently for different jobs.
+
+
+
+
 
 
 
